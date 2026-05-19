@@ -6,6 +6,7 @@ info: |
   Capstone · WPGA Class of 2026 · May 19, 2026
 colorSchema: dark
 mdc: true
+transition: fade-out
 class: text-center
 layout: cover
 ---
@@ -62,21 +63,10 @@ title: The Past
 <div class="tag mb-12">.past</div>
 
 <div class="grid grid-cols-[140px_1fr] gap-y-5 text-2xl">
-  <div class="amber">gr 8</div><div>"needs strategies to persevere"</div>
-  <div class="amber">gr 10</div><div>"need strategies to focus, manage stress"</div>
-  <div class="amber">gr 12</div><div>"mature ownership of learning"</div>
-  <div class="amber">ap calc</div><div>"needs explanatory clarity"</div>
-</div>
-
-<div class="flex gap-4 mt-12 max-w-3xl">
-  <div class="img-placeholder flex-1">
-    <span class="label">image</span>
-    bass performance
-  </div>
-  <div class="img-placeholder flex-1">
-    <span class="label">image</span>
-    volador de papantla
-  </div>
+  <div v-click class="amber">gr 8</div><div v-after>"needs strategies to persevere"</div>
+  <div v-click class="amber">gr 10</div><div v-after>"need strategies to focus, manage stress"</div>
+  <div v-click class="amber">gr 12</div><div v-after>"mature ownership of learning"</div>
+  <div v-click class="amber">ap calc</div><div v-after>"needs explanatory clarity"</div>
 </div>
 
 <!--
@@ -96,33 +86,61 @@ The gap I still have, named explicitly in my AP Calc feedback, is explanatory cl
 ---
 layout: default
 class: text-left
+title: Hardware lineage
+---
+
+<div class="tag mb-4">.pre_capstone</div>
+<div class="muted text-sm tracking-wide mb-12">hands-on lineage · before the AI work</div>
+
+<div class="grid grid-cols-[200px_1fr] gap-y-3 text-lg max-w-4xl mb-12">
+  <div class="amber">01</div><div>fixed my old RC car</div>
+  <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
+  <div class="amber">03</div><div>built an RC airplane</div>
+  <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
+</div>
+
+<div class="gallery mosaic-4 max-w-5xl">
+  <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
+  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
+  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
+  <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
+</div>
+
+<!--
+Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
+
+The point: I came into the capstone already knowing how to wire and debug a circuit. That's what made phase 2 possible.
+-->
+
+---
+layout: default
+class: text-left
 title: Essential question + plan
 ---
 
 <div class="flex justify-between items-start mb-20">
   <div class="tag">.eq → .poa</div>
-  <div class="max-w-md text-right">
-    <div class="muted text-xs tracking-wide mb-2 font-mono">essential question</div>
-    <div class="text-base leading-relaxed">
+  <div class="max-w-xl text-right">
+    <h2 class="text-2xl leading-snug" style="font-weight: 500;">
       how do I transition from a consumer of AI to a developer through self-directed study?
-    </div>
+    </h2>
   </div>
 </div>
 
 <div class="grid grid-cols-8 grid-rows-4 gap-y-4 text-xl max-w-5xl">
-  <div class="col-start-1 row-start-1 flex items-center gap-4">
+  <div v-click class="col-start-1 row-start-1 flex items-center gap-4">
     <span class="dim font-mono text-base">01</span>
     <span>knowledge baseline</span>
   </div>
-  <div class="col-start-3 row-start-2 flex items-center gap-4">
+  <div v-click class="col-start-3 row-start-2 flex items-center gap-4">
     <span class="dim font-mono text-base">02</span>
     <span>pivot</span>
   </div>
-  <div class="col-start-5 row-start-3 flex items-center gap-4">
+  <div v-click class="col-start-5 row-start-3 flex items-center gap-4">
     <span class="dim font-mono text-base">03</span>
     <span>integration</span>
   </div>
-  <div class="col-start-7 row-start-4 flex items-center gap-4">
+  <div v-click class="col-start-7 row-start-4 flex items-center gap-4">
     <span class="dim font-mono text-base">04</span>
     <span>synthesis</span>
   </div>
@@ -152,9 +170,9 @@ title: Phase 1 — formal path
 <div>
 
 <div class="text-3xl leading-loose">
-  <div>11 courses</div>
-  <div>7 days</div>
-  <div>8 badges</div>
+  <div v-click>11 courses</div>
+  <div v-click>7 days</div>
+  <div v-click>8 badges</div>
 </div>
 
 <div class="mt-8 text-lg muted">
@@ -210,21 +228,68 @@ Theory only gets you so far. The rest is hands-on.
 ---
 layout: default
 class: text-left
+title: Sentinel — first AI integration
+---
+
+<div class="tag mb-4">.phase_2</div>
+<div class="muted text-sm tracking-wide mb-20">first AI/software integration · april</div>
+
+<div class="two-panel text-heavy">
+
+<div>
+
+<h2 class="text-3xl font-mono mb-10">Sentinel-AI-Occupancy-Monitor</h2>
+
+<div class="chip-row mb-10">
+  <span class="chip">YOLOv8-Pose</span>
+  <span class="chip">OpenVINO</span>
+  <span class="chip">Streamlit</span>
+</div>
+
+<div class="muted text-base max-w-md leading-relaxed">
+  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard. First time I shipped a working AI pipeline end-to-end.
+</div>
+
+</div>
+
+<div>
+  <img src="/gallery/05.png" alt="sentinel-ai person detection" class="w-full rounded" style="aspect-ratio: 16/10; object-fit: cover;" />
+</div>
+
+</div>
+
+<!--
+Sentinel-AI-Occupancy-Monitor was my first project where I actually shipped a working AI/software integration end-to-end.
+
+The pipeline: IP camera streams to a Python service, YOLOv8-Pose runs detection accelerated by Intel OpenVINO, and a Streamlit dashboard shows live occupancy.
+
+That photo on the right is the actual model output — bounding box + pose keypoints on a person walking through frame.
+
+Sentinel is what told me I could actually do this. Bullseye, the helmet, all of it came after.
+
+[PAUSE 2s]
+-->
+
+---
+layout: default
+class: text-left
 title: Bullseye lineage
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-20">iteration · v1 → v3 in 5 days</div>
+<div class="muted text-sm tracking-wide mb-12">marketplace deal-scoring · v1 → v3 in 5 days</div>
+
+<h2 class="text-3xl font-mono mb-10">bullseye</h2>
 
 <div class="flex items-center gap-3 flex-wrap mb-8 text-3xl">
-  <span class="chip">salvage-radar</span>
-  <span class="dim">→</span>
-  <span class="chip">bullseye</span>
-  <span class="dim">→</span>
-  <span class="chip">bullseye-app</span>
-  <span class="text-xl ml-2">★ 3</span>
+  <span v-click class="chip">salvage-radar</span>
+  <span v-after class="dim">→</span>
+  <span v-click class="chip">bullseye</span>
+  <span v-after class="dim">→</span>
+  <span v-click class="chip">bullseye-app</span>
+  <span v-click class="text-xl ml-2">★ 3</span>
 </div>
-<div class="muted text-base font-mono tracking-wide">
+<div v-click class="muted text-base font-mono tracking-wide">
   apr 29 &nbsp;·&nbsp; may 2 &nbsp;·&nbsp; may 4
 </div>
 
@@ -252,18 +317,23 @@ class: text-left
 title: Bullseye gallery
 ---
 
-<div class="tag mb-12">.bullseye</div>
+<div class="flex justify-between items-center mb-10">
+  <div class="tag">.bullseye</div>
+  <div class="muted text-sm font-mono tracking-wide">getbullseye.app</div>
+</div>
 
-<div class="gallery max-w-5xl" style="grid-template-columns: repeat(3, 1fr);">
-  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/01.png" alt="bullseye landing" /></div>
-  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/02.png" alt="bullseye dashboard" /></div>
-  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/03.png" alt="bullseye featured find" /></div>
+<div class="gallery mosaic-3 max-w-5xl">
+  <div class="cell"><img src="/gallery/01.png" alt="bullseye landing" /></div>
+  <div class="cell"><img src="/gallery/02.png" alt="bullseye dashboard" /></div>
+  <div class="cell"><img src="/gallery/03.png" alt="bullseye featured find" /></div>
 </div>
 
 <!--
-Three views: the landing page, the home dashboard with savings + streak, and a featured find — iPhone 16 Pro listing scored 75/100 against eBay sold-comps.
+Three views: the landing page (the big one), the home dashboard with savings + streak, and a featured find — iPhone 16 Pro listing scored 75/100 against eBay sold-comps.
 
 Real product, real users — me as the first user. AGPL-3, three GitHub stars in the first week.
+
+Live at getbullseye.app — anyone in the room can visit it after the talk.
 -->
 
 ---
@@ -278,9 +348,9 @@ title: Helmet
 <h2 class="text-3xl font-mono mb-10">vl53l8cx-pointcloud-esp32</h2>
 
 <div class="chip-row mb-12">
-  <span class="chip">64 zones</span>
-  <span class="chip">15 Hz</span>
-  <span class="chip dim">1 dead IMU</span>
+  <span v-click class="chip">64 zones</span>
+  <span v-click class="chip">15 Hz</span>
+  <span v-click class="chip dim">1 dead IMU</span>
 </div>
 
 <!--
@@ -307,13 +377,15 @@ class: text-left
 title: Helmet gallery
 ---
 
-<div class="tag mb-12">.helmet</div>
+<div class="tag mb-10">.helmet</div>
 
-<div class="gallery max-w-5xl" style="grid-template-columns: repeat(2, 1fr);">
-  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/02.jpg" alt="full setup with live point cloud" /></div>
-  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/01.jpg" alt="esp32 + tof breadboard" /></div>
-  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/03.jpg" alt="tof sensor breakout close-up" /></div>
-  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/04.jpg" alt="sensor wired to esp32" /></div>
+<div class="gallery mosaic-6 max-w-5xl">
+  <div class="cell"><img src="/helmet/02.jpg" alt="full setup with live point cloud" /></div>
+  <div class="cell"><img src="/helmet/01.jpg" alt="esp32 + tof breadboard" /></div>
+  <div class="cell"><img src="/helmet/03.jpg" alt="tof sensor breakout close-up" /></div>
+  <div class="cell"><img src="/helmet/04.jpg" alt="second sensor wired to esp32" /></div>
+  <div class="cell"><img src="/helmet/05.jpg" alt="tof breakout other side" /></div>
+  <div class="cell"><img src="/helmet/06.jpg" alt="multimeter debug" /></div>
 </div>
 
 <!--
@@ -331,10 +403,10 @@ title: Compressed prompt
 <div class="tag mb-4">.phase_2</div>
 <div class="muted text-sm tracking-wide mb-12">struggle · wrong abstraction layer</div>
 
-<h2 class="text-3xl font-mono mb-12">compressed-prompt</h2>
+<h2 class="text-3xl font-mono mb-20">compressed-prompt</h2>
 
-<div class="text-2xl">
-  I optimized before I tested if it worked.
+<div class="flex justify-start mt-12">
+  <carbon-terminal class="text-[10rem]" style="color:#5a5a5a;" />
 </div>
 
 <!--
@@ -350,6 +422,51 @@ Choose your abstraction layer before you optimize it. Otherwise you're polishing
 
 [PAUSE 2s]
 -->
+
+---
+layout: default
+class: text-left
+title: Web design (and this deck)
+---
+
+<div class="tag mb-4">.phase_2</div>
+<div class="muted text-sm tracking-wide mb-16">meta-loop · the course teaches me how to design itself</div>
+
+<h2 class="text-3xl font-mono mb-12">claude-web-design-guide</h2>
+
+<div class="text-2xl flex items-center gap-6 mb-10">
+  <span>write the course</span>
+  <span class="dim">→</span>
+  <span>take it</span>
+  <span class="dim">→</span>
+  <span>iterate</span>
+</div>
+
+<div class="flex items-center gap-3 mb-10">
+  <span class="chip dim">v1</span>
+  <span class="chip dim">v2</span>
+  <span class="chip">v3 live</span>
+  <span class="muted text-sm ml-2 font-mono">/v1 /v2 archived in place — readers watch it develop</span>
+</div>
+
+<div class="muted text-base">
+  this slideshow is the test.
+</div>
+
+<div class="dim text-sm mt-10 font-mono">
+  reubenlavin08.github.io/claude-web-design-guide
+</div>
+
+<!--
+Alongside the embedded/CV work, I've been writing my own web design course — claude-web-design-guide.
+
+The method is a loop: write the course, take the course on a real project, find what's wrong, rewrite the course. Versions v1 and v2 are archived in place at /v1/ and /v2/ so anyone can watch the method develop.
+
+This slideshow is the test for v3. Every layout, type pair, mosaic grid, and color decision in front of you came out of running the guide on a real artifact — itself.
+
+The deck IS the proof the method works.
+-->
+
 
 ---
 layout: default
@@ -400,29 +517,6 @@ The marketplace lineage I just showed you. The helmet. The CV course. Plus:
 Each one was a different experiment in self-directed AI development — embedded systems, computer vision, marketplace algorithms, Claude Code tooling, low-level automation.
 
 The breadth is the point.
--->
-
----
-layout: default
-class: text-left
-title: Build evidence
----
-
-<div class="tag mb-12">.build</div>
-
-<div class="gallery max-w-5xl">
-  <div class="cell"><img src="/gallery/02.png" alt="bullseye home dashboard" /></div>
-  <div class="cell"><img src="/gallery/04.png" alt="claude-monitor display" /></div>
-  <div class="cell"><img src="/gallery/03.jpg" alt="claude-monitor physical device" /></div>
-  <div class="cell"><img src="/gallery/04.jpg" alt="esp32 + tof + live point cloud" /></div>
-  <div class="cell"><img src="/gallery/05.png" alt="sentinel-ai occupancy monitor" /></div>
-  <div class="cell"><img src="/gallery/06.png" alt="cc-discord-remote on phone" /></div>
-</div>
-
-<!--
-Pause here. Let the photos do the talking. Point at one or two — the ESP32 sensor lit up on the breadboard, bullseye-app catching a Marketplace listing in real time, whatever you want to call attention to.
-
-This is the "hands-on" part of "theory only gets you so far."
 -->
 
 ---
