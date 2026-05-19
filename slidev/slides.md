@@ -285,10 +285,7 @@ title: Helmet
 </div>
 
 <div>
-  <div class="img-placeholder aspect-square">
-    <span class="label">image placeholder</span>
-    esp32 + tof breadboard
-  </div>
+  <img src="/helmet.jpg" alt="esp32 + tof breadboard" class="w-full aspect-square object-cover rounded" />
 </div>
 
 </div>
@@ -400,10 +397,10 @@ title: Build evidence
 <div class="tag mb-12">.build</div>
 
 <div class="gallery max-w-5xl">
-  <div class="cell"><img src="/gallery/01.png" alt="bullseye landing" /></div>
   <div class="cell"><img src="/gallery/02.png" alt="bullseye home dashboard" /></div>
-  <div class="cell"><img src="/gallery/03.png" alt="bullseye featured find" /></div>
   <div class="cell"><img src="/gallery/04.png" alt="claude-monitor display" /></div>
+  <div class="cell"><img src="/gallery/03.jpg" alt="claude-monitor physical device" /></div>
+  <div class="cell"><img src="/gallery/04.jpg" alt="esp32 + tof + live point cloud" /></div>
   <div class="cell"><img src="/gallery/05.png" alt="sentinel-ai occupancy monitor" /></div>
   <div class="cell"><img src="/gallery/06.png" alt="cc-discord-remote on phone" /></div>
 </div>
