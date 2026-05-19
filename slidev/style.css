@@ -1,0 +1,278 @@
+/* pure black + greyscale base. typographic variation does the heavy lifting. */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --slidev-theme-background: #000000;
+  --slidev-theme-foreground: #ffffff;
+}
+
+.slidev-layout {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 400;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: #ffffff;
+  font-family: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+}
+
+.slidev-layout code,
+.slidev-layout .font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* greyscale tier */
+.muted { color: #8c8c8c; }
+.dim   { color: #555555; }
+
+/* emphasis = weight + brightness, not color */
+.amber {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* SECTION LABELS — pixel display font */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  color: #b5b5b5;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  text-transform: lowercase;
+  font-weight: 400;
+  line-height: 1;
+}
+.tag::before {
+  content: '> ';
+  color: #5a5a5a;
+}
+.tag::after {
+  content: '';
+  display: inline-block;
+  width: 96px;
+  height: 1px;
+  margin-left: 18px;
+  vertical-align: middle;
+  background: #444;
+}
+
+/* MOMENT slides — Archivo, medium weight */
+.moment-text {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* WHITE-PANEL SERIF QUOTE — contrast against the black surround */
+.serif-card {
+  background: #ffffff;
+  color: #0a0a0a;
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  padding: 1.75rem 2rem;
+  border-radius: 4px;
+  font-style: italic;
+  line-height: 1.5;
+  box-shadow: 0 4px 24px rgba(255,255,255,0.04);
+}
+.serif-card .source {
+  display: block;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 0.75rem;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  letter-spacing: 0.04em;
+}
+
+/* image placeholder frame */
+.img-placeholder {
+  border: 1px dashed #3a3a3a;
+  background: #0a0a0a;
+  color: #6b6b6b;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.img-placeholder .label {
+  display: block;
+  color: #4a4a4a;
+  font-size: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+
+/* lesson statement — just emphasized text, no label, no box */
+.lesson {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.3;
+  max-width: 36rem;
+}
+
+/* big number */
+.big-num {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.big-num + .label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* CHIPS — outlined rounded pills. PCB-component echo. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #ffffff;
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: transparent;
+  line-height: 1;
+  white-space: nowrap;
+}
+.chip.dim {
+  border-color: #4a4a4a;
+  color: #888;
+}
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+}
+/* compact variant for dense lists (portfolio wall) */
+.chip-row.compact {
+  gap: 0.4rem 0.45rem;
+}
+.chip-row.compact .chip {
+  border-width: 1px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+/* two-panel layout: 60/40 default, customizable */
+.two-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.two-panel.text-heavy { grid-template-columns: 3fr 2fr; }
+.two-panel.image-heavy { grid-template-columns: 2fr 3fr; }
+
+/* MOMENT slides with full-color panels (FP maximalist) */
+.slidev-layout.bg-lime-panel {
+  background: #29ff00 !important;
+  color: #000000 !important;
+}
+.slidev-layout.bg-lime-panel h1,
+.slidev-layout.bg-lime-panel h2,
+.slidev-layout.bg-lime-panel .moment-text {
+  color: #000000;
+}
+.slidev-layout.bg-lime-panel .muted {
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+.slidev-layout.bg-lime-panel .dim {
+  color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.slidev-layout.bg-blue-panel {
+  background: #2300ff !important;
+  color: #ffffff !important;
+}
+.slidev-layout.bg-blue-panel h1,
+.slidev-layout.bg-blue-panel h2,
+.slidev-layout.bg-blue-panel .moment-text {
+  color: #ffffff;
+}
+.slidev-layout.bg-blue-panel .muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.slidev-layout.bg-blue-panel .dim {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.slidev-layout.bg-yellow-panel {
+  background: #ffd60a !important;
+  color: #000000 !important;
+}
+.slidev-layout.bg-yellow-panel h1,
+.slidev-layout.bg-yellow-panel h2,
+.slidev-layout.bg-yellow-panel .moment-text {
+  color: #000000;
+}
+.slidev-layout.bg-yellow-panel .muted {
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+
+/* GALLERY — photo grid for the build evidence slide */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 12px;
+  width: 100%;
+}
+.gallery .cell {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #0a0a0a;
+  border: 1px dashed #3a3a3a;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.gallery .cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery .cell .empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a4a4a;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* kill the stuck goto dialog */
+#slidev-goto-dialog {
+  display: none !important;
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone — Reuben Lavin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hud">
+  <div class="hud-left"><span class="hud-label">slide</span><span class="hud-value">01 / 15</span></div>
+  <div class="hud-right"><span class="hud-label">elapsed</span><span class="hud-value">00:00</span></div>
+</div>
+
+<main id="deck">
+
+  <!-- SLIDE 1 — TITLE -->
+  <section class="slide" data-slide="1">
+    <div class="content" style="text-align:center;">
+      <div class="tag">capstone &nbsp; / &nbsp; wpga class of 2026</div>
+      <h1 class="cursor">self-directed AI development</h1>
+      <p class="muted" style="margin-top:32px;font-size:18px;letter-spacing:0.05em;">
+        Reuben Lavin <span class="dim">&nbsp;·&nbsp;</span> May 19, 2026
+      </p>
+    </div>
+    <aside class="notes">
+      <p><strong>Opener — in medias res hook:</strong></p>
+      <p><em>"Before I introduce myself: a few weeks ago I spent seven hours debugging an IMU sensor before realizing the chip was shorted from the factory. The week before that, I'd finished the Google AI Professional Certificate. The gap between those two experiences is what I want to talk about."</em></p>
+      <p><strong>[PAUSE 2s — look at the assessor]</strong></p>
+      <p><em>"My name's Reuben Lavin, WPGA Class of 2026. My essential question: how do I transition from a consumer of AI to a developer through self-directed study?"</em></p>
+      <p class="muted" style="font-size:13px;">Conversational volume. Don't perform — recall.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 2 — AGENDA -->
+  <section class="slide" data-slide="2">
+    <div class="content">
+      <div class="tag">.agenda</div>
+      <dl class="kv large">
+        <dt>01</dt><dd>past <span class="muted">— my learning journey</span></dd>
+        <dt>02</dt><dd>present <span class="muted">— the EQ, the pivot, the projects</span></dd>
+        <dt>03</dt><dd>future <span class="muted">— what's next</span></dd>
+        <dt>04</dt><dd>q &amp; a</dd>
+      </dl>
+    </div>
+    <aside class="notes">
+      <p><em>(no notes — name the four sections in order; tell the audience you'll remind them of where you are throughout)</em></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 3 — THE PAST -->
+  <section class="slide" data-slide="3">
+    <div class="content">
+      <div class="tag">.past &nbsp; / &nbsp; learning journey</div>
+      <dl class="kv">
+        <dt>gr 8</dt><dd>"needs strategies to persevere"</dd>
+        <dt>gr 10</dt><dd>"need strategies to focus, manage stress"</dd>
+        <dt>gr 12</dt><dd>"mature ownership of learning"</dd>
+        <dt>ap calc</dt><dd>"needs explanatory clarity"</dd>
+      </dl>
+      <p class="dim" style="margin-top:56px;font-size:13px;letter-spacing:0.1em;">[ bass photo &nbsp; · &nbsp; volador de papantla photo ]</p>
+    </div>
+    <aside class="notes">
+      <p>I'll start with where I came from. In Grade 8, my report card said I needed to develop strategies for persevering through setbacks — basically, I gave up too easily.</p>
+      <p>By Grade 10, I was at least self-aware enough to write that I needed to find strategies to focus and manage stress.</p>
+      <p>By Grade 12 Physics, my teacher described what she called a "mature ownership" of learning — I'd figured out how to actually push through.</p>
+      <p>That arc — from giving up easily to taking ownership — is what made it possible for me to attempt the kind of self-directed project this capstone asked for.</p>
+      <p>The gap I still have, named explicitly in my AP Calc feedback, is explanatory clarity. I can do the math; I struggle to communicate the why. This presentation is partly an exercise in closing that gap.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 4 — EQ + PLAN -->
+  <section class="slide" data-slide="4">
+    <div class="content">
+      <div class="tag">.eq &nbsp; + &nbsp; .poa</div>
+      <h2 style="font-weight:400;line-height:1.2;">how do I transition from a <span class="amber">consumer</span> of AI to a <span class="amber">developer</span> through self-directed study?</h2>
+      <div style="margin-top:48px;font-size:20px;color:var(--fg-muted);letter-spacing:0.05em;">plan of action — four milestones</div>
+      <div class="flow" style="margin-top:12px;">
+        <span class="step">knowledge baseline</span>
+        <span class="arrow">→</span>
+        <span class="step">pivot</span>
+        <span class="arrow">→</span>
+        <span class="step">integration</span>
+        <span class="arrow">→</span>
+        <span class="step">synthesis</span>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Here's the question I started with: How do I transition from a consumer of AI to a developer through self-directed study?</p>
+      <p>And here's the plan I wrote in March: four milestones — Knowledge Baseline, Technical Pivot, Integration, Final Synthesis — each with a date and an evidence requirement.</p>
+      <p>The plan was real. What I'm going to show you next is what actually happened against it, and where I deviated.</p>
+      <p>Spoiler: the deviation is where the learning is.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 5 — PHASE 1 -->
+  <section class="slide" data-slide="5">
+    <div class="content">
+      <div class="phase-line">
+        <span class="label">.phase_1</span>
+        <span class="dates">feb 28 — mar 5 &nbsp; · &nbsp; the formal path</span>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:48px;margin-top:32px;flex-wrap:wrap;">
+        <div>
+          <div class="big-number">11</div>
+          <div class="muted" style="font-size:14px;letter-spacing:0.1em;margin-top:8px;">courses</div>
+        </div>
+        <div>
+          <div class="big-number">7</div>
+          <div class="muted" style="font-size:14px;letter-spacing:0.1em;margin-top:8px;">days</div>
+        </div>
+        <div>
+          <div class="big-number">8</div>
+          <div class="muted" style="font-size:14px;letter-spacing:0.1em;margin-top:8px;">credly badges</div>
+        </div>
+      </div>
+      <p style="margin-top:40px;font-size:22px;">
+        + <span class="amber">Google AI Professional Certificate</span>
+      </p>
+      <p class="dim" style="font-size:13px;letter-spacing:0.05em;margin-top:24px;">
+        verifiable &nbsp; → &nbsp; <a href="https://credly.com/users/reuben-lavin" style="color:var(--blue);text-decoration:none;" target="_blank">credly.com/users/reuben-lavin</a>
+      </p>
+      <p class="dim" style="font-size:12px;margin-top:36px;letter-spacing:0.05em;">[ insert credly badge grid screenshot — image.png ]</p>
+    </div>
+    <aside class="notes">
+      <p>Phase one took the EQ literally. To become a developer through self-directed study, I went and got the credential.</p>
+      <p>Between February 28 and March 5 — seven days — I completed 11 Google Career Certificate courses and earned 8 Credly badges including the Google AI Professional Certificate.</p>
+      <div class="demo-cue">pull up <strong>credly.com/users/reuben-lavin</strong> in the browser, show the badges live (~20 sec)</div>
+      <p>These are verifiable. The Pro Cert covers AI fundamentals, brainstorming, research, writing, content creation, data analysis, app building, and agent fundamentals — the full Google curriculum for using AI tools effectively.</p>
+      <p>After seven days I had the credential. <strong>What I didn't have was the answer to my question.</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 6 — REALIZATION -->
+  <section class="slide" data-slide="6">
+    <div class="content">
+      <div class="tag">.realization</div>
+      <div class="quote">"…built a portfolio of 20+ artifacts using AI, and vibe-coded a custom AI solution."</div>
+      <div class="quote-source">— Google's own Pro Cert description</div>
+      <p class="large" style="margin-top:56px;color:var(--fg);">
+        the credential was a <span class="amber">starting point</span>.
+      </p>
+      <p class="large" style="color:var(--fg);">
+        the artifacts were the <span class="amber">answer</span> — and I had to go make them.
+      </p>
+    </div>
+    <aside class="notes">
+      <p>There wasn't one dramatic moment when I realized the credential wasn't enough. It crept in.</p>
+      <p>Google's own description of the Pro Cert — the thing I'd just earned — says it certifies that the holder has built a portfolio of 20+ artifacts and vibe-coded a custom AI solution.</p>
+      <p>So Google itself was telling me: the certificate isn't the proof; the artifacts are.</p>
+      <p>And around that time I kept seeing engineering builds on YouTube — sensor projects, AI-augmented tools, weird hardware — and at some point I started wanting to make those things rather than watch them.</p>
+      <p>The next two months were that.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 7 — BULLSEYE -->
+  <section class="slide" data-slide="7">
+    <div class="content">
+      <div class="phase-line">
+        <span class="label">.phase_2</span>
+        <span class="dates">iteration &nbsp; · &nbsp; v1 → v3 in 5 days</span>
+      </div>
+      <div style="margin-top:48px;">
+        <div class="flow" style="font-size:28px;">
+          <span class="step">salvage-radar</span>
+          <span class="arrow">→</span>
+          <span class="step">bullseye</span>
+          <span class="arrow">→</span>
+          <span class="step">bullseye-app</span>
+          <span class="star">★ 3</span>
+        </div>
+        <div class="muted" style="font-size:14px;margin-top:8px;letter-spacing:0.05em;">
+          <span style="display:inline-block;width:160px;">apr 29</span>
+          <span style="display:inline-block;width:160px;">may 2</span>
+          <span style="display:inline-block;width:160px;">may 4</span>
+        </div>
+      </div>
+      <div class="lesson" style="margin-top:48px;">
+        <span class="lesson-label">lesson</span>
+        iterate publicly. ship each version. use it. find what's broken. rebuild.
+      </div>
+    </div>
+    <aside class="notes">
+      <p>This is my favorite story from the project because it shows the rhythm.</p>
+      <p>On April 29 I shipped version one — salvage-radar — a Craigslist scraper for free and cheap robotics-salvage parts with geo-fencing.</p>
+      <p>Three days later I'd hit the limits of what scraping alone could do, so I rebuilt it as bullseye, adding a local AI agent and comparison data.</p>
+      <p>Two days after that I rebuilt again as bullseye-app — a polished Windows desktop app scoring Facebook Marketplace listings against eBay sold-comp data, AGPL-3 open source, free-forever for three saved searches with a Pro tier. Picked up three GitHub stars in the first week.</p>
+      <div class="demo-cue">open <strong>bullseye-app</strong> on the laptop, type a search like "drone", show it scoring listings against eBay sold-comps in real time (~1 min)</div>
+      <p>The lesson isn't the marketplace bot. It's that I shipped, used what I built, found what was broken, and rebuilt — three times in five days. Iteration only works if each version is actually usable, which means you have to release imperfect work.</p>
+      <p><strong>Iterate publicly. Ship each version before you start the next.</strong></p>
+      <p><strong>[PAUSE 2s]</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 8 — HELMET -->
+  <section class="slide" data-slide="8">
+    <div class="content">
+      <div class="phase-line">
+        <span class="label">.phase_2</span>
+        <span class="dates">helmet &nbsp; · &nbsp; capstone-named project</span>
+      </div>
+      <h2 style="margin-top:24px;font-size:28px;color:var(--fg);"><span class="mono" style="color:var(--blue);">vl53l8cx-pointcloud-esp32</span></h2>
+      <p class="muted" style="font-size:16px;margin-top:-12px;">assistive-vision helmet for blind users · step one</p>
+
+      <div style="display:flex;gap:48px;margin-top:40px;flex-wrap:wrap;">
+        <div>
+          <div class="big-number" style="font-size:64px;">64</div>
+          <div class="muted" style="font-size:13px;letter-spacing:0.1em;">zones</div>
+        </div>
+        <div>
+          <div class="big-number" style="font-size:64px;">15 <span style="font-size:32px;">Hz</span></div>
+          <div class="muted" style="font-size:13px;letter-spacing:0.1em;">depth stream</div>
+        </div>
+        <div>
+          <div class="big-number" style="font-size:64px;color:var(--red);">1</div>
+          <div class="muted" style="font-size:13px;letter-spacing:0.1em;">dead imu (returned)</div>
+        </div>
+      </div>
+
+      <div class="lesson" style="margin-top:48px;">
+        <span class="lesson-label">lesson</span>
+        hardware quality is a variable you can't fix with skill.
+      </div>
+    </div>
+    <aside class="notes">
+      <p>This is the project the capstone was nominally about — an assistive-vision helmet for blind users.</p>
+      <p>The "why": a friend of mine built a haptic and ultrasonic cane for blind users. I helped him with the wiring. After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't — same problem, more spatial information.</p>
+      <div class="demo-cue">bring out ESP32 + ToF sensor on breadboard, plug into laptop USB, run the Python visualizer. wave a hand in front of the sensor and show the live 64-zone depth grid updating (~1 min)</div>
+      <p><strong>What works:</strong> the ESP32-S3 streams a 64-zone depth grid at 15 Hz over serial; the Python visualizer renders animated time-of-flight rays in real time.</p>
+      <p><strong>What's stuck:</strong> the IMU was internally shorted from the factory, so pose fusion isn't running yet, and I haven't tuned the ToF settings to get clean output.</p>
+      <p>You can debug your code for hours and the answer is still that the chip is broken.</p>
+      <p><strong>Hardware quality is a variable you can't fix with skill.</strong></p>
+      <p><strong>[PAUSE 2s]</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 9 — CV COURSE -->
+  <section class="slide" data-slide="9">
+    <div class="content">
+      <div class="phase-line">
+        <span class="label">.phase_2</span>
+        <span class="dates">course &nbsp; · &nbsp; building the learning path</span>
+      </div>
+      <h2 style="margin-top:24px;font-size:28px;"><span class="mono" style="color:var(--blue);">cv-robotics-course</span></h2>
+      <p class="quote" style="margin-top:24px;">"designed around AI as a first-class learning collaborator"</p>
+      <p class="large" style="margin-top:40px;color:var(--fg);">
+        built the course. <span class="dim">haven't taken it yet.</span>
+      </p>
+      <div class="lesson" style="margin-top:48px;">
+        <span class="lesson-label">lesson</span>
+        when no course exists for what you want to learn, designing the course is half the work.
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Working on the helmet showed me how much I didn't know about sensor fusion. So I built a course.</p>
+      <p>cv-robotics-course is a self-paced curriculum on computer vision, calibration, and multi-sensor fusion, designed around AI as a first-class learning collaborator. I designed it to be the course I wished existed when I started the helmet.</p>
+      <div class="demo-cue">(optional, ~30 sec) pull up the course site in the browser, scroll through the curriculum structure</div>
+      <p>Now here's the honest part — I built the curriculum but I haven't taken it yet. There hasn't been time.</p>
+      <p>But the act of structuring the path — figuring out what to learn, in what order, with what tools — was itself the learning.</p>
+      <p><strong>When no course exists, designing the course is half the work.</strong></p>
+      <p><strong>[PAUSE 2s]</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 10 — COMPRESSED PROMPT -->
+  <section class="slide" data-slide="10">
+    <div class="content">
+      <div class="phase-line">
+        <span class="label">.phase_2</span>
+        <span class="dates">struggle &nbsp; · &nbsp; wrong abstraction layer</span>
+      </div>
+      <h2 style="margin-top:24px;font-size:28px;"><span class="mono" style="color:var(--blue);">compressed-prompt</span></h2>
+      <p class="muted" style="font-size:18px;margin-top:-8px;">shorthand <span class="dim">→</span> llm decode</p>
+      <p class="large" style="margin-top:40px;color:var(--fg);">
+        beam search + llm rerank — <span class="amber">on the terminal hook</span>.
+      </p>
+      <p class="large" style="color:var(--fg);margin-top:8px;">
+        the real value lives <span class="amber">at the integration layer</span>.
+      </p>
+      <p class="dim" style="margin-top:8px;font-size:18px;">the optimization was polish on a layer about to be replaced.</p>
+      <div class="lesson" style="margin-top:48px;">
+        <span class="lesson-label">lesson</span>
+        choose your abstraction layer before you optimize it.
+      </div>
+    </div>
+    <aside class="notes">
+      <p>compressed-prompt is the project I struggled with most.</p>
+      <p>The idea is a shorthand input system — type a two-letter code, an LLM expands it into a full prompt. I built a terminal hook with beam search and LLM reranking to make the decoding more accurate. I got it working.</p>
+      <p>And then I realized most of the optimization I'd just done was polish on the wrong layer. The terminal hook is a tiny piece of the eventual system. The real value lives at Phase A — system-wide integration, where the shorthand works in any text field on the computer, not just the terminal.</p>
+      <p>All my beam-search and reranking work was going to be obsolete the moment I moved to that layer.</p>
+      <p><strong>Choose your abstraction layer before you optimize it.</strong> Otherwise you're polishing something you're about to replace.</p>
+      <p><strong>[PAUSE 2s]</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 11 — PORTFOLIO -->
+  <section class="slide" data-slide="11">
+    <div class="content">
+      <div class="tag">.portfolio &nbsp; / &nbsp; 16 repos · 3 weeks</div>
+      <div class="repo-grid">
+        <div class="repo"><strong>bullseye-app</strong> <span>marketplace AI, v3 ★3</span></div>
+        <div class="repo"><strong>vl53l8cx-pointcloud-esp32</strong> <span>helmet step 1</span></div>
+        <div class="repo"><strong>bullseye</strong> <span>marketplace AI, v2</span></div>
+        <div class="repo"><strong>cv-robotics-course</strong> <span>sensor-fusion curriculum</span></div>
+        <div class="repo"><strong>salvage-radar</strong> <span>marketplace AI, v1</span></div>
+        <div class="repo"><strong>Sentinel-AI-Occupancy-Monitor</strong> <span>YOLOv8 + OpenVINO + Streamlit</span></div>
+        <div class="repo"><strong>cc-discord-remote</strong> <span>Claude Code via Discord + ctypes</span></div>
+        <div class="repo"><strong>claude-monitor</strong> <span>Pi dashboard, CRT theme</span></div>
+        <div class="repo"><strong>Sorta_windowsx_64</strong> <span>AI file organization</span></div>
+        <div class="repo"><strong>email-audit-claude-cowork-skill</strong> <span>multi-platform Claude skill</span></div>
+        <div class="repo"><strong>portfolio</strong> <span>hand-rolled HTML/CSS/JS</span></div>
+        <div class="repo private"><strong>claude-web-design-guide</strong> <span>checklist + live Pages site</span></div>
+        <div class="repo private"><strong>web-design-business</strong> <span>small-biz side hustle</span></div>
+        <div class="repo private"><strong>compressed-prompt</strong> <span>shorthand → LLM</span></div>
+        <div class="repo private"><strong>claude-memory</strong> <span>memory backup</span></div>
+        <div class="repo private"><strong>openclaw-secure-setup</strong> <span>install notes</span></div>
+      </div>
+      <p class="large amber" style="margin-top:40px;">each one was a probe.</p>
+    </div>
+    <aside class="notes">
+      <p>Stepping back from the individual projects, this is what the body of work looks like. Sixteen repositories created during the capstone window — most of them after April 24. A lot of them were nights and weekends.</p>
+      <div class="demo-cue">pull up <strong>github.com/reubenlavin08</strong> in the browser, let the assessor scan the repo list (~30 sec)</div>
+      <p>The marketplace lineage I just showed you. The helmet. The CV course.</p>
+      <p>Plus: Sentinel-AI-Occupancy-Monitor, which uses YOLOv8-Pose and OpenVINO with a Streamlit dashboard to count people entering and exiting a room over an IP camera.</p>
+      <p>cc-discord-remote, a Discord bot I built two days ago that drives Claude Code on my laptop from my phone using Win32 console APIs through ctypes.</p>
+      <p>claude-monitor, a Pi-screen dashboard that scrapes the Claude Code CLI's usage data over WebSocket with a CRT-terminal theme.</p>
+      <p>Plus several private repos for a web-design side business, the shorthand keyboard, and memory backups.</p>
+      <p>Each one was a probe into a different facet of self-directed AI development — embedded systems, computer vision, marketplace algorithms, Claude Code tooling, low-level automation. <strong>The breadth is the point.</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 12 — MENTOR + NETWORK -->
+  <section class="slide" data-slide="12">
+    <div class="content">
+      <div class="tag">.network &nbsp; / &nbsp; honest accounting</div>
+      <dl class="kv" style="font-size:20px;">
+        <dt>mentor</dt>
+        <dd>1 meeting &nbsp;<span class="dim">·</span>&nbsp; <span class="muted">"you're smart, you don't need my help"</span></dd>
+        <dt style="padding-top:24px;">experts</dt>
+        <dd style="padding-top:24px;">
+          <strong>Dr. Yang</strong> &nbsp;<span class="muted">— UBC professor of civil engineering</span><br>
+          <span class="muted" style="font-size:15px;">civil engineering &amp; automation; my projects came up</span>
+          <br><br>
+          <strong>Rhys Rustad-Elliott</strong> &nbsp;<span class="muted">— systems software engineer</span><br>
+          <span class="muted" style="font-size:15px;">MSc cum laude VU Amsterdam · ex-Google · ex-Elastic</span><br>
+          <span class="muted" style="font-size:15px;">education path, career trajectory, project approach</span>
+        </dd>
+      </dl>
+      <p class="dim" style="margin-top:40px;font-size:15px;letter-spacing:0.04em;">
+        in-school: Mr. Barnum (chemistry) · Dr. Holowka (3D modeling, spindle work)
+      </p>
+    </div>
+    <aside class="notes">
+      <p>This is the part of the rubric where I have to be honest about where I fell short and where I made do. The capstone guideline is three mentor meetings and two expert consultations.</p>
+      <p>I had <strong>one mentor meeting</strong>, in the first window. My mentor's read of me was that I was smart and didn't need their help, and they said as much. So I ran autonomously — which is what the rest of this deck shows.</p>
+      <p>On the expert side, I didn't pre-arrange formal consultations. What I did have were <strong>two unstructured conversations with practicing experts</strong> that touched directly on the work.</p>
+      <p>The first was with <strong>Dr. Yang</strong>, a Professor of Civil Engineering at UBC — we talked about civil engineering and automation, and my projects came up.</p>
+      <p>The second was with <strong>Rhys Rustad-Elliott</strong>, a systems software engineer with a master's cum laude from VU Amsterdam in computer security, an undergrad with distinction from Toronto, and several years of industry experience at Google and Elastic working on low-level Linux systems and runtime security — we talked about his education path, his career trajectory, and how he approaches projects.</p>
+      <p>Both were informal but both were genuine learning moments. In school, I also worked with Mr. Barnum on chemistry and Dr. Holowka on 3D modeling and spindle work.</p>
+      <p><strong>What I'd do differently:</strong> pre-arrange the expert outreach in the Plan of Action, with a written question list before each conversation, rather than letting it happen incidentally.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 13 — EQ ANSWER -->
+  <section class="slide" data-slide="13">
+    <div class="content">
+      <div class="tag">.answer</div>
+      <h2 style="font-weight:400;color:var(--fg-muted);">self-directed AI learning isn't about credentials.</h2>
+      <h2 style="margin-top:-8px;">it's about choosing problems that force you into <span class="amber">territory the courses don't cover.</span></h2>
+
+      <div style="margin-top:48px;font-size:22px;line-height:1.8;">
+        <div>credentials <span class="arrow" style="margin:0 16px;color:var(--fg-dim);">→</span> starting point</div>
+        <div>portfolio &nbsp; <span class="arrow" style="margin:0 16px;color:var(--fg-dim);">→</span> answer</div>
+      </div>
+
+      <div style="margin-top:40px;font-size:16px;color:var(--fg-muted);letter-spacing:0.05em;">
+        four lessons:
+      </div>
+      <div style="font-size:17px;margin-top:8px;line-height:1.9;">
+        <span class="amber">·</span> iterate publicly &nbsp;<span class="dim">(bullseye)</span><br>
+        <span class="amber">·</span> hardware quality is a variable &nbsp;<span class="dim">(helmet)</span><br>
+        <span class="amber">·</span> design the course &nbsp;<span class="dim">(cv-robotics-course)</span><br>
+        <span class="amber">·</span> choose your abstraction layer &nbsp;<span class="dim">(compressed-prompt)</span>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Coming back to the question: How do I transition from a consumer of AI to a developer through self-directed study?</p>
+      <p>My answer, after three months:</p>
+      <p><strong>Self-directed AI learning isn't about credentials. It's about choosing problems that force you into territory the courses don't cover.</strong></p>
+      <p><strong>[PAUSE 3s — stand still, look at the assessor]</strong></p>
+      <p>The Pro Cert was a starting point. The portfolio — and the people I talked to about it — was the answer.</p>
+      <p>And inside the portfolio, every project taught a different lesson:</p>
+      <p>Iterate publicly — release imperfect work or you never find what's broken.</p>
+      <p>Hardware quality is a variable you can't fix with skill.</p>
+      <p>When no course exists, design the course.</p>
+      <p>Choose your abstraction layer before you optimize it.</p>
+      <p>Those four lessons together are what I actually got from this project. None of them are in the Google curriculum.</p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 14 — FUTURE -->
+  <section class="slide" data-slide="14">
+    <div class="content">
+      <div class="tag">.next &nbsp; / &nbsp; bringing it full circle</div>
+      <div style="font-size:22px;margin-top:32px;line-height:1.7;">
+        <div><span class="amber">sept 2026</span> &nbsp;<span class="arrow">→</span>&nbsp; UBC science</div>
+        <div><span class="amber">jan 2027</span> &nbsp;<span class="arrow">→</span>&nbsp; apply engineering transfer</div>
+        <div><span class="amber">mar 2027</span> &nbsp;<span class="arrow">→</span>&nbsp; engineering physics interview</div>
+      </div>
+      <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--rule);">
+        <div class="muted" style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:12px;">next probe</div>
+        <p class="large">train my own AI model on <span class="amber">USGS seismic data</span> → niche trading algorithm.</p>
+        <p class="dim" style="margin-top:16px;font-size:17px;">the original EQ wasn't wrong. it was premature.</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Looking forward: in September I'm starting UBC Science. I'll apply for Engineering transfer in January, decisions come back in May, and if it goes well I interview for Engineering Physics in March 2027.</p>
+      <p>That's the academic track.</p>
+      <p>The next project track is bringing the original EQ full circle. I want to train my own AI model on USGS seismic data and use it to test a niche trading algorithm — the kind of statistically-grounded, evidence-based AI work I originally imagined when I wrote my question in March.</p>
+      <p>The original EQ wasn't wrong. It was just premature — I needed three months of messy applied work before I could even attempt it properly.</p>
+      <p><strong>The approach keeps probing.</strong></p>
+      <p><strong>[PAUSE 3s — this is your last real line. Hold the silence. Then advance.]</strong></p>
+    </aside>
+  </section>
+
+  <!-- SLIDE 15 — THANK YOU / Q&A -->
+  <section class="slide" data-slide="15">
+    <div class="content" style="text-align:center;">
+      <h1 style="font-size:80px;">thank you<span class="amber">.</span></h1>
+      <p class="large" style="margin-top:48px;color:var(--fg-muted);">questions?</p>
+      <div style="margin-top:64px;font-size:17px;color:var(--fg-muted);letter-spacing:0.05em;">
+        <a href="https://github.com/reubenlavin08" style="color:var(--blue);text-decoration:none;" target="_blank">github.com/reubenlavin08</a>
+        <br>
+        <a href="https://credly.com/users/reuben-lavin" style="color:var(--blue);text-decoration:none;" target="_blank">credly.com/users/reuben-lavin</a>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><em>"Thank you."  [pause 1s]  "Questions?"</em></p>
+      <p class="muted" style="font-size:13px;">No new content. The thesis landed on slide 13. The forward-looking close landed on slide 14. This slide just opens the conversation.</p>
+      <div class="qa">
+        <h4>Q: "What surprised you most about this project?"</h4>
+        <p>How much more I learned from the projects that failed than the ones that worked. The Google certs felt productive but were forgettable. The shorted IMU and the wrong-layer optimization on compressed-prompt are the two stories I'll remember from this year.</p>
+
+        <h4>Q: "If you had another month, what would you do with it?"</h4>
+        <p>Pre-arrange three formal expert interviews — questions written out in advance — because the conversations I had informally were valuable enough that more of them, done deliberately, would have changed the direction of several projects. And I'd tune the ToF sensor on the helmet so I could demonstrate clean data, not just live streams.</p>
+
+        <h4>Q: "Is there something you wanted to explore that you didn't get to?"</h4>
+        <p>Training my own model. Every project I shipped used existing AI tools — Claude Code, Google's curriculum, off-the-shelf YOLOv8. I never trained a model from scratch. That's why the USGS seismic idea is the next probe.</p>
+
+        <h4>Q: "What's one thing you know now that you wish you'd known at the start?"</h4>
+        <p>That credentials and artifacts are different categories of evidence, and the rubric for becoming a developer is the second one. I would have started shipping in March instead of April.</p>
+
+        <h4>Q: "Vibe-coded custom AI solution?" (Pro Cert)</h4>
+        <p>The Pro Cert description references a vibe-coded custom AI solution. In my case I demonstrated that competency across the broader GitHub portfolio rather than a single dedicated project — most of the 16 repos I've shown you were built with Claude Code as a coding collaborator.</p>
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<div class="progress" id="progress"></div>
+
+<div class="notes-panel" id="notes-panel">
+  <h3>speaker notes</h3>
+  <div id="notes-content"></div>
+</div>
+<div class="notes-panel-hint" id="notes-hint">press N or ESC to close</div>
+
+<div class="help" id="help">
+  <strong>navigation</strong>
+  <div class="help-row"><span>next</span><span><kbd>→</kbd> <kbd>space</kbd></span></div>
+  <div class="help-row"><span>back</span><span><kbd>←</kbd></span></div>
+  <div class="help-row"><span>notes</span><span><kbd>n</kbd></span></div>
+  <div class="help-row"><span>fullscreen</span><span><kbd>f</kbd></span></div>
+  <div class="help-row"><span>jump 1-9</span><span><kbd>1</kbd>…<kbd>9</kbd></span></div>
+  <div class="help-row"><span>this help</span><span><kbd>?</kbd></span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
