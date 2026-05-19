@@ -335,16 +335,17 @@
 .gallery.mosaic-6 > :nth-child(5) { grid-area: e; }
 .gallery.mosaic-6 > :nth-child(6) { grid-area: f; }
 
-/* MOSAIC-7 — bench-style 7 cells: big + tall + small stack + 3 bottom strip. */
+/* MOSAIC-7 — 3 big cells on top (a, b, rc-car), 4 small bottom strip.
+   Cell order: a=anchor, b=secondary, c/d/e/f=bottom strip, g=feature (rc-car). */
 .gallery.mosaic-7 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 96px);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 100px);
   grid-template-areas:
-    "a a a b b c"
-    "a a a b b c"
-    "a a a b b d"
-    "e e f f g g";
+    "a a a a b b g g"
+    "a a a a b b g g"
+    "a a a a b b g g"
+    "c c d d e e f f";
   gap: 8px;
   width: 100%;
 }
