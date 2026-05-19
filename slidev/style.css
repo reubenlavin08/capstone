@@ -301,10 +301,24 @@
 .gallery.mosaic-3 .cell {
   aspect-ratio: auto;
 }
-/* Screenshots (PNGs) — landscape cells fit the image natively without letterbox. Cover from the top so the most important UI stays in frame. */
+/* Screenshots (PNGs) — landscape cells. Contain so the full UI is visible; black bg blends letterbox. */
+.gallery.mosaic-3 .cell {
+  background: #0a0a0a;
+}
 .gallery.mosaic-3 .cell img {
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Helmet + hardware galleries — use contain so photos show in full without weird crops. */
+.gallery.mosaic-6 .cell,
+.gallery.mosaic-4 .cell {
+  background: #0a0a0a;
+}
+.gallery.mosaic-6 .cell img,
+.gallery.mosaic-4 .cell img {
+  object-fit: contain;
+  object-position: center;
 }
 .gallery.mosaic-6 > :nth-child(1), .gallery.mosaic-3 > :nth-child(1) { grid-area: a; }
 .gallery.mosaic-6 > :nth-child(2), .gallery.mosaic-3 > :nth-child(2) { grid-area: b; }
@@ -345,26 +359,48 @@
     transform: translateY(0);
   }
 }
-.slidev-layout > * {
+/* Auto-stagger on every direct child of every slide EXCEPT absolutely-positioned bg images. */
+.slidev-layout > *:not(img):not([style*="position:absolute"]):not(.absolute) {
   opacity: 0;
   animation: fadeInUp 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
-.slidev-layout > *:nth-child(1)  { animation-delay: 0.10s; }
-.slidev-layout > *:nth-child(2)  { animation-delay: 0.22s; }
-.slidev-layout > *:nth-child(3)  { animation-delay: 0.34s; }
-.slidev-layout > *:nth-child(4)  { animation-delay: 0.46s; }
-.slidev-layout > *:nth-child(5)  { animation-delay: 0.58s; }
-.slidev-layout > *:nth-child(6)  { animation-delay: 0.70s; }
-.slidev-layout > *:nth-child(7)  { animation-delay: 0.82s; }
-.slidev-layout > *:nth-child(8)  { animation-delay: 0.94s; }
-.slidev-layout > *:nth-child(9)  { animation-delay: 1.06s; }
-.slidev-layout > *:nth-child(10) { animation-delay: 1.18s; }
+.slidev-layout > *:nth-child(1):not(img):not(.absolute)  { animation-delay: 0.10s; }
+.slidev-layout > *:nth-child(2):not(img):not(.absolute)  { animation-delay: 0.22s; }
+.slidev-layout > *:nth-child(3):not(img):not(.absolute)  { animation-delay: 0.34s; }
+.slidev-layout > *:nth-child(4):not(img):not(.absolute)  { animation-delay: 0.46s; }
+.slidev-layout > *:nth-child(5):not(img):not(.absolute)  { animation-delay: 0.58s; }
+.slidev-layout > *:nth-child(6):not(img):not(.absolute)  { animation-delay: 0.70s; }
+.slidev-layout > *:nth-child(7):not(img):not(.absolute)  { animation-delay: 0.82s; }
+.slidev-layout > *:nth-child(8):not(img):not(.absolute)  { animation-delay: 0.94s; }
+.slidev-layout > *:nth-child(9):not(img):not(.absolute)  { animation-delay: 1.06s; }
+.slidev-layout > *:nth-child(10):not(img):not(.absolute) { animation-delay: 1.18s; }
 
-/* Skip the auto-stagger for the cover (single hero element, looks cleaner without it) */
-.slidev-layout.slidev-layout-cover > *,
-.slidev-layout.cover > * {
-  animation: fadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  animation-delay: 0.25s;
+/* COVER SLIDE — full-bleed PCB bg + centered title.
+   Position img/title absolutely to the slide root so they fill the canvas, not just the centered wrapper. */
+.slidev-layout > .cover-bg {
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1 !important;
+  animation: none !important;
+}
+.cover-title {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.cover-meta {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #8c8c8c;
+  letter-spacing: 0.02em;
 }
 
 /* kill the stuck goto dialog */

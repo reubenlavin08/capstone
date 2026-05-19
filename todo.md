@@ -132,6 +132,29 @@ Order: roughly chronological.
 
 ---
 
+## New request batch (2026-05-19 ~04:00, must address before delivery)
+
+R1. ❌ **PCB traces gone from cover** — verify + restore. Cover should have the 3 traces with vias on dot pattern bg.
+R2. ❌ **Credly badge wrong / needs Drive insert** — re-fetch the actual Google Credly badge from Drive folder (user has uploaded the right one). Current `public/credly.png` may not be right.
+R3. ❌ **Hardware position** — move hardware to AFTER the "theory only gets you so far" moment (currently: hardware between EQ+POA and Phase 1; user wants hardware after the theory moment, so order becomes: EQ+POA → Phase 1 → theory moment → Hardware text → Hardware gallery → Sentinel → ...).
+R4. ❌ **Remove Sentinel filler line** — "first time I shipped a working AI pipeline end-to-end." — kill from Sentinel slide. Speaker delivers in voice.
+R5. ❌ **Sentinel gallery image out of frame** — image position/sizing breaking the canvas. Fix.
+R6. ❌ **Bullseye B&W logo on bullseye text slide** — get the logo, add monochrome version next to/replacing the `bullseye` h2.
+R7. ❌ **Helmet gallery images weirdly resized** — the mosaic-6 cells aren't matching their image aspect ratios. Fix cropping/sizing.
+R8. ❌ **Bullseye gallery images weirdly resized + cropped** — same issue, screenshots being cropped poorly.
+R9. ❌ **Remove "each one was a different experiment." line** — kill from portfolio chip wall slide.
+R10. ❌ **Remove "mentor — 1 meeting" line** — don't surface mentor count unless asked in Q&A; just drop that row from network slide.
+R11. ❌ **Add final "outtakes" gallery slide** — user will gather unused images/videos and place as a closing collage slide.
+R12. ✅ Rule confirmed: log every user request to todo.md BEFORE acting.
+R13. ❌ Use new transparent-bg Credly badge from `C:\Users\User\Downloads\certificate-card.webp...` — replaces current credly.png
+R14. ⚠️ Claude-monitor TOUCH GRASS: two perspective videos side-by-side. **Blocker**: 8 MOV files in Drive; user needs to ID which 2 specifically. **Also**: MOV→MP4 conversion required (ffmpeg not installed in dev env). Animation.gif likely covers one perspective already.
+R15. ⚠️ RC plane build timelapse video — same blocker (MOV→MP4 + user ID).
+R16. ❌ Add to .next cascade (smallest text, append at bottom): "openclaw red-teaming + prompt-injection research"
+R17. ❌ Two VL53CX software GIFs added to Drive — embed on helmet text or helmet gallery slide
+R18. ❌ Add cc-discord-remote project slide — "control Claude Code from anywhere, anytime" (built May 15-16, fits with the recent projects cluster)
+
+---
+
 ## Verification queue (screenshot + check)
 
 - [ ] Hardware text slide (post-position-swap)

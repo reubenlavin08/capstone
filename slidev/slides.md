@@ -8,19 +8,15 @@ colorSchema: dark
 mdc: true
 transition: slide-left
 class: text-center
-layout: cover
+layout: center
 ---
 
-<img src="/pcb-bg.svg" alt="" class="absolute inset-0 w-full h-full object-cover pointer-events-none" style="z-index:0;" />
+<img src="/pcb-bg.svg" alt="" class="cover-bg" />
 
-<div class="relative" style="z-index:10;">
+<h1 class="cover-title">AI, Robotics and Learning</h1>
 
-# AI, Robotics and Learning
-
-<div class="text-base muted mt-12 tracking-wide">
+<div class="cover-meta">
   Reuben Lavin <span class="dim mx-2">·</span> WPGA Class of 2026 <span class="dim mx-2">·</span> May 19, 2026
-</div>
-
 </div>
 
 <!--
@@ -130,47 +126,6 @@ Spoiler: the deviation is where the learning is.
 ---
 layout: default
 class: text-left
-title: Hardware lineage
----
-
-<div class="tag mb-4">.hardware</div>
-<div class="muted text-sm tracking-wide mb-20">hands-on lineage · what I came in with</div>
-
-<div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
-  <div class="amber">01</div><div>fixed my old RC car</div>
-  <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
-  <div class="amber">03</div><div>built an RC airplane</div>
-  <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
-</div>
-
-<!--
-Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
-
-To me hardware and software are basically one. The capstone work that follows leans on the same lineage.
--->
-
----
-layout: default
-class: text-left
-title: Hardware gallery
----
-
-<div class="tag mb-12">.hardware</div>
-
-<div class="gallery mosaic-4 max-w-5xl">
-  <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
-  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
-  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
-  <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
-</div>
-
-<!--
-The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
--->
-
----
-layout: default
-class: text-left
 title: Phase 1 — formal path
 ---
 
@@ -197,12 +152,8 @@ title: Phase 1 — formal path
 
 </div>
 
-<div>
-  <div class="img-placeholder aspect-video">
-    <span class="label">image placeholder</span>
-    credly badge grid<br>
-    <span class="dim" style="text-transform:none;font-size:0.7rem;">drop file at: slidev/public/credly.png</span>
-  </div>
+<div class="flex items-center justify-center">
+  <img src="/credly.webp" alt="Google AI Professional Certificate badge" class="max-h-72 object-contain" />
 </div>
 
 </div>
@@ -240,6 +191,47 @@ Theory only gets you so far. The rest is hands-on.
 ---
 layout: default
 class: text-left
+title: Hardware lineage
+---
+
+<div class="tag mb-4">.hardware</div>
+<div class="muted text-sm tracking-wide mb-20">hands-on lineage · the foundation phase 2 leans on</div>
+
+<div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
+  <div class="amber">01</div><div>fixed my old RC car</div>
+  <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
+  <div class="amber">03</div><div>built an RC airplane</div>
+  <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
+</div>
+
+<!--
+Before any of the AI work, I had a hardware lineage. The capstone work that follows leans on the same lineage.
+
+To me hardware and software are basically one.
+-->
+
+---
+layout: default
+class: text-left
+title: Hardware gallery
+---
+
+<div class="tag mb-12">.hardware</div>
+
+<div class="gallery mosaic-4 max-w-5xl">
+  <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
+  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
+  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
+  <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
+</div>
+
+<!--
+The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
+-->
+
+---
+layout: default
+class: text-left
 title: Sentinel — first AI integration
 ---
 
@@ -255,8 +247,7 @@ title: Sentinel — first AI integration
 </div>
 
 <div class="text-xl max-w-2xl leading-relaxed">
-  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard.<br>
-  <span class="muted">first time I shipped a working AI pipeline end-to-end.</span>
+  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard.
 </div>
 
 ---
@@ -265,10 +256,10 @@ class: text-left
 title: Sentinel gallery
 ---
 
-<div class="tag mb-12">.sentinel</div>
+<div class="tag mb-8">.sentinel</div>
 
-<div class="flex justify-center max-w-5xl mx-auto" style="height: 70vh;">
-  <img src="/gallery/05.png" alt="sentinel-ai person detection" style="height: 100%; object-fit: contain;" />
+<div class="flex justify-center items-center">
+  <img src="/gallery/05.png" alt="sentinel-ai person detection" style="max-height: 380px; max-width: 100%; object-fit: contain;" />
 </div>
 
 <!--
@@ -292,7 +283,10 @@ title: Bullseye lineage
 <div class="tag mb-4">.phase_2</div>
 <div class="muted text-sm tracking-wide mb-12">marketplace deal-scoring · v1 → v3 in 5 days</div>
 
-<h2 class="text-3xl font-mono mb-10">bullseye</h2>
+<div class="flex items-center gap-4 mb-10">
+  <img src="/bullseye-logo.svg" alt="" class="w-12 h-12" />
+  <h2 class="text-3xl font-mono">bullseye</h2>
+</div>
 
 <div class="flex items-center gap-3 flex-wrap mb-8 text-3xl">
   <span class="chip">salvage-radar</span>
@@ -356,14 +350,30 @@ title: Helmet
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-20 font-mono">helmet · capstone-named project</div>
+<div class="muted text-sm tracking-wide mb-12 font-mono">helmet · capstone-named project</div>
+
+<div class="two-panel text-heavy">
+
+<div>
 
 <h2 class="text-3xl font-mono mb-10">vl53l8cx-pointcloud-esp32</h2>
 
-<div class="chip-row mb-12">
+<div class="chip-row mb-8">
   <span class="chip">64 zones</span>
   <span class="chip">15 Hz</span>
   <span class="chip dim">1 dead IMU</span>
+</div>
+
+<div class="muted text-base max-w-md leading-relaxed">
+  live 3D point cloud over serial — sensor data rendered in real time.
+</div>
+
+</div>
+
+<div class="flex items-center justify-center">
+  <img src="/helmet/pointcloud-v6.gif" alt="live VL53L8CX point cloud" style="max-height: 380px; max-width: 100%; object-fit: contain;" />
+</div>
+
 </div>
 
 <!--
@@ -439,6 +449,47 @@ Choose your abstraction layer before you optimize it. Otherwise you're polishing
 ---
 layout: default
 class: text-left
+title: cc-discord-remote
+---
+
+<div class="tag mb-4">.phase_2</div>
+<div class="muted text-sm tracking-wide mb-20">recent · built may 15-16 in 2 days</div>
+
+<div class="two-panel text-heavy">
+
+<div>
+
+<h2 class="text-3xl font-mono mb-10">cc-discord-remote</h2>
+
+<div class="chip-row mb-12">
+  <span class="chip">Discord bot</span>
+  <span class="chip">Win32 ctypes</span>
+  <span class="chip">terminal piping</span>
+</div>
+
+<div class="text-xl max-w-2xl leading-relaxed">
+  control Claude Code from anywhere, anytime.
+</div>
+
+</div>
+
+<div class="flex items-center justify-center">
+  <img src="/gallery/06.png" alt="cc-discord-remote on phone" style="max-height: 380px; object-fit: contain;" />
+</div>
+
+</div>
+
+<!--
+Two weekends ago I realized I couldn't use the official /remote-control feature because my iPhone Claude account is different from the laptop one — Terry's signup. So I built my own.
+
+cc-discord-remote is a Discord bot that pipes commands into Claude Code running in the terminal on my laptop via Win32 ctypes. I can send a Discord message from anywhere and it runs in Claude Code on the laptop, then the response comes back to me in Discord.
+
+It means I can keep work moving when I'm not physically at the laptop. Built in 2 days.
+-->
+
+---
+layout: default
+class: text-left
 title: Web design (and this deck)
 ---
 
@@ -496,8 +547,6 @@ title: Portfolio — 16 repos
   <span class="chip dim">openclaw-secure-setup</span>
 </div>
 
-<div class="text-xl muted mt-16">each one was a different experiment.</div>
-
 <!--
 Stepping back from the individual projects, this is what the body of work looks like. Sixteen repositories created during the capstone window — most of them after April 24. A lot of them were nights and weekends.
 
@@ -528,9 +577,6 @@ title: Network
 <div class="tag mb-16">.network</div>
 
 <div class="grid grid-cols-[140px_1fr] gap-y-8 text-xl">
-  <div class="amber">mentor</div>
-  <div>1 meeting</div>
-
   <div class="amber">experts</div>
   <div>
     <div>Dr. Yang <span class="muted text-base">— UBC civil engineering</span></div>
@@ -604,6 +650,9 @@ title: What's next
   </div>
   <div class="text-base dim">
     launch + market bullseye
+  </div>
+  <div class="text-sm dim">
+    openclaw red-teaming + prompt-injection research
   </div>
 </div>
 
