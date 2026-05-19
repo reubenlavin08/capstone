@@ -214,33 +214,18 @@ title: Bullseye lineage
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-16">iteration · v1 → v3 in 5 days</div>
+<div class="muted text-sm tracking-wide mb-20">iteration · v1 → v3 in 5 days</div>
 
-<div class="two-panel text-heavy">
-
-<div>
-
-<div class="flex items-center gap-3 flex-wrap mb-4 text-2xl">
+<div class="flex items-center gap-3 flex-wrap mb-8 text-3xl">
   <span class="chip">salvage-radar</span>
   <span class="dim">→</span>
   <span class="chip">bullseye</span>
   <span class="dim">→</span>
   <span class="chip">bullseye-app</span>
-  <span class="text-base ml-2">★ 3</span>
+  <span class="text-xl ml-2">★ 3</span>
 </div>
-<div class="muted text-sm font-mono tracking-wide ml-1">
+<div class="muted text-base font-mono tracking-wide">
   apr 29 &nbsp;·&nbsp; may 2 &nbsp;·&nbsp; may 4
-</div>
-
-</div>
-
-<div>
-  <div class="img-placeholder aspect-video">
-    <span class="label">image placeholder</span>
-    bullseye-app running
-  </div>
-</div>
-
 </div>
 
 <!--
@@ -264,15 +249,31 @@ Iterate publicly. Ship each version before you start the next.
 ---
 layout: default
 class: text-left
+title: Bullseye gallery
+---
+
+<div class="tag mb-12">.bullseye</div>
+
+<div class="gallery max-w-5xl" style="grid-template-columns: repeat(3, 1fr);">
+  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/01.png" alt="bullseye landing" /></div>
+  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/02.png" alt="bullseye dashboard" /></div>
+  <div class="cell" style="aspect-ratio: 16/10;"><img src="/gallery/03.png" alt="bullseye featured find" /></div>
+</div>
+
+<!--
+Three views: the landing page, the home dashboard with savings + streak, and a featured find — iPhone 16 Pro listing scored 75/100 against eBay sold-comps.
+
+Real product, real users — me as the first user. AGPL-3, three GitHub stars in the first week.
+-->
+
+---
+layout: default
+class: text-left
 title: Helmet
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-12 font-mono">helmet · capstone-named project</div>
-
-<div class="two-panel text-heavy">
-
-<div>
+<div class="muted text-sm tracking-wide mb-20 font-mono">helmet · capstone-named project</div>
 
 <h2 class="text-3xl font-mono mb-10">vl53l8cx-pointcloud-esp32</h2>
 
@@ -280,14 +281,6 @@ title: Helmet
   <span class="chip">64 zones</span>
   <span class="chip">15 Hz</span>
   <span class="chip dim">1 dead IMU</span>
-</div>
-
-</div>
-
-<div>
-  <img src="/helmet.jpg" alt="esp32 + tof breadboard" class="w-full aspect-square object-cover rounded" />
-</div>
-
 </div>
 
 <!--
@@ -306,6 +299,27 @@ You can debug your code for hours and the answer is still that the chip is broke
 Hardware quality is a variable you can't fix with skill.
 
 [PAUSE 2s]
+-->
+
+---
+layout: default
+class: text-left
+title: Helmet gallery
+---
+
+<div class="tag mb-12">.helmet</div>
+
+<div class="gallery max-w-5xl" style="grid-template-columns: repeat(2, 1fr);">
+  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/02.jpg" alt="full setup with live point cloud" /></div>
+  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/01.jpg" alt="esp32 + tof breadboard" /></div>
+  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/03.jpg" alt="tof sensor breakout close-up" /></div>
+  <div class="cell" style="aspect-ratio: 4/3;"><img src="/helmet/04.jpg" alt="sensor wired to esp32" /></div>
+</div>
+
+<!--
+The full setup: ESP32-S3 streaming 64-zone depth grid over serial to the Python visualizer on the laptop. The colored point cloud on the screen is the live ToF output.
+
+Close-ups show the SATEL-VL53L8CX sensor breakout being held, the breadboard wiring, and a second sensor under test.
 -->
 
 ---
