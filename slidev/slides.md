@@ -745,6 +745,7 @@ title: Thank you
 
 <div class="muted text-sm mt-20 tracking-wide font-mono leading-loose">
   github.com/reubenlavin08<br>
+  linkedin.com/in/reuben-lavin-4bb2712ba<br>
   credly.com/users/reuben-lavin
 </div>
 

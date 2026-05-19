@@ -316,7 +316,10 @@ Target: 24 min speaking + 6 min Q&A.
 ## 25 — Thank you
 
 - "Thank you. Questions?"
-- Links shown on slide: github.com/reubenlavin08, credly.com/users/reuben-lavin.
+- Links shown on slide:
+  - github.com/reubenlavin08
+  - linkedin.com/in/reuben-lavin-4bb2712ba
+  - credly.com/users/reuben-lavin
 
 ---
 
