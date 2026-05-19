@@ -8,15 +8,17 @@ colorSchema: dark
 mdc: true
 transition: slide-left
 class: text-center
-layout: center
+layout: default
 ---
 
-<img src="/pcb-bg.svg" alt="" class="cover-bg" />
-
-<h1 class="cover-title">AI, Robotics and Learning</h1>
-
-<div class="cover-meta">
-  Reuben Lavin <span class="dim mx-2">·</span> WPGA Class of 2026 <span class="dim mx-2">·</span> May 19, 2026
+<div class="cover-stage">
+  <img src="/pcb-bg.svg" alt="" class="cover-bg" />
+  <div class="cover-content">
+    <h1 class="cover-title">AI, Robotics and Learning</h1>
+    <div class="cover-meta">
+      Reuben Lavin <span class="dim mx-2">·</span> WPGA Class of 2026 <span class="dim mx-2">·</span> May 19, 2026
+    </div>
+  </div>
 </div>
 
 <!--
@@ -221,7 +223,7 @@ title: Hardware gallery
 <div class="gallery mosaic-4 max-w-5xl">
   <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
   <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
-  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
+  <div class="cell"><img src="/hardware/plane-build.gif" alt="rc plane build timelapse" /></div>
   <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
 </div>
 
@@ -453,28 +455,31 @@ title: cc-discord-remote
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-20">recent · built may 15-16 in 2 days</div>
+<div class="muted text-sm tracking-wide mb-12">recent · built may 15-16 in 2 days</div>
 
 <div class="two-panel text-heavy">
 
 <div>
 
-<h2 class="text-3xl font-mono mb-10">cc-discord-remote</h2>
+<div class="flex items-center gap-4 mb-10">
+  <img src="/cc-remote-logo.png" alt="" class="w-14 h-14" />
+  <h2 class="text-3xl font-mono">cc-discord-remote</h2>
+</div>
 
-<div class="chip-row mb-12">
+<div class="chip-row mb-10">
   <span class="chip">Discord bot</span>
   <span class="chip">Win32 ctypes</span>
   <span class="chip">terminal piping</span>
 </div>
 
-<div class="text-xl max-w-2xl leading-relaxed">
+<div class="text-xl max-w-md leading-relaxed">
   control Claude Code from anywhere, anytime.
 </div>
 
 </div>
 
 <div class="flex items-center justify-center">
-  <img src="/gallery/06.png" alt="cc-discord-remote on phone" style="max-height: 380px; object-fit: contain;" />
+  <img src="/gallery/06.png" alt="cc-discord-remote on phone" style="max-height: 360px; object-fit: contain;" />
 </div>
 
 </div>
@@ -494,18 +499,23 @@ title: Web design (and this deck)
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-20">writing my own web design course</div>
+<div class="muted text-sm tracking-wide mb-16">writing my own web design course · applying it to my own sites</div>
 
-<h2 class="text-3xl font-mono mb-12">Designing with Claude Code</h2>
+<h2 class="text-3xl font-mono mb-10">Designing with Claude Code</h2>
 
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 mb-12">
   <span class="chip dim">v1</span>
   <span class="chip dim">v2</span>
   <span class="chip">v3 live</span>
 </div>
 
-<div class="dim text-sm mt-20 font-mono">
-  reubenlavin08.github.io/claude-web-design-guide
+<div class="text-base muted max-w-2xl leading-relaxed mb-12">
+  this deck and my hand-rolled portfolio site are both running the v3 method.
+</div>
+
+<div class="dim text-sm font-mono leading-relaxed">
+  reubenlavin08.github.io/claude-web-design-guide<br>
+  reubenlavin08.github.io/Portfolio
 </div>
 
 <!--
@@ -636,24 +646,14 @@ class: text-left
 title: What's next
 ---
 
-<div class="tag mb-12">.next</div>
+<div class="tag mb-16">.next</div>
 
-<div class="space-y-6">
-  <div class="text-4xl font-normal whitespace-nowrap" style="letter-spacing:-0.01em; line-height:1.1;">
-    train my own AI model on USGS seismic data
-  </div>
-  <div class="text-3xl font-normal whitespace-nowrap" style="line-height:1.15;">
-    continue work on the lidar helmet
-  </div>
-  <div class="text-xl muted whitespace-nowrap">
-    AWS &nbsp;·&nbsp; Anthropic &nbsp;·&nbsp; Coursera SQL
-  </div>
-  <div class="text-base dim">
-    launch + market bullseye
-  </div>
-  <div class="text-sm dim">
-    openclaw red-teaming + prompt-injection research
-  </div>
+<div class="cascade">
+  <div class="cascade-line cascade-1">train my own AI model on USGS seismic data</div>
+  <div class="cascade-line cascade-2">continue work on the lidar helmet</div>
+  <div class="cascade-line cascade-3">AWS · Anthropic · Coursera SQL</div>
+  <div class="cascade-line cascade-4">launch + market bullseye</div>
+  <div class="cascade-line cascade-5">openclaw red-teaming</div>
 </div>
 
 <!--

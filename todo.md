@@ -147,11 +147,32 @@ R10. ❌ **Remove "mentor — 1 meeting" line** — don't surface mentor count u
 R11. ❌ **Add final "outtakes" gallery slide** — user will gather unused images/videos and place as a closing collage slide.
 R12. ✅ Rule confirmed: log every user request to todo.md BEFORE acting.
 R13. ❌ Use new transparent-bg Credly badge from `C:\Users\User\Downloads\certificate-card.webp...` — replaces current credly.png
-R14. ⚠️ Claude-monitor TOUCH GRASS: two perspective videos side-by-side. **Blocker**: 8 MOV files in Drive; user needs to ID which 2 specifically. **Also**: MOV→MP4 conversion required (ffmpeg not installed in dev env). Animation.gif likely covers one perspective already.
-R15. ⚠️ RC plane build timelapse video — same blocker (MOV→MP4 + user ID).
+R14. ⏳ Claude-monitor TOUCH GRASS: side-by-side videos. Files identified:
+  - Animation.gif (31MB, screen recording — perspective 1)
+  - claudemonitorlive.mov (170MB — perspective 2)
+R15. ⏳ RC plane build timelapse — planetimelapse.MOV (65MB) → hardware slide
+Need: install ffmpeg (or use imageio-ffmpeg), compress to ~5-10MB MP4 each, embed via <video autoplay loop muted>.
 R16. ❌ Add to .next cascade (smallest text, append at bottom): "openclaw red-teaming + prompt-injection research"
 R17. ❌ Two VL53CX software GIFs added to Drive — embed on helmet text or helmet gallery slide
-R18. ❌ Add cc-discord-remote project slide — "control Claude Code from anywhere, anytime" (built May 15-16, fits with the recent projects cluster)
+R18. ✅ Add cc-discord-remote project slide — "control Claude Code from anywhere, anytime" (built May 15-16)
+
+## Batch 3 (2026-05-19 ~04:30)
+
+R19. ❌ **Front page broken** — title now at bottom of slide (not centered). PCB traces visible but title positioning is off. Need to fix cover layout properly.
+R20. ❌ **Animations still not visible on individual text blocks/images** — auto-stagger CSS not firing or being overridden. Need to verify across slides and force consistency.
+R21. ❌ **Hardware needs**: at least one RC plane photo/gif AND a breadboard photo. Convert planetimelapse.MOV; pull breadboard photo from Drive.
+R22. ❌ **Bullseye gallery: weird borders + missing photo** — there should be a 4th bullseye photo somewhere; the cell borders are showing as harsh lines.
+R23. ❌ **cc-discord-remote slide layout weird** — image floats awkwardly, layout breaking. New cc-remote photos in Drive — fetch + use.
+R24. ❌ **Portfolio site mention** — weave in with claude-web-design slide (briefly mention `reubenlavin08.github.io/Portfolio` as hand-rolled HTML/CSS/JS).
+R25. ❌ **Portfolio chip wall too cramped** — needs more breathing space between chips, larger gaps, maybe split into rows with categories.
+R26. ⚠️ **"build what isn't in the syllabus" moment** — user not sure if necessary; keep for now. Pending: user reviews script to decide.
+R27. ❌ **Next cascade not triangular enough** — currently descending sizes but not visually triangular. Make each line further indented or use width constraint to enforce triangle shape.
+R28. ✅ **CRITICAL RULE**: Log every user request to todo.md BEFORE acting. Same applies retroactively to past messages.
+R29. **DIRECT**: Script + bulleted points already exist at:
+  - `Desktop\Claude Projects\capstone\delivery.md` (canonical)
+  - `Desktop\Claude Projects\capstone\prompts.md` (mirror)
+  - `Desktop\Claude Projects\capstone\speaker-notes.md` (mirror)
+  - Pushed to GitHub: github.com/reubenlavin08/capstone/blob/main/delivery.md
 
 ---
 
