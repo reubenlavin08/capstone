@@ -223,12 +223,14 @@ title: Hardware gallery
 <div class="gallery mosaic-4 max-w-5xl">
   <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
   <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
-  <div class="cell"><img src="/hardware/plane-build.gif" alt="rc plane build timelapse" /></div>
+  <div class="cell">
+    <video src="/videos/plane-test.mp4" autoplay loop muted playsinline></video>
+  </div>
   <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
 </div>
 
 <!--
-The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
+LEGO + Arduino autonomous car (top-left, big). RC car parts. RC plane flight test (cell c, looping). Electric scooter motherboard.
 -->
 
 ---
@@ -684,40 +686,49 @@ The questions keep coming.
 ---
 layout: default
 class: text-left
-title: Outtakes
+title: Outtakes — build
 ---
 
-<div class="tag mb-8">.outtakes</div>
+<div class="tag mb-8">.outtakes / build</div>
 
-<div class="gallery mosaic-6 max-w-6xl">
+<div class="gallery pair max-w-6xl">
   <div class="cell">
-    <video src="/videos/claude-monitor-live.mp4" autoplay loop muted playsinline></video>
+    <img src="/hardware/plane-build.gif" alt="RC plane build timelapse" />
   </div>
   <div class="cell">
-    <img src="/helmet/pointcloud-basic.gif" alt="early point cloud" />
-  </div>
-  <div class="cell">
-    <img src="/videos/touch-grass-screen.gif" alt="touch-grass nudge" />
-  </div>
-  <div class="cell">
-    <img src="/gallery/04.png" alt="claude-monitor dashboard" />
-  </div>
-  <div class="cell">
-    <img src="/gallery/03.jpg" alt="bench scene" />
-  </div>
-  <div class="cell">
-    <img src="/gallery/04.jpg" alt="bench scene" />
+    <video src="/videos/plane-test2.mp4" autoplay loop muted playsinline></video>
   </div>
 </div>
 
 <!--
-Outtakes. Stuff that didn't make a slide of its own:
+Left: timelapse of me building the RC plane.
+Right: a second flight test of that same plane.
 
-- claude-monitor running live on the Pi-screen dashboard
-- the original ToF point cloud — what the helmet visualization looked like before I rewrote it
-- the touch-grass nudge — claude-monitor will yell at me if I cross a usage budget
-- the dashboard view of claude-monitor scraping CLI usage
-- background images from the project window
+[Linger ~10 seconds, then advance.]
+-->
+
+---
+layout: default
+class: text-left
+title: Outtakes — AI tooling
+---
+
+<div class="tag mb-8">.outtakes / ai tooling</div>
+
+<div class="gallery pair max-w-6xl">
+  <div class="cell">
+    <video src="/videos/claude-monitor-live.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="cell">
+    <img src="/videos/touch-grass-screen.gif" alt="claude-monitor touch-grass nudge" />
+  </div>
+</div>
+
+<!--
+Two views of claude-monitor — a project I built to track my own AI usage on a Raspberry Pi screen.
+
+Left: live dashboard running on the Pi.
+Right: the "touch grass" nudge — it yells at me when I cross a usage budget.
 
 [Linger ~10 seconds, then advance to thank you.]
 -->

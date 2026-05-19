@@ -176,6 +176,16 @@ R41. ✅ **Mentor mention dropped** from Network slide spoken script. Cue added 
 R42. ✅ **Dr. Yang content rewritten**: civil engineering, automation in construction, building affordability, autonomous structural safety inspection with drones + stereo vision + computer vision.
 R43. ✅ **Rhys content rewritten**: work ethic + curiosity, range of CS projects, how he picks what's next. Credentials dropped.
 
+## Batch 6 (2026-05-18)
+
+R44. ✅ **Claude-monitor pair**: live + touch-grass-gif placed in `.gallery.pair` (1fr 1fr, equal 16:9 cells, contain).
+R45. ✅ **Two outtakes slides**: 23 "build" (plane build timelapse + plane-test2) and 24 "AI tooling" (claude-monitor live + touch-grass).
+R46. ✅ **Hardware gallery rewired**: cell 3 now plane-test.mp4 (airplane flight test, autoplay loop muted). Build timelapse moved to outtakes/build slide; plane-test2.mp4 is the "other" airplane test.
+
+## Batch 7 (2026-05-18)
+
+R47. ✅ **Merged speaker-notes.md + prompts.md into one file** — prompts.md is canonical, deleted speaker-notes.md. Per-slide bullet format: each bullet is a direct line to say. Dropped verbose "Script" prose paragraphs. delivery.md kept as mirror.
+
 ## Batch 3 (2026-05-19 ~04:30)
 
 R19. ❌ **Front page broken** — title now at bottom of slide (not centered). PCB traces visible but title positioning is off. Need to fix cover layout properly.

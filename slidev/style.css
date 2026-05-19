@@ -349,6 +349,24 @@
 .gallery.mosaic-4 > :nth-child(3) { grid-area: c; }
 .gallery.mosaic-4 > :nth-child(4) { grid-area: d; }
 
+/* PAIR — two equal cells side by side. For "same size" requirements. */
+.gallery.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  width: 100%;
+}
+.gallery.pair .cell {
+  aspect-ratio: 16 / 9;
+  background: #0a0a0a;
+}
+.gallery.pair .cell img,
+.gallery.pair .cell video {
+  object-fit: contain;
+  object-position: center;
+}
+
 /* TIMED REVEALS — every direct child of every slide fades up after the slide-left transition arrives.
    Stagger STARTS after slide transition (~0.5s) completes so the effect is visible. */
 @keyframes fadeInUp {
