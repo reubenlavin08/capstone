@@ -326,6 +326,7 @@ Target: 24 min speaking + 6 min Q&A.
   - drone quad-copter assembly
   - espresso machine internals I repaired
   - lawnmower controller PCB
+  - first test drive of the RC car
 
 [~10s, then advance to thank you]
 

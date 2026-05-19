@@ -318,7 +318,12 @@
 }
 .gallery.mosaic-6 .cell img,
 .gallery.mosaic-6 .cell video,
-.gallery.mosaic-4 .cell img {
+.gallery.mosaic-4 .cell img,
+.gallery.mosaic-4 .cell video,
+.gallery.mosaic-3-side .cell img,
+.gallery.mosaic-3-side .cell video,
+.gallery.quad .cell img,
+.gallery.quad .cell video {
   object-fit: contain;
   object-position: center;
 }
@@ -329,11 +334,35 @@
 .gallery.mosaic-6 > :nth-child(5) { grid-area: e; }
 .gallery.mosaic-6 > :nth-child(6) { grid-area: f; }
 
+/* MOSAIC-7 — bench-style 7 cells: big + tall + small stack + 3 bottom strip. */
+.gallery.mosaic-7 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 96px);
+  grid-template-areas:
+    "a a a b b c"
+    "a a a b b c"
+    "a a a b b d"
+    "e e f f g g";
+  gap: 8px;
+  width: 100%;
+}
+.gallery.mosaic-7 .cell { aspect-ratio: auto; background: #0a0a0a; }
+.gallery.mosaic-7 .cell img,
+.gallery.mosaic-7 .cell video { object-fit: contain; object-position: center; }
+.gallery.mosaic-7 > :nth-child(1) { grid-area: a; }
+.gallery.mosaic-7 > :nth-child(2) { grid-area: b; }
+.gallery.mosaic-7 > :nth-child(3) { grid-area: c; }
+.gallery.mosaic-7 > :nth-child(4) { grid-area: d; }
+.gallery.mosaic-7 > :nth-child(5) { grid-area: e; }
+.gallery.mosaic-7 > :nth-child(6) { grid-area: f; }
+.gallery.mosaic-7 > :nth-child(7) { grid-area: g; }
+
 /* 4-cell mosaic: big + 3 stacked thin */
 .gallery.mosaic-4 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 120px);
+  grid-template-rows: repeat(3, 145px);
   grid-template-areas:
     "a a a a b b"
     "a a a a c c"
@@ -348,6 +377,34 @@
 .gallery.mosaic-4 > :nth-child(2) { grid-area: b; }
 .gallery.mosaic-4 > :nth-child(3) { grid-area: c; }
 .gallery.mosaic-4 > :nth-child(4) { grid-area: d; }
+
+/* MOSAIC-3-SIDE — big left, tall right (2 rows), small right bottom.
+   For when a portrait video needs more vertical room than mosaic-4 gives. */
+.gallery.mosaic-3-side {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 145px);
+  grid-template-areas:
+    "a a a a b b"
+    "a a a a b b"
+    "a a a a c c";
+  gap: 8px;
+  width: 100%;
+}
+.gallery.mosaic-3-side .cell { aspect-ratio: auto; background: #0a0a0a; }
+.gallery.mosaic-3-side > :nth-child(1) { grid-area: a; }
+.gallery.mosaic-3-side > :nth-child(2) { grid-area: b; }
+.gallery.mosaic-3-side > :nth-child(3) { grid-area: c; }
+
+/* QUAD — 2x2 equal cells. For 4 items at identical size. */
+.gallery.quad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+.gallery.quad .cell { aspect-ratio: 16/9; background: #0a0a0a; }
 
 /* PAIR — two equal cells side by side. For "same size" requirements. */
 .gallery.pair {

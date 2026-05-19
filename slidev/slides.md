@@ -220,9 +220,8 @@ title: Hardware gallery
 
 <div class="tag mb-12">.hardware</div>
 
-<div class="gallery mosaic-4 max-w-5xl">
+<div class="gallery mosaic-3-side max-w-5xl">
   <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
-  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
   <div class="cell">
     <video src="/videos/plane-test.mp4" autoplay loop muted playsinline></video>
   </div>
@@ -230,7 +229,7 @@ title: Hardware gallery
 </div>
 
 <!--
-LEGO + Arduino autonomous car (top-left, big). RC car parts. RC plane flight test (cell c, looping). Electric scooter motherboard.
+LEGO + Arduino autonomous car (big, left). RC plane flight test (tall, right, looping). Electric scooter motherboard (small, bottom-right).
 -->
 
 ---
@@ -724,7 +723,7 @@ title: Outtakes — AI tooling
 
 <div class="tag mb-8">.outtakes / ai tooling</div>
 
-<div class="gallery mosaic-4 max-w-6xl">
+<div class="gallery quad max-w-6xl">
   <div class="cell">
     <video src="/videos/claude-monitor-live.mp4" autoplay loop muted playsinline></video>
   </div>
@@ -758,24 +757,28 @@ title: Outtakes — bench
 
 <div class="tag mb-8">.outtakes / bench</div>
 
-<div class="gallery mosaic-6 max-w-6xl">
+<div class="gallery mosaic-7 max-w-6xl">
   <div class="cell"><img src="/extras/adc-breakout.jpg" alt="ADC breakout breadboard test" /></div>
   <div class="cell"><img src="/extras/smd-chip.jpg" alt="SMD chip on fingertip" /></div>
   <div class="cell"><img src="/extras/ebike-bms.jpg" alt="e-bike BMS controller PCB" /></div>
   <div class="cell"><img src="/extras/drone-quad.jpg" alt="drone quad assembly" /></div>
   <div class="cell"><img src="/extras/espresso-internals.jpg" alt="espresso machine internals" /></div>
   <div class="cell"><img src="/extras/lawnmower-pcb.jpg" alt="lawnmower controller PCB" /></div>
+  <div class="cell">
+    <video src="/videos/rc-car-test.mp4" autoplay loop muted playsinline></video>
+  </div>
 </div>
 
 <!--
 Bench outtakes — other projects + tinkering not on the main slides:
 
 - big: ADC breakout bring-up on a breadboard
-- top-right: SMD chip on a fingertip (scale shot)
-- mid-right: e-bike BMS controller
-- bottom-right: drone quad-copter assembly
-- bottom-left: espresso machine I repaired (internals)
+- top-right tall: SMD chip on a fingertip (scale shot)
+- top-right small: e-bike BMS controller
+- mid-right small: drone quad-copter assembly
+- bottom-left: espresso machine internals
 - bottom-mid: lawnmower controller PCB
+- bottom-right: first drive test of the RC car
 
 [Linger ~10 seconds, then advance to thank you.]
 -->
