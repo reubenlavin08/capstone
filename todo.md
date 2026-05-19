@@ -1,67 +1,149 @@
-# Capstone TODO — Tue May 19, 8:30 AM
+# Capstone deck — request audit (2026-05-19, pre-delivery)
 
-Updated 2026-05-17 (Sun).
+Pulled from chat history. Each request marked:
+- ✅ DONE — fulfilled and verified
+- ⚠️ PARTIAL — addressed but not fully right or not verified
+- ❌ OPEN — not done or blocked
 
-## STATE OF PLAY
-- **Content**: done (custom site + Google Slides backup + prompt sheet + speaker notes)
-- **Custom presentation site**: `C:\Users\User\Desktop\Claude Projects\capstone\site\` — serve with `node serve.js 8000`
-- **Google Slides backup**: https://docs.google.com/presentation/d/1u1-wJdEL15EtvhajhdEBJq7Viv0S36CdtRbncBHcPO0/edit
-- **Talking prompts**: `prompts.md` (phone-readable, anchors + scene prompts + pause cues)
-- **Info doc**: `capstone-info.md` (rubric, course, transcript, GitHub portfolio)
+Order: roughly chronological.
 
 ---
 
-## TONIGHT (Sun, before bed)
-- [ ] **Confirm 8:30 slot** on the Capstone Presentation Sign-up Google Sheet. Non-negotiable.
-- [ ] Read `prompts.md` once. Mark anything that doesn't sound like you — I can rewrite.
-- [ ] Bed early. You're presenting at 8:30 AM.
+## Earliest session (project setup + visual direction)
 
-## MONDAY MORNING
-- [ ] **Add images to the site**:
-  - Slide 3: bass photo + Volador de Papantla photo
-  - Slide 5: Credly badge grid screenshot (`C:\Users\User\image.png`)
-  - Slide 8: breadboard / ESP32 + ToF photo
-  - Slide 11: GitHub profile screenshot
-- [ ] **Test all 4 demos work**:
-  - ESP32 + ToF → Python visualizer (slide 8) — most critical
-  - bullseye-app launches + runs a search (slide 7)
-  - `credly.com/users/reuben-lavin` loads (slide 5)
-  - `github.com/reubenlavin08` loads (slide 11)
-- [ ] **Practice the Alt-Tab transitions** between Slides and each demo app. Get each transition under 3 sec.
-- [ ] **Have screenshot/video fallback** for each demo in case the live one fails.
-
-## MONDAY AFTERNOON
-- [ ] **One timed runthrough**, standing up, with `prompts.md` on your phone propped beside the laptop.
-  - Target: 25 min talk time
-  - Watch for: rushing, monotone, reading-the-slides, missed pauses
-- [ ] Trim or stretch based on the timing.
-- [ ] **Second runthrough** if time — practice the 4 named lesson lines + the thesis until they feel natural, not memorized.
-
-## MONDAY EVENING
-- [ ] Light review of the 4 Q&A prep answers (bottom of `prompts.md`).
-- [ ] Pack: laptop, charger, ESP32 + ToF + USB cable, dongle (HDMI/USB-C if UCC needs it), water.
-- [ ] Print `prompts.md` (1 page in small text) as paper backup — phones die.
-- [ ] Bed by 10. You're up at 6.
-
-## TUESDAY 8:15 AM
-- [ ] At UCC by 8:15. Laptop open, site loaded at `http://localhost:8000`, demos pre-warmed.
-- [ ] One deep breath. You've done the work — this is just the report-out.
+1. ✅ Familiarize with capstone via Google Docs / Drive
+2. ✅ Pull CLC class info from WPGA MyschoolApp via chrome-devtools
+3. ✅ Maintain a todo.md and info doc with surfaced context
+4. ✅ Clarify gaps (1 mentor mtg, 2 informal expert convos: Dr Yang + Rhys Rustad-Elliott)
+5. ✅ Draft slides in Google Slides via MCP
+6. ✅ Add speaker notes (Google Slides backup deck kept)
+7. ✅ Auto-approve permission for Google Slides MCP writes (Slides-only exception)
+8. ✅ Pivot from Google Slides to custom site → Slidev
+9. ✅ Mention Pro Cert pursuit honestly + acknowledge "I was just doing the EQ literally"
+10. ✅ Heavy on imagery / visual focus
+11. ✅ PCB-style background for cover (greyscale, traces as accents)
+12. ✅ Greyscale color scheme
+13. ✅ Black background, no terminal theme
+14. ✅ Use Slidev for the deck
+15. ✅ Title: "AI, Robotics and Learning"
 
 ---
 
-## DELIVERY REMINDERS
+## Tone + content
 
-- Look at the assessor, not the slides.
-- Pause after each named lesson. Silence makes it land.
-- Don't read bullets aloud.
-- Conversational volume, not stage.
-- Strongest material lives at the start and the end.
-- Honest gaps > defensive deflection. The rubric explicitly rewards "what I'd do differently."
+16. ✅ Removed corny / overdramatic language (FP-maximalist green panel killed; aphoristic lines slimmed)
+17. ✅ Replaced "probing" everywhere with experiment/questions/building
+18. ✅ Title font: Archivo for h2 headings
+19. ✅ Body in IBM Plex Mono, weight 400
+20. ✅ Intentional layouts with negative space
+21. ✅ POA as descending staircase 01→04 diagonal
+22. ✅ EQ + POA combined onto one slide (EQ caption top-right, staircase below)
 
-## Q&A — the 4 likely prompts (full answers in `prompts.md`)
-1. What surprised you most? → Failures > successes.
-2. Another month — what? → Pre-arranged expert interviews + ToF tuning.
-3. Wanted to explore but didn't? → Train a model from scratch.
-4. Wish you'd known at the start? → Credentials and artifacts are different categories of evidence.
+---
 
-Plus the Pro Cert "vibe-coded solution" answer (don't fabricate — the portfolio IS the answer).
+## Photos / Drive
+
+23. ✅ Pulled photos from Drive `project photos` folder
+24. ✅ Replaced wrong `credly.png` with Google AI Pro Cert badge
+25. ✅ Wired ESP32 + ToF photo into helmet slide (`helmet.jpg` from IMG_6983)
+26. ✅ Bullseye gallery: 3 screenshots (landing, dashboard, featured find)
+27. ✅ Helmet gallery: 6 photos (mosaic-6)
+28. ✅ Hardware gallery: 4 photos (mosaic-4)
+29. ✅ Bass + Volador placeholders REMOVED per user (Option 1)
+30. ❌ **Videos NOT embedded** — user flagged this turn; need MOV→MP4 conversion + placement
+31. ⚠️ "Way more photos" in galleries — bullseye capped at 3 (no more in Drive); helmet has 6; hardware has 4
+
+---
+
+## Layout / mosaic
+
+32. ✅ Per-project text → gallery slide pattern (Bullseye, Helmet, Hardware, Sentinel paired)
+33. ✅ Mosaic asymmetric Shutter-style layouts
+34. ⚠️ **Image overflow** — converted vh→px row heights this turn; awaiting visual confirm
+35. ⚠️ **Some images cropped when they shouldn't be** — user just flagged; needs case-by-case fix
+36. ❌ "Should be obvious not a Google slide" — deck IS distinctive (black bg, IBM Plex Mono, `> .tag` prefixes, asymmetric mosaics, PCB cover) but user wants MORE. Not yet added (custom slide number footer? More PCB accents? Persistent edge element?)
+
+---
+
+## Project content + chronology
+
+37. ✅ Slimmed project lesson statements (deleted aphoristic `.lesson` lines)
+38. ✅ Deleted cv-robotics-course standalone slide
+39. ✅ "Theory only gets you so far." moment replaces earlier "certs weren't the answer"
+40. ✅ Removed school timeline from Next slide
+41. ✅ Hardware lineage slides added
+42. ✅ Sentinel slide added (mid-March, Mexico City)
+43. ✅ Web design slide added (stripped to title + version chips + URL)
+44. ✅ Hardware moved AFTER EQ+POA (was before)
+45. ❌ **Compressed-prompt rename** — user wants better name. Awaiting pick: prompt-expander / shorthand / stenoprompt / other
+46. ✅ Bullseye gallery URL caption `getbullseye.app` top-right
+47. ✅ Compressed-prompt slide: removed redundant sentence, added carbon-terminal icon
+
+---
+
+## Animations / transitions
+
+48. ✅ Page transition `slide-left` (replaced `fade-out`)
+49. ⚠️ **Timed animations** — converted v-click to auto-stagger via `:nth-child` on every slide. Needs visual verification.
+50. ⚠️ **Animations consistent** — stripped per-element reveals + added auto-stagger. Needs visual confirm.
+
+---
+
+## Sentence + line edits
+
+51. ✅ "Optimized the wrong layer." → "I optimized before I tested if it worked."
+52. ✅ "Studying isn't building." → "Theory only gets you so far."
+53. ✅ "This slideshow is the test." REMOVED (corny per user)
+54. ✅ Bullseye text slide: `bullseye` h2 title added
+
+---
+
+## Hosting + delivery
+
+55. ✅ Private GitHub repo `reubenlavin08/capstone` created
+56. ✅ Repo flipped to PUBLIC per user
+57. ✅ All content pushed to main
+58. ✅ PDF export built (`slidev/capstone.pdf`)
+59. ✅ Deployed to GitHub Pages: https://reubenlavin08.github.io/capstone/
+60. ✅ LAN dev server: http://192.168.1.242:3030/ (--remote, 0.0.0.0)
+
+---
+
+## Visual / typography
+
+61. ✅ Heading text size consistent (project h2 = text-3xl mono)
+62. ✅ EQ caption uses Archivo + h2 sizing
+63. ✅ Triangle cascade for Next slide (4 lines descending, single lines, left-aligned)
+
+---
+
+## Speaker notes / accompanying docs
+
+64. ❌ **`prompts.md` and `speaker-notes.md` STALE** — haven't reflected: deleted CV slide, removed school timeline, new gallery slide, theory line wording, new Sentinel/Hardware/Web design slides, cascade Next slide
+
+---
+
+## Pending user-input decisions
+
+65. ❌ Compressed-prompt rename pick
+66. ❌ Compressed-prompt + Web design order (currently: rename-project → web design)
+67. ❌ Video selection + conversion + placement
+68. ⚠️ Specific images that are still cropped wrong — need user to point out which
+
+---
+
+## Verification queue (screenshot + check)
+
+- [ ] Hardware text slide (post-position-swap)
+- [ ] Hardware gallery (mosaic-4 px heights)
+- [ ] Bullseye gallery (mosaic-3 landscape)
+- [ ] Helmet gallery (mosaic-6 px heights)
+- [ ] EQ + POA staircase animation
+- [ ] Phase 1 (credly.png)
+- [ ] Sentinel text + gallery
+- [ ] Moment slides (theory / build / still building)
+- [ ] Web design slide
+- [ ] Next cascade
+- [ ] Portfolio compact chip wall
+- [ ] Cover (PCB-bg)
+- [ ] Auto-stagger animation rendering correctly across all slides

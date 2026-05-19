@@ -277,7 +277,7 @@
 .gallery.mosaic-6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 16vh);
+  grid-template-rows: repeat(4, 96px);
   grid-template-areas:
     "a a a b b c"
     "a a a b b c"
@@ -289,7 +289,7 @@
 .gallery.mosaic-3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 18vh);
+  grid-template-rows: repeat(3, 120px);
   grid-template-areas:
     "a a a a a a"
     "a a a a a a"
@@ -317,7 +317,7 @@
 .gallery.mosaic-4 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 18vh);
+  grid-template-rows: repeat(3, 120px);
   grid-template-areas:
     "a a a a b b"
     "a a a a c c"
@@ -333,29 +333,39 @@
 .gallery.mosaic-4 > :nth-child(3) { grid-area: c; }
 .gallery.mosaic-4 > :nth-child(4) { grid-area: d; }
 
-/* TIMED REVEALS — staggered fade-up on slide entry, no clicks required */
+/* TIMED REVEALS — every direct child of every slide fades up automatically on entry.
+   Consistent staggered animation across the whole deck, no per-element markup needed. */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.reveal {
+.slidev-layout > * {
   opacity: 0;
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
-.reveal-1 { animation-delay: 0.2s; }
-.reveal-2 { animation-delay: 0.6s; }
-.reveal-3 { animation-delay: 1.0s; }
-.reveal-4 { animation-delay: 1.4s; }
-.reveal-5 { animation-delay: 1.8s; }
-.reveal-6 { animation-delay: 2.2s; }
-.reveal-7 { animation-delay: 2.6s; }
-.reveal-8 { animation-delay: 3.0s; }
+.slidev-layout > *:nth-child(1)  { animation-delay: 0.10s; }
+.slidev-layout > *:nth-child(2)  { animation-delay: 0.22s; }
+.slidev-layout > *:nth-child(3)  { animation-delay: 0.34s; }
+.slidev-layout > *:nth-child(4)  { animation-delay: 0.46s; }
+.slidev-layout > *:nth-child(5)  { animation-delay: 0.58s; }
+.slidev-layout > *:nth-child(6)  { animation-delay: 0.70s; }
+.slidev-layout > *:nth-child(7)  { animation-delay: 0.82s; }
+.slidev-layout > *:nth-child(8)  { animation-delay: 0.94s; }
+.slidev-layout > *:nth-child(9)  { animation-delay: 1.06s; }
+.slidev-layout > *:nth-child(10) { animation-delay: 1.18s; }
+
+/* Skip the auto-stagger for the cover (single hero element, looks cleaner without it) */
+.slidev-layout.slidev-layout-cover > *,
+.slidev-layout.cover > * {
+  animation: fadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.25s;
+}
 
 /* kill the stuck goto dialog */
 #slidev-goto-dialog {

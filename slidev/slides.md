@@ -86,47 +86,6 @@ The gap I still have, named explicitly in my AP Calc feedback, is explanatory cl
 ---
 layout: default
 class: text-left
-title: Hardware lineage
----
-
-<div class="tag mb-4">.pre_capstone</div>
-<div class="muted text-sm tracking-wide mb-20">hands-on lineage · before the AI work</div>
-
-<div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
-  <div class="amber">01</div><div>fixed my old RC car</div>
-  <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
-  <div class="amber">03</div><div>built an RC airplane</div>
-  <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
-</div>
-
-<!--
-Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
-
-The point: I came into the capstone already knowing how to wire and debug a circuit. That's what made phase 2 possible.
--->
-
----
-layout: default
-class: text-left
-title: Hardware gallery
----
-
-<div class="tag mb-12">.hardware</div>
-
-<div class="gallery mosaic-4 max-w-5xl">
-  <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
-  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
-  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
-  <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
-</div>
-
-<!--
-The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
--->
-
----
-layout: default
-class: text-left
 title: Essential question + plan
 ---
 
@@ -166,6 +125,47 @@ And the plan I wrote in March: four milestones — Knowledge Baseline, Technical
 The plan was real. What I'm going to show you next is what actually happened against it, and where I deviated.
 
 Spoiler: the deviation is where the learning is.
+-->
+
+---
+layout: default
+class: text-left
+title: Hardware lineage
+---
+
+<div class="tag mb-4">.hardware</div>
+<div class="muted text-sm tracking-wide mb-20">hands-on lineage · what I came in with</div>
+
+<div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
+  <div class="amber">01</div><div>fixed my old RC car</div>
+  <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
+  <div class="amber">03</div><div>built an RC airplane</div>
+  <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
+</div>
+
+<!--
+Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
+
+To me hardware and software are basically one. The capstone work that follows leans on the same lineage.
+-->
+
+---
+layout: default
+class: text-left
+title: Hardware gallery
+---
+
+<div class="tag mb-12">.hardware</div>
+
+<div class="gallery mosaic-4 max-w-5xl">
+  <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
+  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
+  <div class="cell"><img src="/hardware/03-airplane.jpg" alt="rc airplane motor" /></div>
+  <div class="cell"><img src="/hardware/04-scooter.jpg" alt="scooter controller" /></div>
+</div>
+
+<!--
+The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
 -->
 
 ---
@@ -244,7 +244,7 @@ title: Sentinel — first AI integration
 ---
 
 <div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-20">first AI/software integration · april</div>
+<div class="muted text-sm tracking-wide mb-20">first AI/software integration · march · mexico city</div>
 
 <h2 class="text-3xl font-mono mb-10">Sentinel-AI-Occupancy-Monitor</h2>
 
@@ -410,20 +410,20 @@ Close-ups show the SATEL-VL53L8CX sensor breakout being held, the breadboard wir
 ---
 layout: default
 class: text-left
-title: Compressed prompt
+title: Shorthand
 ---
 
 <div class="tag mb-4">.phase_2</div>
 <div class="muted text-sm tracking-wide mb-12">struggle · wrong abstraction layer</div>
 
-<h2 class="text-3xl font-mono mb-20">compressed-prompt</h2>
+<h2 class="text-3xl font-mono mb-20">shorthand</h2>
 
 <div class="flex justify-start mt-12">
   <carbon-terminal class="text-[10rem]" style="color:#5a5a5a;" />
 </div>
 
 <!--
-compressed-prompt is the project I struggled with most.
+shorthand is the project I struggled with most.
 
 The idea is a shorthand input system — type a two-letter code, an LLM expands it into a full prompt. I built a terminal hook with beam search and LLM reranking. I got it working.
 
@@ -491,7 +491,7 @@ title: Portfolio — 16 repos
   <span class="chip">portfolio</span>
   <span class="chip dim">claude-web-design-guide</span>
   <span class="chip dim">web-design-business</span>
-  <span class="chip dim">compressed-prompt</span>
+  <span class="chip dim">shorthand</span>
   <span class="chip dim">claude-memory</span>
   <span class="chip dim">openclaw-secure-setup</span>
 </div>
@@ -512,7 +512,7 @@ The marketplace lineage I just showed you. The helmet. The CV course. Plus:
 - Sorta — AI file organization
 - email-audit-claude-cowork-skill — multi-platform Claude skill
 - claude-web-design-guide (private) — checklist site for distinctive AI-built sites
-- web-design-business (private), compressed-prompt (private), claude-memory (private)
+- web-design-business (private), shorthand (private), claude-memory (private)
 
 Each one was a different experiment in self-directed AI development — embedded systems, computer vision, marketplace algorithms, Claude Code tooling, low-level automation.
 
@@ -579,7 +579,7 @@ And inside the portfolio, every project taught a different lesson:
 - iterate publicly (Bullseye)
 - hardware quality is a variable (helmet)
 - when no course exists, design the course (CV course)
-- choose your abstraction layer (compressed-prompt)
+- choose your abstraction layer (shorthand)
 
 Those four lessons together are what I actually got from this project. None of them are in the Google curriculum.
 -->
@@ -661,7 +661,7 @@ No new content. The thesis landed on slide 13. The close landed on slide 15. Thi
 Q&A — likely prompts:
 
 Q: "What surprised you most about this project?"
-→ How much more I learned from the projects that failed than the ones that worked. The Google certs felt productive but were forgettable. The shorted IMU and the wrong-layer compressed-prompt stories are the two I'll remember.
+→ How much more I learned from the projects that failed than the ones that worked. The Google certs felt productive but were forgettable. The shorted IMU and the wrong-layer shorthand stories are the two I'll remember.
 
 Q: "If you had another month, what would you do with it?"
 → Pre-arrange three formal expert interviews — questions written out in advance — because the conversations I had informally were valuable enough that more of them, done deliberately, would have changed the direction of several projects. And I'd tune the ToF sensor on the helmet so I could demonstrate clean data.
