@@ -63,10 +63,10 @@ title: The Past
 <div class="tag mb-12">.past</div>
 
 <div class="grid grid-cols-[140px_1fr] gap-y-5 text-2xl">
-  <div v-click class="amber">gr 8</div><div v-after>"needs strategies to persevere"</div>
-  <div v-click class="amber">gr 10</div><div v-after>"need strategies to focus, manage stress"</div>
-  <div v-click class="amber">gr 12</div><div v-after>"mature ownership of learning"</div>
-  <div v-click class="amber">ap calc</div><div v-after>"needs explanatory clarity"</div>
+  <div class="amber reveal reveal-1">gr 8</div><div class="reveal reveal-1">"needs strategies to persevere"</div>
+  <div class="amber reveal reveal-2">gr 10</div><div class="reveal reveal-2">"need strategies to focus, manage stress"</div>
+  <div class="amber reveal reveal-3">gr 12</div><div class="reveal reveal-3">"mature ownership of learning"</div>
+  <div class="amber reveal reveal-4">ap calc</div><div class="reveal reveal-4">"needs explanatory clarity"</div>
 </div>
 
 <!--
@@ -90,14 +90,28 @@ title: Hardware lineage
 ---
 
 <div class="tag mb-4">.pre_capstone</div>
-<div class="muted text-sm tracking-wide mb-12">hands-on lineage · before the AI work</div>
+<div class="muted text-sm tracking-wide mb-20">hands-on lineage · before the AI work</div>
 
-<div class="grid grid-cols-[200px_1fr] gap-y-3 text-lg max-w-4xl mb-12">
+<div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
   <div class="amber">01</div><div>fixed my old RC car</div>
   <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
   <div class="amber">03</div><div>built an RC airplane</div>
   <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
 </div>
+
+<!--
+Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
+
+The point: I came into the capstone already knowing how to wire and debug a circuit. That's what made phase 2 possible.
+-->
+
+---
+layout: default
+class: text-left
+title: Hardware gallery
+---
+
+<div class="tag mb-12">.hardware</div>
 
 <div class="gallery mosaic-4 max-w-5xl">
   <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
@@ -107,9 +121,7 @@ title: Hardware lineage
 </div>
 
 <!--
-Before any of the AI work, I had a hardware lineage — fixed my old RC car, built an autonomous car with ultrasonic obstacle avoidance, built an RC airplane, and tore down then rebuilt an electric scooter.
-
-The point: I came into the capstone already knowing how to wire and debug a circuit. That's what made phase 2 possible.
+The artifacts: LEGO + Arduino autonomous car (top-left, big), RC car parts, brushless motor for the airplane, electric scooter motherboard.
 -->
 
 ---
@@ -128,19 +140,19 @@ title: Essential question + plan
 </div>
 
 <div class="grid grid-cols-8 grid-rows-4 gap-y-4 text-xl max-w-5xl">
-  <div v-click class="col-start-1 row-start-1 flex items-center gap-4">
+  <div class="col-start-1 row-start-1 flex items-center gap-4 reveal reveal-1">
     <span class="dim font-mono text-base">01</span>
     <span>knowledge baseline</span>
   </div>
-  <div v-click class="col-start-3 row-start-2 flex items-center gap-4">
+  <div class="col-start-3 row-start-2 flex items-center gap-4 reveal reveal-2">
     <span class="dim font-mono text-base">02</span>
     <span>pivot</span>
   </div>
-  <div v-click class="col-start-5 row-start-3 flex items-center gap-4">
+  <div class="col-start-5 row-start-3 flex items-center gap-4 reveal reveal-3">
     <span class="dim font-mono text-base">03</span>
     <span>integration</span>
   </div>
-  <div v-click class="col-start-7 row-start-4 flex items-center gap-4">
+  <div class="col-start-7 row-start-4 flex items-center gap-4 reveal reveal-4">
     <span class="dim font-mono text-base">04</span>
     <span>synthesis</span>
   </div>
@@ -170,9 +182,9 @@ title: Phase 1 — formal path
 <div>
 
 <div class="text-3xl leading-loose">
-  <div v-click>11 courses</div>
-  <div v-click>7 days</div>
-  <div v-click>8 badges</div>
+  <div class="reveal reveal-1">11 courses</div>
+  <div class="reveal reveal-2">7 days</div>
+  <div class="reveal reveal-3">8 badges</div>
 </div>
 
 <div class="mt-8 text-lg muted">
@@ -234,28 +246,29 @@ title: Sentinel — first AI integration
 <div class="tag mb-4">.phase_2</div>
 <div class="muted text-sm tracking-wide mb-20">first AI/software integration · april</div>
 
-<div class="two-panel text-heavy">
-
-<div>
-
 <h2 class="text-3xl font-mono mb-10">Sentinel-AI-Occupancy-Monitor</h2>
 
-<div class="chip-row mb-10">
+<div class="chip-row mb-12">
   <span class="chip">YOLOv8-Pose</span>
   <span class="chip">OpenVINO</span>
   <span class="chip">Streamlit</span>
 </div>
 
-<div class="muted text-base max-w-md leading-relaxed">
-  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard. First time I shipped a working AI pipeline end-to-end.
+<div class="text-xl max-w-2xl leading-relaxed">
+  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard.<br>
+  <span class="muted">first time I shipped a working AI pipeline end-to-end.</span>
 </div>
 
-</div>
+---
+layout: default
+class: text-left
+title: Sentinel gallery
+---
 
-<div>
-  <img src="/gallery/05.png" alt="sentinel-ai person detection" class="w-full rounded" style="aspect-ratio: 16/10; object-fit: cover;" />
-</div>
+<div class="tag mb-12">.sentinel</div>
 
+<div class="flex justify-center max-w-5xl mx-auto" style="height: 70vh;">
+  <img src="/gallery/05.png" alt="sentinel-ai person detection" style="height: 100%; object-fit: contain;" />
 </div>
 
 <!--
@@ -282,14 +295,14 @@ title: Bullseye lineage
 <h2 class="text-3xl font-mono mb-10">bullseye</h2>
 
 <div class="flex items-center gap-3 flex-wrap mb-8 text-3xl">
-  <span v-click class="chip">salvage-radar</span>
-  <span v-after class="dim">→</span>
-  <span v-click class="chip">bullseye</span>
-  <span v-after class="dim">→</span>
-  <span v-click class="chip">bullseye-app</span>
-  <span v-click class="text-xl ml-2">★ 3</span>
+  <span class="chip reveal reveal-1">salvage-radar</span>
+  <span class="dim reveal reveal-1">→</span>
+  <span class="chip reveal reveal-2">bullseye</span>
+  <span class="dim reveal reveal-2">→</span>
+  <span class="chip reveal reveal-3">bullseye-app</span>
+  <span class="text-xl ml-2 reveal reveal-4">★ 3</span>
 </div>
-<div v-click class="muted text-base font-mono tracking-wide">
+<div class="muted text-base font-mono tracking-wide reveal reveal-5">
   apr 29 &nbsp;·&nbsp; may 2 &nbsp;·&nbsp; may 4
 </div>
 
@@ -348,9 +361,9 @@ title: Helmet
 <h2 class="text-3xl font-mono mb-10">vl53l8cx-pointcloud-esp32</h2>
 
 <div class="chip-row mb-12">
-  <span v-click class="chip">64 zones</span>
-  <span v-click class="chip">15 Hz</span>
-  <span v-click class="chip dim">1 dead IMU</span>
+  <span class="chip reveal reveal-1">64 zones</span>
+  <span class="chip reveal reveal-2">15 Hz</span>
+  <span class="chip dim reveal reveal-3">1 dead IMU</span>
 </div>
 
 <!--
@@ -425,38 +438,22 @@ Choose your abstraction layer before you optimize it. Otherwise you're polishing
 
 ---
 layout: default
-class: text-center
+class: text-left
 title: Web design (and this deck)
 ---
 
-<div class="flex justify-center mb-4"><div class="tag">.phase_2</div></div>
-<div class="muted text-sm tracking-wide mb-12">meta-loop · the course teaches me how to design itself</div>
+<div class="tag mb-4">.phase_2</div>
+<div class="muted text-sm tracking-wide mb-20">writing my own web design course</div>
 
-<h2 class="text-3xl font-mono mb-10">Designing with Claude Code</h2>
+<h2 class="text-3xl font-mono mb-12">Designing with Claude Code</h2>
 
-<div class="text-2xl flex items-center justify-center gap-6 mb-10">
-  <span>write the course</span>
-  <span class="dim">→</span>
-  <span>take it</span>
-  <span class="dim">→</span>
-  <span>iterate</span>
-</div>
-
-<div class="flex items-center justify-center gap-3 mb-10">
+<div class="flex items-center gap-3">
   <span class="chip dim">v1</span>
   <span class="chip dim">v2</span>
   <span class="chip">v3 live</span>
 </div>
 
-<div class="muted text-sm mb-10 max-w-xl mx-auto leading-relaxed">
-  9 steps: content → references → type → colour → layout → density → motion → "do not do" → final audit
-</div>
-
-<div class="muted text-base mb-10">
-  this slideshow is the test.
-</div>
-
-<div class="dim text-sm font-mono">
+<div class="dim text-sm mt-20 font-mono">
   reubenlavin08.github.io/claude-web-design-guide
 </div>
 
@@ -593,18 +590,35 @@ class: text-left
 title: What's next
 ---
 
-<div class="tag mb-20">.next</div>
+<div class="tag mb-16">.next</div>
 
-<div class="muted text-xs tracking-widest uppercase mb-6">next experiment</div>
-<div class="text-3xl max-w-4xl" style="line-height:1.4;">
-  train my own AI model on USGS seismic data &nbsp;<span class="dim">→</span>&nbsp; niche trading algorithm.
+<div class="space-y-8 max-w-5xl">
+  <div class="text-6xl font-normal" style="letter-spacing:-0.02em; line-height:1.1;">
+    train my own AI model on USGS seismic data
+  </div>
+  <div class="text-4xl font-normal" style="line-height:1.15;">
+    continue work on the lidar helmet
+  </div>
+  <div class="text-2xl muted">
+    AWS Cloud Practitioner &nbsp;·&nbsp; Anthropic AI courses &nbsp;·&nbsp; Coursera SQL
+  </div>
+  <div class="text-lg dim">
+    launch + market bullseye
+  </div>
 </div>
 
 <!--
-The next project brings the original EQ full circle. I want to train my own AI model on USGS seismic data and use it to test a niche trading algorithm — the kind of statistically-grounded, evidence-based AI work I originally imagined when I wrote my question in March.
+What's next, biggest first:
 
-The original EQ wasn't wrong. It was just premature — I needed three months of messy applied work before I could even attempt it properly.
+Training my own AI model on USGS seismic data — the original EQ brought full-circle. Statistically-grounded, evidence-based AI work.
+
+Continuing the lidar helmet — replacing the dead IMU, getting pose fusion online, then onto Phase 3 sensor fusion.
+
+Picking up structured courses on the side: AWS Cloud Practitioner, Anthropic's AI courses, a Coursera SQL course — filling in formal credentials alongside the project work.
+
+And launching + marketing bullseye properly so it's not just three GitHub stars but actual users.
 -->
+
 
 ---
 layout: center

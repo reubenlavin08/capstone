@@ -335,6 +335,30 @@
 .gallery.mosaic-4 > :nth-child(3) { grid-area: c; }
 .gallery.mosaic-4 > :nth-child(4) { grid-area: d; }
 
+/* TIMED REVEALS — staggered fade-up on slide entry, no clicks required */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+.reveal-1 { animation-delay: 0.2s; }
+.reveal-2 { animation-delay: 0.6s; }
+.reveal-3 { animation-delay: 1.0s; }
+.reveal-4 { animation-delay: 1.4s; }
+.reveal-5 { animation-delay: 1.8s; }
+.reveal-6 { animation-delay: 2.2s; }
+.reveal-7 { animation-delay: 2.6s; }
+.reveal-8 { animation-delay: 3.0s; }
+
 /* kill the stuck goto dialog */
 #slidev-goto-dialog {
   display: none !important;
