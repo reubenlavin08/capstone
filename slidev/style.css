@@ -289,11 +289,11 @@
 .gallery.mosaic-3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 20vh);
+  grid-template-rows: repeat(3, 18vh);
   grid-template-areas:
-    "a a a b b b"
-    "a a a b b b"
-    "a a a c c c";
+    "a a a a a a"
+    "a a a a a a"
+    "b b b c c c";
   gap: 8px;
   width: 100%;
 }
@@ -301,12 +301,10 @@
 .gallery.mosaic-3 .cell {
   aspect-ratio: auto;
 }
-/* Screenshots (PNGs) — contain so the full UI is visible, light letterbox */
-.gallery.mosaic-3 .cell {
-  background: #fafafa;
-}
+/* Screenshots (PNGs) — landscape cells fit the image natively without letterbox. Cover from the top so the most important UI stays in frame. */
 .gallery.mosaic-3 .cell img {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
 }
 .gallery.mosaic-6 > :nth-child(1), .gallery.mosaic-3 > :nth-child(1) { grid-area: a; }
 .gallery.mosaic-6 > :nth-child(2), .gallery.mosaic-3 > :nth-child(2) { grid-area: b; }

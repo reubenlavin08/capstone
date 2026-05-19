@@ -63,10 +63,10 @@ title: The Past
 <div class="tag mb-12">.past</div>
 
 <div class="grid grid-cols-[140px_1fr] gap-y-5 text-2xl">
-  <div class="amber reveal reveal-1">gr 8</div><div class="reveal reveal-1">"needs strategies to persevere"</div>
-  <div class="amber reveal reveal-2">gr 10</div><div class="reveal reveal-2">"need strategies to focus, manage stress"</div>
-  <div class="amber reveal reveal-3">gr 12</div><div class="reveal reveal-3">"mature ownership of learning"</div>
-  <div class="amber reveal reveal-4">ap calc</div><div class="reveal reveal-4">"needs explanatory clarity"</div>
+  <div class="amber">gr 8</div><div class="">"needs strategies to persevere"</div>
+  <div class="amber">gr 10</div><div class="">"need strategies to focus, manage stress"</div>
+  <div class="amber">gr 12</div><div class="">"mature ownership of learning"</div>
+  <div class="amber">ap calc</div><div class="">"needs explanatory clarity"</div>
 </div>
 
 <!--
@@ -140,19 +140,19 @@ title: Essential question + plan
 </div>
 
 <div class="grid grid-cols-8 grid-rows-4 gap-y-4 text-xl max-w-5xl">
-  <div class="col-start-1 row-start-1 flex items-center gap-4 reveal reveal-1">
+  <div class="col-start-1 row-start-1 flex items-center gap-4">
     <span class="dim font-mono text-base">01</span>
     <span>knowledge baseline</span>
   </div>
-  <div class="col-start-3 row-start-2 flex items-center gap-4 reveal reveal-2">
+  <div class="col-start-3 row-start-2 flex items-center gap-4">
     <span class="dim font-mono text-base">02</span>
     <span>pivot</span>
   </div>
-  <div class="col-start-5 row-start-3 flex items-center gap-4 reveal reveal-3">
+  <div class="col-start-5 row-start-3 flex items-center gap-4">
     <span class="dim font-mono text-base">03</span>
     <span>integration</span>
   </div>
-  <div class="col-start-7 row-start-4 flex items-center gap-4 reveal reveal-4">
+  <div class="col-start-7 row-start-4 flex items-center gap-4">
     <span class="dim font-mono text-base">04</span>
     <span>synthesis</span>
   </div>
@@ -182,9 +182,9 @@ title: Phase 1 — formal path
 <div>
 
 <div class="text-3xl leading-loose">
-  <div class="reveal reveal-1">11 courses</div>
-  <div class="reveal reveal-2">7 days</div>
-  <div class="reveal reveal-3">8 badges</div>
+  <div class="">11 courses</div>
+  <div class="">7 days</div>
+  <div class="">8 badges</div>
 </div>
 
 <div class="mt-8 text-lg muted">
@@ -295,14 +295,14 @@ title: Bullseye lineage
 <h2 class="text-3xl font-mono mb-10">bullseye</h2>
 
 <div class="flex items-center gap-3 flex-wrap mb-8 text-3xl">
-  <span class="chip reveal reveal-1">salvage-radar</span>
-  <span class="dim reveal reveal-1">→</span>
-  <span class="chip reveal reveal-2">bullseye</span>
-  <span class="dim reveal reveal-2">→</span>
-  <span class="chip reveal reveal-3">bullseye-app</span>
-  <span class="text-xl ml-2 reveal reveal-4">★ 3</span>
+  <span class="chip">salvage-radar</span>
+  <span class="dim">→</span>
+  <span class="chip">bullseye</span>
+  <span class="dim">→</span>
+  <span class="chip">bullseye-app</span>
+  <span class="text-xl ml-2">★ 3</span>
 </div>
-<div class="muted text-base font-mono tracking-wide reveal reveal-5">
+<div class="muted text-base font-mono tracking-wide">
   apr 29 &nbsp;·&nbsp; may 2 &nbsp;·&nbsp; may 4
 </div>
 
@@ -361,9 +361,9 @@ title: Helmet
 <h2 class="text-3xl font-mono mb-10">vl53l8cx-pointcloud-esp32</h2>
 
 <div class="chip-row mb-12">
-  <span class="chip reveal reveal-1">64 zones</span>
-  <span class="chip reveal reveal-2">15 Hz</span>
-  <span class="chip dim reveal reveal-3">1 dead IMU</span>
+  <span class="chip">64 zones</span>
+  <span class="chip">15 Hz</span>
+  <span class="chip dim">1 dead IMU</span>
 </div>
 
 <!--
@@ -590,19 +590,19 @@ class: text-left
 title: What's next
 ---
 
-<div class="tag mb-16">.next</div>
+<div class="tag mb-12">.next</div>
 
-<div class="space-y-8 max-w-5xl">
-  <div class="text-6xl font-normal" style="letter-spacing:-0.02em; line-height:1.1;">
+<div class="space-y-6">
+  <div class="text-4xl font-normal whitespace-nowrap" style="letter-spacing:-0.01em; line-height:1.1;">
     train my own AI model on USGS seismic data
   </div>
-  <div class="text-4xl font-normal" style="line-height:1.15;">
+  <div class="text-3xl font-normal whitespace-nowrap" style="line-height:1.15;">
     continue work on the lidar helmet
   </div>
-  <div class="text-2xl muted">
-    AWS Cloud Practitioner &nbsp;·&nbsp; Anthropic AI courses &nbsp;·&nbsp; Coursera SQL
+  <div class="text-xl muted whitespace-nowrap">
+    AWS &nbsp;·&nbsp; Anthropic &nbsp;·&nbsp; Coursera SQL
   </div>
-  <div class="text-lg dim">
+  <div class="text-base dim">
     launch + market bullseye
   </div>
 </div>
