@@ -385,7 +385,7 @@
 .gallery.mosaic-3-side {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 145px);
+  grid-template-rows: repeat(3, 130px);
   grid-template-areas:
     "a a a a b b"
     "a a a a b b"
