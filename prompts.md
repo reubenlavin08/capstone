@@ -75,7 +75,7 @@ Target: 24 min speaking + 6 min Q&A.
 ## 7 — Hardware lineage (text)
 
 - Before any of the AI work, I had a hardware lineage.
-- Fixed my old RC car.
+- Fixed my old RC car.  _(TODO: waiting on the right footage — green RC-tank-style car — from Reuben)_
 - Built an autonomous LEGO car with ultrasonic obstacle avoidance.
 - Built an RC airplane.
 - Tore down and rebuilt an electric scooter.
