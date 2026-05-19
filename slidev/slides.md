@@ -197,13 +197,23 @@ title: Hardware lineage
 ---
 
 <div class="tag mb-4">.hardware</div>
-<div class="muted text-sm tracking-wide mb-20">hands-on lineage · the foundation phase 2 leans on</div>
+<div class="muted text-sm tracking-wide mb-12">hands-on lineage · the foundation phase 2 leans on</div>
 
+<div class="two-panel">
+
+<div>
 <div class="grid grid-cols-[200px_1fr] gap-y-6 text-2xl max-w-4xl">
   <div class="amber">01</div><div>fixed my old RC car</div>
   <div class="amber">02</div><div>built an autonomous car with ultrasonic obstacle avoidance</div>
   <div class="amber">03</div><div>built an RC airplane</div>
   <div class="amber">04</div><div>tore down + rebuilt an electric scooter</div>
+</div>
+</div>
+
+<div class="flex items-center justify-center">
+  <img src="/hardware/rc-car.jpg" alt="rc car rebuilt" style="max-height: 380px; object-fit: contain;" />
+</div>
+
 </div>
 
 <!--
@@ -222,7 +232,9 @@ title: Hardware gallery
 
 <div class="gallery mosaic-4 max-w-5xl">
   <div class="cell"><img src="/hardware/02-autonomous.jpg" alt="autonomous car" /></div>
-  <div class="cell"><img src="/hardware/01-rc.jpg" alt="rc car" /></div>
+  <div class="cell">
+    <video src="/videos/rc-car-test.mp4" autoplay loop muted playsinline></video>
+  </div>
   <div class="cell">
     <video src="/videos/plane-test.mp4" autoplay loop muted playsinline></video>
   </div>
@@ -230,7 +242,7 @@ title: Hardware gallery
 </div>
 
 <!--
-LEGO + Arduino autonomous car (top-left, big). RC car parts. RC plane flight test (cell c, looping). Electric scooter motherboard.
+LEGO + Arduino autonomous car (top-left, big). RC car test drive (cell b, looping). RC plane flight test (cell c, looping). Electric scooter motherboard.
 -->
 
 ---

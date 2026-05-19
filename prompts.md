@@ -41,23 +41,31 @@ Target: 24 min speaking + 6 min Q&A.
   - 02 pivot — Sentinel
   - 03 integration — bullseye
   - 04 synthesis — the lidar helmet
-- What I'm about to show you is what actually happened against that plan. The deviation is where the learning is.
+- What I'm about to show you is what actually happened against that plan.
+- The deviation is where the learning is.
 
 ---
 
 ## 5 — Phase 1 (Google AI Pro Cert)
 
-- Phase one took the EQ literally — to become a developer through self-directed study, I went and got the credential.
-- Feb 28 to Mar 5 — seven days. 11 Google Career Certificate courses, 8 Credly badges, including the Google AI Professional Certificate.
-- It felt like sugarcoated grunt work — resume padding more than real skills. Corporate AI tools and consumer-level stuff.
+- Phase one took the EQ literally.
+- To become a developer through self-directed study, I went and got the credential.
+- Feb 28 to Mar 5 — seven days.
+- 11 Google Career Certificate courses.
+- 8 Credly badges, including the Google AI Professional Certificate.
+- It felt like sugarcoated grunt work.
+- Resume padding more than real skills.
+- Mostly corporate AI tools and consumer-level stuff.
 
 ---
 
 ## 6 — "theory only gets you so far."
 
-- Seven days of clicking through course modules taught me something, but it was passive.
+- Seven days of clicking through course modules taught me something.
+- But it was passive.
 - I was curious about the real thing.
-- I wanted to be hands-on — to actually make something instead of watching videos about other people making things.
+- I wanted to be hands-on.
+- To actually make something — instead of watching videos about other people making things.
 - The next two months were that.
 
 [PAUSE 2s before advancing]
@@ -67,7 +75,7 @@ Target: 24 min speaking + 6 min Q&A.
 ## 7 — Hardware lineage (text)
 
 - Before any of the AI work, I had a hardware lineage.
-- Fixed my old RC car.  _(TODO: add a photo to this slide + video to the gallery)_
+- Fixed my old RC car.
 - Built an autonomous LEGO car with ultrasonic obstacle avoidance.
 - Built an RC airplane.
 - Tore down and rebuilt an electric scooter.
@@ -87,9 +95,10 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 9 — Sentinel (text)
 
-- Sentinel was the first project where I shipped a working AI integration end-to-end.
+- Sentinel — first project where I shipped a working AI integration end-to-end.
 - Built in a hotel room during spring break in Mexico City.
-- A camera feeds a program that runs a person-detection AI, accelerated by an Intel chip.
+- A camera feeds into a program that runs a person-detection AI.
+- The AI is accelerated by an Intel chip.
 - A live dashboard shows who's in the room and where they are.
 - This was the project that told me I could actually do this.
 - Bullseye and the helmet came out of the confidence Sentinel gave me.
@@ -108,50 +117,87 @@ Target: 24 min speaking + 6 min Q&A.
 ## 11 — Bullseye (text)
 
 - My favorite story from the project — it shows the rhythm.
-- April 29 — version one, salvage-radar — a Craigslist scraper for free and cheap robotics parts near me.
-- Three days later I'd hit its limits, so I rebuilt as bullseye — added an AI agent and price-comparison data.
-- The legal piece: I researched it. Scraping Facebook Marketplace is in a grey area but doable. I started from some abandoned GitHub repos for the basic scraping logic, then built my own utilities around them.
-- Two days after that, bullseye-app — a Windows desktop app that scores Facebook Marketplace listings against the actual selling prices of similar items on eBay.
-- Open-source. Three GitHub stars in the first week — not a lot, but it's a work in progress. I'm still optimizing and haven't started advertising yet.
-- The lesson isn't the marketplace bot. It's that I shipped, used it, found what was broken, and rebuilt — three times in five days.
+- **April 29** — version one, **salvage-radar**.
+  - A Craigslist scraper for free and cheap robotics parts near me.
+- **May 2** — rebuilt as **bullseye**.
+  - Hit salvage-radar's limits 3 days in.
+  - Added an AI agent and price-comparison data.
+- The legal piece:
+  - I researched it.
+  - Scraping Facebook Marketplace is in a grey area, but doable.
+  - Started from some abandoned GitHub repos for the scraping logic.
+  - Built my own utilities around them.
+- **May 4** — rebuilt again as **bullseye-app**.
+  - A Windows desktop app.
+  - Scores Facebook Marketplace listings against actual eBay sold-prices.
+- Open-source.
+- 3 GitHub stars in the first week.
+- Not a lot — but it's a work in progress.
+- Still optimizing. Haven't started advertising yet.
+- The lesson isn't the marketplace bot.
+- It's that I shipped, used it, found what was broken, and rebuilt.
+- Three times in five days.
 
 ---
 
 ## 12 — Bullseye gallery
 
-- Landing page, home dashboard with savings and streak, and a featured find — an iPhone scored 75 out of 100 against eBay sold comps.
-- Live at getbullseye.app — anyone in the room can visit it after this.
+- Three views:
+  - landing page
+  - home dashboard with savings and streak
+  - a featured find — iPhone scored 75/100 against eBay sold comps
+- Live at **getbullseye.app** — anyone in the room can visit it after this.
 
 
 ---
 
 ## 13 — Helmet (text)
 
-- The project this capstone was nominally about — an assistive-vision helmet for blind users.
-- Why: my friend James built a vibrating cane for blind users. I helped him wire it. Watching him test it, I started wondering what a helmet could pick up that a cane couldn't — same problem, more spatial information.
-- Works: a chip in the helmet streams a depth map of the surroundings about 15 times a second to a laptop. The laptop draws what the sensor sees in 3D, live.
-- Stuck: the motion sensor was broken from the factory. Returned it. So the part that tracks which way you're facing isn't running yet.
-- You can debug your code for hours and the answer is still that the chip is broken.
-- Lesson: hardware quality is a variable you can't fix with skill.
+- The project this capstone was nominally about.
+- An assistive-vision helmet for blind users.
+- **Why:**
+  - my friend James built a vibrating cane for blind users
+  - I helped him wire it
+  - watching him test it, I started wondering what a helmet could pick up that a cane couldn't
+  - same problem, more spatial information
+- **Works:**
+  - a chip in the helmet streams a depth map of the surroundings ~15 times a second to a laptop
+  - the laptop draws what the sensor sees in 3D, live
+- **Stuck:**
+  - the motion sensor was broken from the factory
+  - returned it
+  - the part that tracks which way you're facing isn't running yet
+- You can debug your code for hours — the answer is still that the chip is broken.
+- **Lesson:** hardware quality is a variable you can't fix with skill.
 
 ---
 
 ## 14 — Helmet gallery
 
-- Top-left is the full setup running.
-- The other shots are close-ups of the sensor, the second sensor under test, and a multimeter session debugging the dead motion-sensor chip.
+- Top-left: the full setup running.
+- Other shots:
+  - close-ups of the sensor
+  - second sensor under test
+  - multimeter session debugging the dead motion-sensor chip
 
 ---
 
 ## 15 — Shorthand
 
 - The project I struggled with most.
-- Idea: type a two-letter code, an AI expands it into a full prompt for you.
-- I built the version that runs inside a terminal — including the logic that picks the best expansion to suggest. Got it working.
-- Then I realized I'd been polishing the wrong piece. The terminal version is one tiny corner; the real value is the version where the shorthand works in any text field, anywhere on your computer.
-- The deeper problem: I was optimizing decoding accuracy for sentences typed with way fewer characters. But across many samples, a plain Claude model with none of my optimization did just as well. My system added no benefit.
+- **Idea:** type a two-letter code → AI expands it into a full prompt.
+- I built the terminal version.
+  - Including the logic that picks the best expansion to suggest.
+  - Got it working.
+- Then I realized I'd been polishing the wrong piece.
+  - The terminal version is one tiny corner.
+  - The real value lives where the shorthand works in *any* text field, anywhere on your computer.
+- The deeper problem:
+  - I was optimizing decoding accuracy for sentences typed with way fewer characters.
+  - Across many samples, a plain Claude model with none of my optimization did just as well.
+  - My system added no benefit.
 - Once I move to the system-wide version, the polish I just did is gone.
-- Lesson: figure out where the real value lives before you start polishing.
+- **Lesson:** figure out where the real value lives before you start polishing.
 
 [PAUSE 2s]
 
@@ -159,19 +205,28 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 16 — cc-discord-remote
 
-- Two days ago I built cc-discord-remote.
-- The official remote-control for my AI assistant didn't work for me because my phone account and my laptop account are different.
-- So I built my own. It's a Discord bot. I send a message from anywhere; it types the message into the AI on my laptop; the response comes back to me in Discord.
+- Two days ago I built **cc-discord-remote**.
+- The official remote-control for my AI assistant didn't work for me.
+  - My phone account and my laptop account are different.
+- So I built my own — a Discord bot.
+  - I send a message from anywhere.
+  - It types the message into the AI on my laptop.
+  - The response comes back to me in Discord.
 - Two-day build.
-- Lesson: when a tool doesn't fit your setup, build the bridge yourself.
+- **Lesson:** when a tool doesn't fit your setup, build the bridge yourself.
 
 ---
 
 ## 17 — Web design (and this deck)
 
-- In parallel with the embedded work, I've been writing my own web design course — Designing with Claude Code.
-- The method is a loop: write the course, take the course on a real project, find what's wrong, rewrite the course.
-- v1 and v2 are archived in place so anyone can watch the method develop. v3 is live.
+- In parallel with the embedded work, I've been writing my own web design course — **Designing with Claude Code**.
+- The method is a loop:
+  - write the course
+  - take the course on a real project
+  - find what's wrong
+  - rewrite the course
+- v1 and v2 are archived in place so anyone can watch the method develop.
+- v3 is live.
 - The deck you're looking at uses the v3 method.
 
 ---
@@ -193,7 +248,10 @@ Target: 24 min speaking + 6 min Q&A.
   - building affordability
   - drones using stereo vision and computer vision to autonomously inspect the safety of buildings and bridges
 - That real-world handle is something coursework couldn't have given me.
-- **Rhys Rustad-Elliott** — systems software engineer. Undergrad with distinction from the University of Toronto, master's *cum laude* from VU Amsterdam in computer security. Years at Google and Elastic working on low-level Linux systems and runtime security.
+- **Rhys Rustad-Elliott** — systems software engineer.
+  - Undergrad with distinction from the University of Toronto.
+  - Master's *cum laude* from VU Amsterdam in computer security.
+  - Years at Google and Elastic working on low-level Linux systems and runtime security.
 - We talked about:
   - his work ethic and curiosity
   - the wide range of computer science projects he's done
@@ -205,8 +263,10 @@ Target: 24 min speaking + 6 min Q&A.
 ## 20 — "build what isn't in the syllabus."
 
 - Coming back to the question.
-- Self-directed AI learning isn't about credentials. It's about choosing problems that force you into territory the courses don't cover.
-- The Pro Cert was a starting point. The portfolio was the answer.
+- Self-directed AI learning isn't about credentials.
+- It's about choosing problems that force you into territory the courses don't cover.
+- The Pro Cert was a starting point.
+- The portfolio was the answer.
 
 [PAUSE 3s — stand still, look at the assessor]
 
@@ -225,7 +285,9 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 22 — "still building."
 
-- The original EQ wasn't wrong. It was premature. I needed three months of messy applied work before I could even attempt it properly.
+- The original EQ wasn't wrong.
+- It was premature.
+- I needed three months of messy applied work before I could even attempt it properly.
 - The questions keep coming.
 
 [PAUSE 4s — hold the silence. Then advance.]
