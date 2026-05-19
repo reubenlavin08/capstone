@@ -691,18 +691,27 @@ title: Outtakes — build
 
 <div class="tag mb-8">.outtakes / build</div>
 
-<div class="gallery pair max-w-6xl">
+<div class="gallery mosaic-4 max-w-6xl">
   <div class="cell">
     <img src="/hardware/plane-build.gif" alt="RC plane build timelapse" />
   </div>
   <div class="cell">
     <video src="/videos/plane-test2.mp4" autoplay loop muted playsinline></video>
   </div>
+  <div class="cell">
+    <video src="/videos/bldc-motor-prop.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="cell">
+    <img src="/extras/bldc-motor.jpg" alt="brushless motor in hand" />
+  </div>
 </div>
 
 <!--
-Left: timelapse of me building the RC plane.
-Right: a second flight test of that same plane.
+Build outtakes:
+- big cell: RC plane build timelapse
+- top-right: second plane flight test
+- mid: brushless motor + prop spinning bench test
+- bottom: brushless motor in hand
 
 [Linger ~10 seconds, then advance.]
 -->
@@ -715,20 +724,58 @@ title: Outtakes — AI tooling
 
 <div class="tag mb-8">.outtakes / ai tooling</div>
 
-<div class="gallery pair max-w-6xl">
+<div class="gallery mosaic-4 max-w-6xl">
   <div class="cell">
     <video src="/videos/claude-monitor-live.mp4" autoplay loop muted playsinline></video>
   </div>
   <div class="cell">
     <img src="/videos/touch-grass-screen.gif" alt="claude-monitor touch-grass nudge" />
   </div>
+  <div class="cell">
+    <img src="/extras/claude-monitor-pi.jpg" alt="Raspberry Pi in wooden case" />
+  </div>
+  <div class="cell">
+    <img src="/extras/claude-monitor-dashboard.png" alt="claude-monitor dashboard screenshot" />
+  </div>
 </div>
 
 <!--
 Two views of claude-monitor — a project I built to track my own AI usage on a Raspberry Pi screen.
 
-Left: live dashboard running on the Pi.
-Right: the "touch grass" nudge — it yells at me when I cross a usage budget.
+- big cell: live dashboard running on the Pi
+- top-right: the "touch grass" nudge that yells at me when I cross a usage budget
+- mid: the Pi itself in a wooden case
+- bottom: dashboard screenshot
+
+[Linger ~10 seconds, then advance.]
+-->
+
+---
+layout: default
+class: text-left
+title: Outtakes — bench
+---
+
+<div class="tag mb-8">.outtakes / bench</div>
+
+<div class="gallery mosaic-6 max-w-6xl">
+  <div class="cell"><img src="/extras/adc-breakout.jpg" alt="ADC breakout breadboard test" /></div>
+  <div class="cell"><img src="/extras/smd-chip.jpg" alt="SMD chip on fingertip" /></div>
+  <div class="cell"><img src="/extras/ebike-bms.jpg" alt="e-bike BMS controller PCB" /></div>
+  <div class="cell"><img src="/extras/drone-quad.jpg" alt="drone quad assembly" /></div>
+  <div class="cell"><img src="/extras/espresso-internals.jpg" alt="espresso machine internals" /></div>
+  <div class="cell"><img src="/extras/lawnmower-pcb.jpg" alt="lawnmower controller PCB" /></div>
+</div>
+
+<!--
+Bench outtakes — other projects + tinkering not on the main slides:
+
+- big: ADC breakout bring-up on a breadboard
+- top-right: SMD chip on a fingertip (scale shot)
+- mid-right: e-bike BMS controller
+- bottom-right: drone quad-copter assembly
+- bottom-left: espresso machine I repaired (internals)
+- bottom-mid: lawnmower controller PCB
 
 [Linger ~10 seconds, then advance to thank you.]
 -->

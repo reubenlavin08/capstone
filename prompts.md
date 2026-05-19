@@ -296,8 +296,10 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 23 — Outtakes / build
 
-- On the left, the timelapse of me building the RC plane.
-- On the right, a second flight test of that same plane.
+- Timelapse of me building the RC plane.
+- A second flight test of that same plane.
+- Brushless motor + propeller spinning on a bench test.
+- The brushless motor itself, in my hand.
 
 [~10s, then advance]
 
@@ -305,15 +307,31 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 24 — Outtakes / AI tooling
 
-- Two views of claude-monitor — a project I built to track my own AI usage on a small screen on my desk.
-- On the left, the live dashboard.
-- On the right, the "touch grass" nudge — it yells at me when I cross a usage budget.
+- **claude-monitor** — a project I built to track my own AI usage on a small screen on my desk.
+- The live dashboard running on the Pi.
+- The "touch grass" nudge — it yells at me when I cross a usage budget.
+- The Pi itself in a wooden case.
+- Dashboard screenshot.
 
 [~10s, then advance]
 
 ---
 
-## 25 — Thank you
+## 25 — Outtakes / bench
+
+- Other projects + tinkering not on the main slides:
+  - ADC breakout bring-up on a breadboard
+  - SMD chip on my fingertip (scale shot)
+  - e-bike BMS controller PCB
+  - drone quad-copter assembly
+  - espresso machine internals I repaired
+  - lawnmower controller PCB
+
+[~10s, then advance to thank you]
+
+---
+
+## 26 — Thank you
 
 - "Thank you. Questions?"
 - Links shown on slide:
