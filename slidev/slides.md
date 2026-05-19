@@ -323,7 +323,7 @@ title: Compressed prompt
 <h2 class="text-3xl font-mono mb-12">compressed-prompt</h2>
 
 <div class="text-2xl">
-  optimized the wrong layer.
+  I optimized before I tested if it worked.
 </div>
 
 <!--
@@ -400,12 +400,12 @@ title: Build evidence
 <div class="tag mb-12">.build</div>
 
 <div class="gallery max-w-5xl">
-  <div class="cell"><div class="empty">01<br/>gallery/01.jpg</div></div>
-  <div class="cell"><div class="empty">02<br/>gallery/02.jpg</div></div>
-  <div class="cell"><div class="empty">03<br/>gallery/03.jpg</div></div>
-  <div class="cell"><div class="empty">04<br/>gallery/04.jpg</div></div>
-  <div class="cell"><div class="empty">05<br/>gallery/05.jpg</div></div>
-  <div class="cell"><div class="empty">06<br/>gallery/06.jpg</div></div>
+  <div class="cell"><img src="/gallery/01.png" alt="bullseye landing" /></div>
+  <div class="cell"><img src="/gallery/02.png" alt="bullseye home dashboard" /></div>
+  <div class="cell"><img src="/gallery/03.png" alt="bullseye featured find" /></div>
+  <div class="cell"><img src="/gallery/04.png" alt="claude-monitor display" /></div>
+  <div class="cell"><img src="/gallery/05.png" alt="sentinel-ai occupancy monitor" /></div>
+  <div class="cell"><img src="/gallery/06.png" alt="cc-discord-remote on phone" /></div>
 </div>
 
 <!--
