@@ -26,12 +26,10 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 3 — Past (report cards)
 
-- Four real lines from my report cards across high school.
-- Grade 8: I'd quit when things got hard.
-- Grade 10: I'd put work off and panic at the end.
-- Grade 12 Physics: I'm running my own projects and meeting my own deadlines.
-- AP Calc, this year: I can do the math, but I struggle to communicate the why. That's the gap I'm working on right now — including up here.
-- That arc is what made a self-directed capstone possible at all.
+- Some background on my learning habits — three lines from my report cards across high school.
+- Grade 8: I avoided hard things. I played a lot of video games.
+- Grade 10: I procrastinated and panicked at the end. Still gaming a lot, all the way into Grade 11.
+- Grade 12: I'm running my own projects and meeting my own deadlines.
 
 ---
 
@@ -49,11 +47,9 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 5 — Phase 1 (Google AI Pro Cert)
 
-- Phase one took the EQ literally. To become a developer through self-directed study, I went and got the credential.
-- Feb 28 to Mar 5 — seven days.
-- 11 Google Career Certificate courses, 8 Credly badges, including the Google AI Professional Certificate.
-- (Optional: open credly.com/users/reuben-lavin in the browser, show the badges, ~20s.)
-- After seven days I had the credential. What I didn't have was the answer to my question.
+- Phase one took the EQ literally — to become a developer through self-directed study, I went and got the credential.
+- Feb 28 to Mar 5 — seven days. 11 Google Career Certificate courses, 8 Credly badges, including the Google AI Professional Certificate.
+- It felt like sugarcoated grunt work — resume padding more than real skills. Corporate AI tools and consumer-level stuff.
 
 ---
 
@@ -71,11 +67,11 @@ Target: 24 min speaking + 6 min Q&A.
 ## 7 — Hardware lineage (text)
 
 - Before any of the AI work, I had a hardware lineage.
-- Fixed my old RC car.
+- Fixed my old RC car.  _(TODO: add a photo to this slide + video to the gallery)_
 - Built an autonomous LEGO car with ultrasonic obstacle avoidance.
 - Built an RC airplane.
 - Tore down and rebuilt an electric scooter.
-- Hardware and software are basically one thing to me. The capstone work leans on this lineage.
+- Hardware and software are one thing to me. The capstone work leans on this lineage.
 
 ---
 
@@ -91,18 +87,19 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 9 — Sentinel (text)
 
-- Sentinel was my first project that shipped a working AI integration end-to-end.
-- Built during spring break in Mexico City.
+- Sentinel was the first project where I shipped a working AI integration end-to-end.
+- Built in a hotel room during spring break in Mexico City.
 - A camera feeds a program that runs a person-detection AI, accelerated by an Intel chip.
 - A live dashboard shows who's in the room and where they are.
-- Sentinel was the project that told me I could actually do this.
-- Bullseye and the helmet came from the confidence Sentinel gave me.
+- This was the project that told me I could actually do this.
+- Bullseye and the helmet came out of the confidence Sentinel gave me.
 
 ---
 
 ## 10 — Sentinel gallery
 
 - That's the live AI output — boxes around the people the system has found, dots tracing how they're standing.
+- I also tested AI skeletal tracking in this project, though it's not in this picture.
 
 [Advance after ~15s]
 
@@ -110,11 +107,12 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 11 — Bullseye (text)
 
-- My favorite story from the project because it shows the rhythm.
-- April 29 — version one, salvage-radar — a tool that scraped Craigslist for free and cheap robotics parts near me.
+- My favorite story from the project — it shows the rhythm.
+- April 29 — version one, salvage-radar — a Craigslist scraper for free and cheap robotics parts near me.
 - Three days later I'd hit its limits, so I rebuilt as bullseye — added an AI agent and price-comparison data.
+- The legal piece: I researched it. Scraping Facebook Marketplace is in a grey area but doable. I started from some abandoned GitHub repos for the basic scraping logic, then built my own utilities around them.
 - Two days after that, bullseye-app — a Windows desktop app that scores Facebook Marketplace listings against the actual selling prices of similar items on eBay.
-- Open-source. Three GitHub stars in the first week.
+- Open-source. Three GitHub stars in the first week — not a lot, but it's a work in progress. I'm still optimizing and haven't started advertising yet.
 - The lesson isn't the marketplace bot. It's that I shipped, used it, found what was broken, and rebuilt — three times in five days.
 
 ---
@@ -124,21 +122,17 @@ Target: 24 min speaking + 6 min Q&A.
 - Landing page, home dashboard with savings and streak, and a featured find — an iPhone scored 75 out of 100 against eBay sold comps.
 - Live at getbullseye.app — anyone in the room can visit it after this.
 
-(Optional demo: open bullseye-app, type "drone", show real scoring, ~45s.)
 
 ---
 
 ## 13 — Helmet (text)
 
-- This is the project the capstone was nominally about — an assistive-vision helmet for blind users.
-- The "why": a friend of mine built a vibrating cane for blind users. I helped him wire it.
-- After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't — same problem, but with more information about what's around you.
-- What works: a small chip in the helmet streams a depth map of the surrounding area about fifteen times a second to a laptop. The laptop draws what the sensor is seeing in 3D, live.
-- What's stuck: the motion sensor was broken from the factory. I returned it. So the part that tells the helmet which way you're facing isn't running yet.
+- The project this capstone was nominally about — an assistive-vision helmet for blind users.
+- Why: my friend James built a vibrating cane for blind users. I helped him wire it. Watching him test it, I started wondering what a helmet could pick up that a cane couldn't — same problem, more spatial information.
+- Works: a chip in the helmet streams a depth map of the surroundings about 15 times a second to a laptop. The laptop draws what the sensor sees in 3D, live.
+- Stuck: the motion sensor was broken from the factory. Returned it. So the part that tracks which way you're facing isn't running yet.
 - You can debug your code for hours and the answer is still that the chip is broken.
 - Lesson: hardware quality is a variable you can't fix with skill.
-
-(Optional demo: sensor on breadboard, wave hand, show live depth map on laptop, ~60s.)
 
 ---
 
@@ -151,11 +145,12 @@ Target: 24 min speaking + 6 min Q&A.
 
 ## 15 — Shorthand
 
-- This is the project I struggled with most.
-- The idea: type a two-letter code, an AI expands it into a full prompt for you.
-- I built the version that runs inside a terminal program — including the logic that picks the best expansion to suggest. Got it working.
-- Then I realized I'd been polishing the wrong piece. The terminal version is one tiny corner. The real value is the version where the shorthand works in any text field, anywhere on your computer.
-- Once I move to that version, the polish I just did is gone.
+- The project I struggled with most.
+- Idea: type a two-letter code, an AI expands it into a full prompt for you.
+- I built the version that runs inside a terminal — including the logic that picks the best expansion to suggest. Got it working.
+- Then I realized I'd been polishing the wrong piece. The terminal version is one tiny corner; the real value is the version where the shorthand works in any text field, anywhere on your computer.
+- The deeper problem: I was optimizing decoding accuracy for sentences typed with way fewer characters. But across many samples, a plain Claude model with none of my optimization did just as well. My system added no benefit.
+- Once I move to the system-wide version, the polish I just did is gone.
 - Lesson: figure out where the real value lives before you start polishing.
 
 [PAUSE 2s]
@@ -187,25 +182,23 @@ Target: 24 min speaking + 6 min Q&A.
 - Embedded systems, computer vision, marketplace algorithms, AI-assistant tooling, low-level automation.
 - The breadth is the point.
 
-(Optional demo: github.com/reubenlavin08, scroll, ~30s.)
 
 ---
 
 ## 19 — Network
 
 - Two informal conversations with practicing experts.
-- Dr. Yang — Civil Engineering professor at UBC. He looked at my projects and talked about how they connected to his lab's work:
+- **Dr. Yang** — Professor of Civil Engineering at UBC, leading a research lab in construction automation and building affordability. He looked at my projects and connected them to his lab's work:
   - automation in construction
   - building affordability
-  - drones with stereo vision and computer vision to autonomously inspect the safety of buildings and bridges
-- That kind of real-world handle on this work is something I couldn't have gotten from coursework.
-- Rhys Rustad-Elliott — systems software engineer with industry experience at Google and Elastic. We talked about:
+  - drones using stereo vision and computer vision to autonomously inspect the safety of buildings and bridges
+- That real-world handle is something coursework couldn't have given me.
+- **Rhys Rustad-Elliott** — systems software engineer. Undergrad with distinction from the University of Toronto, master's *cum laude* from VU Amsterdam in computer security. Years at Google and Elastic working on low-level Linux systems and runtime security.
+- We talked about:
   - his work ethic and curiosity
   - the wide range of computer science projects he's done
   - how he picks what to work on next
-- What I'd do differently: pre-arrange these in the Plan of Action with a written question list before each conversation.
 
-[If asked about mentor meetings: I had one early on. My mentor read me as someone who didn't need much help and said so, so I ran autonomously. What I'd change is pre-arranging the meetings with written questions.]
 
 ---
 
