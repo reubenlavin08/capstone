@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Capstone notes — Reuben Lavin</title>
+<style>
+  @page { size: A4; margin: 1.8cm 1.6cm; }
+  html, body { background: white; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 10pt;
+    line-height: 1.32;
+    margin: 0;
+    color: #111;
+    orphans: 4;
+    widows: 4;
+  }
+  /* On-screen container so the browser preview looks like the print. */
+  @media screen {
+    body { max-width: 18cm; margin: 2rem auto; padding: 0 1rem; }
+  }
+  h1 { font-size: 16pt; margin: 0 0 0.2em 0; }
+  h1 + p { margin: 0 0 0.8em 0; font-size: 9.5pt; color: #555; }
+  .slide-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0.7em 0 0.6em 0;
+    padding: 0.3em 0 0.2em 0;
+  }
+  .slide-card + .slide-card { border-top: 1px solid #d8d8d8; padding-top: 0.55em; }
+  h2 {
+    font-size: 11.5pt;
+    margin: 0 0 0.3em 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  ul { margin: 0.1em 0 0.3em 0; padding-left: 1.25em; }
+  ul ul { margin: 0.05em 0 0.1em 0; padding-left: 1.15em; }
+  li { margin: 0.06em 0; }
+  p { margin: 0.2em 0; }
+  hr { display: none; }
+  strong { font-weight: 600; }
+  /* Print hint banner — visible on screen, hidden when printing. */
+  .print-hint {
+    background: #fff5d7; border: 1px solid #e0c25e; padding: 0.6em 0.9em;
+    font-size: 9.5pt; margin-bottom: 1em; border-radius: 4px;
+  }
+  @media print { .print-hint { display: none; } }
+</style>
+</head>
+<body>
+<div class="print-hint">
+  <strong>Print this page directly:</strong> press <kbd>Ctrl + P</kbd> →
+  set <em>Scale: 100%</em> (or <em>Default</em>) — do NOT use "Fit to page" —
+  and <em>Margins: Default</em>. This page's page-break CSS is honoured natively by the browser.
+</div>
+<h1>Capstone — what to say on each slide</h1>
+<p>May 19, 2026 · 8:30 AM · UCC. Phone-readable. Each slide has bullets = the things to actually say, in order. Paraphrase, don't memorize.</p>
+<p>Target: 24 min speaking + 6 min Q&amp;A.</p>
+<section class="slide-card"><h2>1 — Cover</h2>
+<ul>
+<li>A few weeks ago I spent seven hours debugging a sensor before realizing the chip was shorted from the factory.</li>
+<li>The week before that, I'd finished the Google AI Professional Certificate.</li>
+<li>The gap between those two experiences is what I want to talk about.</li>
+<li>I'm Reuben Lavin, WPGA Class of 2026.</li>
+<li>My essential question: how do I transition from a consumer of AI to a developer through self-directed study?</li>
+</ul>
+<p>[PAUSE 2s — look at the assessor before advancing]</p>
+</section><section class="slide-card"><h2>2 — Agenda</h2>
+<ul>
+<li>Past, present, future, then questions.</li>
+</ul>
+</section><section class="slide-card"><h2>3 — Past (report cards)</h2>
+<ul>
+<li>Some background on my learning habits — three lines from my report cards across high school.</li>
+<li>Grade 8: I avoided hard things. I played a lot of video games.</li>
+<li>Grade 10: I procrastinated and panicked at the end. Still gaming a lot, all the way into Grade 11.</li>
+<li>Grade 12: I'm running my own projects and meeting my own deadlines.</li>
+</ul>
+</section><section class="slide-card"><h2>4 — EQ + POA</h2>
+<ul>
+<li>The question: how do I transition from a consumer of AI to a developer through self-directed study?</li>
+<li>The plan, four milestones:</li>
+<li>01 knowledge baseline — the Google AI Pro Cert</li>
+<li>02 pivot — Sentinel</li>
+<li>03 integration — bullseye</li>
+<li>04 synthesis — the lidar helmet</li>
+<li>What I'm about to show you is what actually happened against that plan.</li>
+<li>The deviation is where the learning is.</li>
+</ul>
+</section><section class="slide-card"><h2>5 — Phase 1 (Google AI Pro Cert)</h2>
+<ul>
+<li>Phase one took the EQ literally.</li>
+<li>To become a developer through self-directed study, I went and got the credential.</li>
+<li>Feb 28 to Mar 5 — seven days.</li>
+<li>11 Google Career Certificate courses.</li>
+<li>8 Credly badges, including the Google AI Professional Certificate.</li>
+<li>It felt like sugarcoated grunt work.</li>
+<li>Resume padding more than real skills.</li>
+<li>Mostly corporate AI tools and consumer-level stuff.</li>
+</ul>
+</section><section class="slide-card"><h2>6 — "theory only gets you so far."</h2>
+<ul>
+<li>Seven days of clicking through course modules taught me something.</li>
+<li>But it was passive.</li>
+<li>I was curious about the real thing.</li>
+<li>I wanted to be hands-on.</li>
+<li>To actually make something — instead of watching videos about other people making things.</li>
+<li>The next two months were that.</li>
+</ul>
+<p>[PAUSE 2s before advancing]</p>
+</section><section class="slide-card"><h2>7 — Hardware lineage (text)</h2>
+<ul>
+<li>Before any of the AI work, I had a hardware lineage.</li>
+<li>Fixed my old RC car.  <em>(TODO: waiting on the right footage — green RC-tank-style car — from Reuben)</em></li>
+<li>Built an autonomous LEGO car with ultrasonic obstacle avoidance.</li>
+<li>Built an RC airplane.</li>
+<li>Tore down and rebuilt an electric scooter.</li>
+<li>Hardware and software are one thing to me. The capstone work leans on this lineage.</li>
+</ul>
+</section><section class="slide-card"><h2>8 — Hardware gallery</h2>
+<ul>
+<li>Top-left is the autonomous car — LEGO chassis, Arduino, ultrasonic.</li>
+<li>The looping clip is one of my plane test flights.</li>
+<li>The green PCB is the scooter.</li>
+</ul>
+<p>[Advance after ~25s]</p>
+</section><section class="slide-card"><h2>9 — Sentinel (text)</h2>
+<ul>
+<li>Sentinel — first project where I shipped a working AI integration end-to-end.</li>
+<li>Built in a hotel room during spring break in Mexico City.</li>
+<li>A camera feeds into a program that runs a person-detection AI.</li>
+<li>The AI is accelerated by an Intel chip.</li>
+<li>A live dashboard shows who's in the room and where they are.</li>
+<li>This was the project that told me I could actually do this.</li>
+<li>Bullseye and the helmet came out of the confidence Sentinel gave me.</li>
+</ul>
+</section><section class="slide-card"><h2>10 — Sentinel gallery</h2>
+<ul>
+<li>That's the live AI output — boxes around the people the system has found, dots tracing how they're standing.</li>
+<li>I also tested AI skeletal tracking in this project, though it's not in this picture.</li>
+</ul>
+<p>[Advance after ~15s]</p>
+</section><section class="slide-card"><h2>11 — Bullseye (text)</h2>
+<ul>
+<li>My favorite story from the project — it shows the rhythm.</li>
+<li><strong>April 29</strong> — version one, <strong>salvage-radar</strong>.</li>
+<li>A Craigslist scraper for free and cheap robotics parts near me.</li>
+<li><strong>May 2</strong> — rebuilt as <strong>bullseye</strong>.</li>
+<li>Hit salvage-radar's limits 3 days in.</li>
+<li>Added an AI agent and price-comparison data.</li>
+<li>The legal piece:</li>
+<li>I researched it.</li>
+<li>Scraping Facebook Marketplace is in a grey area, but doable.</li>
+<li>Started from some abandoned GitHub repos for the scraping logic.</li>
+<li>Built my own utilities around them.</li>
+<li><strong>May 4</strong> — rebuilt again as <strong>bullseye-app</strong>.</li>
+<li>A Windows desktop app.</li>
+<li>Scores Facebook Marketplace listings against actual eBay sold-prices.</li>
+<li>Open-source.</li>
+<li>3 GitHub stars in the first week.</li>
+<li>Not a lot — but it's a work in progress.</li>
+<li>Still optimizing. Haven't started advertising yet.</li>
+<li>The lesson isn't the marketplace bot.</li>
+<li>It's that I shipped, used it, found what was broken, and rebuilt.</li>
+<li>Three times in five days.</li>
+</ul>
+</section><section class="slide-card"><h2>12 — Bullseye gallery</h2>
+<ul>
+<li>Three views:</li>
+<li>landing page</li>
+<li>home dashboard with savings and streak</li>
+<li>a featured find — iPhone scored 75/100 against eBay sold comps</li>
+<li>Live at <strong>getbullseye.app</strong> — anyone in the room can visit it after this.</li>
+</ul>
+</section><section class="slide-card"><h2>13 — Helmet (text)</h2>
+<ul>
+<li>The project this capstone was nominally about.</li>
+<li>An assistive-vision helmet for blind users.</li>
+<li><strong>Why:</strong></li>
+<li>my friend James built a vibrating cane for blind users</li>
+<li>I helped him wire it</li>
+<li>watching him test it, I started wondering what a helmet could pick up that a cane couldn't</li>
+<li>same problem, more spatial information</li>
+<li><strong>Works:</strong></li>
+<li>a chip in the helmet streams a depth map of the surroundings ~15 times a second to a laptop</li>
+<li>the laptop draws what the sensor sees in 3D, live</li>
+<li><strong>Stuck:</strong></li>
+<li>the motion sensor was broken from the factory</li>
+<li>returned it</li>
+<li>the part that tracks which way you're facing isn't running yet</li>
+<li>You can debug your code for hours — the answer is still that the chip is broken.</li>
+<li><strong>Lesson:</strong> hardware quality is a variable you can't fix with skill.</li>
+</ul>
+</section><section class="slide-card"><h2>14 — Helmet gallery</h2>
+<ul>
+<li>Top-left: the full setup running.</li>
+<li>Other shots:</li>
+<li>close-ups of the sensor</li>
+<li>second sensor under test</li>
+<li>multimeter session debugging the dead motion-sensor chip</li>
+</ul>
+</section><section class="slide-card"><h2>15 — Shorthand</h2>
+<ul>
+<li>The project I struggled with most.</li>
+<li><strong>Idea:</strong> type a two-letter code → AI expands it into a full prompt.</li>
+<li>I built the terminal version.</li>
+<li>Including the logic that picks the best expansion to suggest.</li>
+<li>Got it working.</li>
+<li>Then I realized I'd been polishing the wrong piece.</li>
+<li>The terminal version is one tiny corner.</li>
+<li>The real value lives where the shorthand works in <em>any</em> text field, anywhere on your computer.</li>
+<li>The deeper problem:</li>
+<li>I was optimizing decoding accuracy for sentences typed with way fewer characters.</li>
+<li>Across many samples, a plain Claude model with none of my optimization did just as well.</li>
+<li>My system added no benefit.</li>
+<li>Once I move to the system-wide version, the polish I just did is gone.</li>
+<li><strong>Lesson:</strong> figure out where the real value lives before you start polishing.</li>
+</ul>
+<p>[PAUSE 2s]</p>
+</section><section class="slide-card"><h2>16 — cc-discord-remote</h2>
+<ul>
+<li>Two days ago I built <strong>cc-discord-remote</strong>.</li>
+<li>The official remote-control for my AI assistant didn't work for me.</li>
+<li>My phone account and my laptop account are different.</li>
+<li>So I built my own — a Discord bot.</li>
+<li>I send a message from anywhere.</li>
+<li>It types the message into the AI on my laptop.</li>
+<li>The response comes back to me in Discord.</li>
+<li>Two-day build.</li>
+<li><strong>Lesson:</strong> when a tool doesn't fit your setup, build the bridge yourself.</li>
+</ul>
+</section><section class="slide-card"><h2>17 — Web design (and this deck)</h2>
+<ul>
+<li>In parallel with the embedded work, I've been writing my own web design course — <strong>Designing with Claude Code</strong>.</li>
+<li>The method is a loop:</li>
+<li>write the course</li>
+<li>take the course on a real project</li>
+<li>find what's wrong</li>
+<li>rewrite the course</li>
+<li>v1 and v2 are archived in place so anyone can watch the method develop.</li>
+<li>v3 is live.</li>
+<li>The deck you're looking at uses the v3 method.</li>
+</ul>
+</section><section class="slide-card"><h2>18 — Portfolio (16 repos · 3 weeks)</h2>
+<ul>
+<li>This is the body of work — sixteen repositories created during the capstone window, most after April 24.</li>
+<li>Embedded systems, computer vision, marketplace algorithms, AI-assistant tooling, low-level automation.</li>
+<li>The breadth is the point.</li>
+</ul>
+</section><section class="slide-card"><h2>19 — Network</h2>
+<ul>
+<li>Two informal conversations with practicing experts.</li>
+<li><strong>Dr. Yang</strong> — Professor of Civil Engineering at UBC, leading a research lab in construction automation and building affordability. He looked at my projects and connected them to his lab's work:</li>
+<li>automation in construction</li>
+<li>building affordability</li>
+<li>drones using stereo vision and computer vision to autonomously inspect the safety of buildings and bridges</li>
+<li>That real-world handle is something coursework couldn't have given me.</li>
+<li><strong>Rhys Rustad-Elliott</strong> — systems software engineer.</li>
+<li>Undergrad with distinction from the University of Toronto.</li>
+<li>Master's <em>cum laude</em> from VU Amsterdam in computer security.</li>
+<li>Years at Google and Elastic working on low-level Linux systems and runtime security.</li>
+<li>We talked about:</li>
+<li>his work ethic and curiosity</li>
+<li>the wide range of computer science projects he's done</li>
+<li>how he picks what to work on next</li>
+</ul>
+</section><section class="slide-card"><h2>20 — "build what isn't in the syllabus."</h2>
+<ul>
+<li>Coming back to the question.</li>
+<li>Self-directed AI learning isn't about credentials.</li>
+<li>It's about choosing problems that force you into territory the courses don't cover.</li>
+<li>The Pro Cert was a starting point.</li>
+<li>The portfolio was the answer.</li>
+</ul>
+<p>[PAUSE 3s — stand still, look at the assessor]</p>
+</section><section class="slide-card"><h2>21 — What's next</h2>
+<ul>
+<li>Biggest first.</li>
+<li>Train my own AI model on USGS seismic data — the original EQ, full-circle.</li>
+<li>Continue the lidar helmet — new motion sensor, then full sensor fusion.</li>
+<li>Structured courses on the side: AWS Cloud Practitioner, Anthropic's AI courses, Coursera SQL.</li>
+<li>Launch bullseye properly — not three GitHub stars, actual users.</li>
+<li>Red-teaming work on openclaw.</li>
+</ul>
+</section><section class="slide-card"><h2>22 — "still building."</h2>
+<ul>
+<li>The original EQ wasn't wrong.</li>
+<li>It was premature.</li>
+<li>I needed three months of messy applied work before I could even attempt it properly.</li>
+<li>The questions keep coming.</li>
+</ul>
+<p>[PAUSE 4s — hold the silence. Then advance.]</p>
+</section><section class="slide-card"><h2>23 — Outtakes / build</h2>
+<ul>
+<li>On the left, the timelapse of me building the RC plane.</li>
+<li>On the right, a second flight test of that same plane.</li>
+</ul>
+<p>[~10s, then advance]</p>
+</section><section class="slide-card"><h2>24 — Outtakes / AI tooling</h2>
+<ul>
+<li>Two views of claude-monitor — a project I built to track my own AI usage on a small screen on my desk.</li>
+<li>On the left, the live dashboard.</li>
+<li>On the right, the "touch grass" nudge — it yells at me when I cross a usage budget.</li>
+</ul>
+<p>[~10s, then advance]</p>
+</section><section class="slide-card"><h2>25 — Thank you</h2>
+<ul>
+<li>"Thank you. Questions?"</li>
+<li>Links shown on slide:</li>
+<li>github.com/reubenlavin08</li>
+<li>linkedin.com/in/reuben-lavin-4bb2712ba</li>
+<li>credly.com/users/reuben-lavin</li>
+</ul>
+</section><section class="slide-card"><h2>Q&amp;A — likely questions</h2>
+<ul>
+<li><strong>What was hardest?</strong> → Shorthand. I built the wrong layer before testing what users actually wanted.</li>
+<li><strong>What surprised you most?</strong> → How much of self-directed AI work is choosing the right problem, not the right technique.</li>
+<li><strong>Would you do anything differently?</strong> → Pre-arrange expert outreach. Two informal conversations should have been four or five structured ones with written questions.</li>
+<li><strong>Helmet roadmap?</strong> → Replace the motion sensor → get pose tracking working → multi-sensor calibration → audio feedback for the user through bone-conduction headphones.</li>
+<li><strong>Why open-source bullseye?</strong> → AGPL keeps it user-aligned, not enterprise-aligned. Anyone can fork it; commercial use requires the same license.</li>
+<li><strong>How did you decide what to build?</strong> → Driven by my own friction. Bullseye started because I was hunting for free salvage parts. Helmet started because a friend built a cane.</li>
+<li><strong>What about the mentor meetings?</strong> → I had one early on. My mentor read me as someone who didn't need much help and said so, so I ran autonomously.</li>
+</ul>
+</section><section class="slide-card"><h2>Backup phrases if you blank</h2>
+<ul>
+<li>"Let me come back to that."</li>
+<li>"I'll show you in a second."</li>
+<li>"The short version is..."</li>
+<li>"I don't have a clean answer to that — what I can say is..."</li>
+</ul></section>
+</body>
+</html>
