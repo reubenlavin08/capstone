@@ -98,14 +98,14 @@ Between February 28 and March 5 — seven days — I completed 11 Google Career 
 ## 6 — Moment: "theory only gets you so far."
 
 **Topics**
-- The Pro Cert's own description says the holder built 20+ artifacts
-- Google itself told me the certificate isn't the proof — the artifacts are
-- This is where the pivot started
+- Seven days of course modules = passive learning
+- I was curious about the real thing — wanted to be hands-on
+- Wanted to make real things, not watch videos about other people making them
 
 **Script**
-"Google's own description of the Pro Cert says the holder built a portfolio of 20+ artifacts. So Google itself was telling me the certificate isn't the proof. The artifacts are.
+"Seven days of clicking through course modules taught me something, but it was passive. I was curious about the real thing. I wanted to be hands-on — to actually make something instead of watching videos about other people making things.
 
-The next two months were the artifacts."
+The next two months were that."
 
 **Cue:** [PAUSE 2s before advancing]
 
@@ -146,14 +146,13 @@ Hardware and software are basically one thing to me. The capstone work leans on 
 
 **Topics**
 - First project that shipped a working AI integration end-to-end
-- Stack: YOLOv8-Pose + OpenVINO + Streamlit
-- IP camera → pose detection → live dashboard
-- Built during spring break in CDMX
+- Camera → person-detection AI → live dashboard
+- Built during spring break in Mexico City
 
 **Script**
 "Sentinel was my first project that shipped a working AI integration end-to-end. Built during spring break in Mexico City.
 
-IP camera streams to a Python service, YOLOv8-Pose runs detection accelerated by Intel OpenVINO, and a Streamlit dashboard shows live occupancy.
+A camera feeds into a program that runs a person-detection AI, accelerated by an Intel chip, and a live dashboard shows who's in the room and where they are.
 
 Sentinel told me I could actually do this. Bullseye and the helmet came after."
 
@@ -162,10 +161,10 @@ Sentinel told me I could actually do this. Bullseye and the helmet came after."
 ## 10 — Sentinel gallery
 
 **Topics**
-- Live model output: bounding box + pose keypoints
+- Live AI output: boxes around people, dots tracing how they're standing
 
 **Script**
-"That's the live detection output — bounding box and pose keypoints on a person walking through the camera frame."
+"That's the live output — boxes around people the AI has found, dots tracing how they're standing as they walk through the camera frame."
 
 **Cue:** [Advance after ~15s]
 
@@ -182,11 +181,11 @@ Sentinel told me I could actually do this. Bullseye and the helmet came after."
 **Script**
 "This is my favorite story from the project because it shows the rhythm.
 
-April 29 — version one, salvage-radar — a Craigslist scraper for free and cheap robotics parts with geo-fencing.
+April 29 — version one, salvage-radar — a tool that scraped Craigslist for free and cheap robotics parts near me.
 
-Three days later I'd hit its limits, so I rebuilt as bullseye — added a local AI agent and comparison data.
+Three days later I'd hit its limits, so I rebuilt as bullseye — added an AI agent and price comparison data.
 
-Two days after that, bullseye-app — a Windows desktop app scoring Facebook Marketplace listings against eBay sold-comp data. AGPL-3, three GitHub stars in the first week.
+Two days after that, bullseye-app — a Windows desktop app that scores Facebook Marketplace listings against the actual selling prices of similar items on eBay. Open-source. Three GitHub stars in the first week.
 
 The lesson isn't the marketplace bot. It's that I shipped, used it, found what was broken, and rebuilt — three times in five days."
 
@@ -208,26 +207,25 @@ Live at getbullseye.app."
 
 ---
 
-## 13 — Helmet (text · vl53l8cx-pointcloud-esp32)
+## 13 — Helmet (text)
 
 **Topics**
 - The capstone-named project — assistive-vision helmet for blind users
-- Why: friend built a haptic cane; I helped wire it; wanted to see what a helmet could pick up that a cane couldn't
-- 64-zone ToF, 15 Hz, ESP32-S3 streaming over serial
-- What works: live depth-grid streaming + Python visualizer
-- What's stuck: IMU shorted from factory; pose fusion not running yet
-- Big lesson: hardware quality is a variable you can't fix with skill
+- Why: friend built a vibrating cane; I helped wire it; wanted to see what a helmet could pick up that a cane couldn't
+- What works: live 3D depth map streaming to a laptop in real time
+- What's stuck: the motion sensor was broken from the factory; can't tell which way the helmet is facing yet
+- Lesson: hardware quality is a variable you can't fix with skill
 
 **Script**
 "This is the project the capstone was nominally about — an assistive-vision helmet for blind users.
 
-A friend built a haptic and ultrasonic cane for blind users. I helped him wire it. After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't.
+A friend of mine built a vibrating cane for blind users. I helped him wire it. After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't — same problem, but with more information about what's around you.
 
-What works: the ESP32-S3 streams a 64-zone depth grid at 15 Hz over serial. The Python visualizer renders the time-of-flight rays in real time.
+What works: a small chip in the helmet streams a depth map of the surrounding area about fifteen times a second to a laptop, and the laptop draws what the sensor is seeing in 3D, live.
 
-What's stuck: the IMU was shorted from the factory. I returned it. Pose fusion isn't running yet. You can debug your code for hours and the answer is still that the chip is broken."
+What's stuck: the motion sensor was broken from the factory. I returned it. So the part that tells the helmet which way you're facing isn't running yet. You can debug your code for hours and the answer is still that the chip is broken."
 
-**Cue:** [Optional DEMO: ESP32 + ToF on breadboard, wave hand, show live grid, ~60s]
+**Cue:** [Optional DEMO: sensor on breadboard, wave hand, show live depth map on the laptop, ~60s]
 
 ---
 
@@ -246,19 +244,19 @@ What's stuck: the IMU was shorted from the factory. I returned it. Pose fusion i
 
 **Topics**
 - The project I struggled with most
-- Idea: two-letter code → LLM expands it into a full prompt
-- Built a terminal hook with beam search + LLM reranking
-- Realized I'd optimized the wrong abstraction layer — the terminal hook is one tiny piece; real value is system-wide integration
-- Lesson: choose your abstraction layer before you optimize it
+- Idea: type a two-letter code → AI expands it into a full prompt
+- Built the terminal version end-to-end, including the logic that picks the best expansion
+- Realized I'd been polishing the wrong piece — the terminal is a tiny corner; the real value is everywhere on your computer
+- Lesson: figure out where the real value lives before you start polishing
 
 **Script**
-"This is the project I struggled with most. Idea: type a two-letter code, an LLM expands it into a full prompt. I built a terminal hook with beam search and LLM reranking. Got it working.
+"This is the project I struggled with most. The idea: type a two-letter code, an AI expands it into a full prompt for you.
 
-Then I realized most of the optimization I'd just done was on the wrong abstraction layer. The terminal hook is a tiny piece. The real value lives at system-wide integration, where the shorthand works in any text field.
+I built the version that runs inside a terminal program — including the logic that picks the best expansion to suggest. Got it working.
 
-All my beam-search work was going to be obsolete the moment I moved to that layer.
+Then I realized I'd been polishing the wrong piece. The terminal version is one tiny corner. The real value is the version where the shorthand works in any text field, anywhere on your computer. Once I move to that, the polish I just did is gone.
 
-Choose your abstraction layer before you optimize it."
+Lesson: figure out where the real value lives before you start polishing."
 
 ---
 
@@ -266,14 +264,16 @@ Choose your abstraction layer before you optimize it."
 
 **Topics**
 - Built May 15-16, in 2 days
-- Discord bot that pipes commands into Claude Code on my laptop via Win32 ctypes
-- Lets me keep work moving when I'm not at the laptop
-- Born from the constraint that the official /remote-control didn't fit my account split
+- Discord bot that lets me drive my AI assistant from anywhere
+- Born from the constraint that the official remote-control didn't fit my account setup
+- Lesson: when a tool doesn't fit your setup, build the bridge yourself
 
 **Script**
-"Two days ago I built cc-discord-remote. It's a Discord bot that pipes commands into Claude Code running on my laptop, via Win32 ctypes. I send a message from anywhere; it runs on the laptop; the output comes back to me in Discord.
+"Two days ago I built cc-discord-remote. The official remote-control for my AI assistant didn't work for me because my phone account and my laptop account are different.
 
-It means I can keep work moving when I'm not physically at the laptop. Built in two days."
+So I built my own. It's a Discord bot. I send a message from anywhere; it types the message into the AI on my laptop; the response comes back to me in Discord.
+
+Two-day build. Lesson: when a tool doesn't fit your setup, build the bridge yourself."
 
 ---
 
@@ -314,19 +314,20 @@ Embedded, computer vision, marketplace algorithms, Claude Code tooling, low-leve
 ## 19 — Network
 
 **Topics**
-- Rubric: 3 mentor meetings + 2 expert consultations
-- I had 1 mentor meeting; mentor's read was that I didn't need their help
-- 2 informal expert conversations: Dr. Yang (UBC civil engineering); Rhys Rustad-Elliott (systems software engineer, Google/Elastic)
-- What I'd do differently: pre-arrange expert outreach in the POA with written question lists
+- Dr. Yang (UBC civil engineering) — looked at my projects, connected them to his lab's work: automation in construction, building affordability, drones with stereo vision + computer vision for autonomous structural safety inspection
+- Rhys Rustad-Elliott (systems software engineer, ex-Google/Elastic) — work ethic + curiosity, the wide range of CS projects he's done and how he picks what's next
+- What I'd do differently: pre-arrange expert outreach in the POA with written questions
 
 **Script**
-"Where I fell short and where I made do.
+"Two informal conversations with practicing experts.
 
-I had one mentor meeting. My mentor's read of me was that I was smart and didn't need their help, and they said as much. So I ran autonomously.
+Dr. Yang is a Civil Engineering professor at UBC. He looked at my projects and talked about how they connected to his lab's work — automation in construction, building affordability, and using drones with stereo vision and computer vision to autonomously inspect the safety of buildings and bridges. That kind of real-world handle on this work is something I couldn't have gotten from coursework.
 
-On the expert side, I didn't pre-arrange formal consultations. I had two informal conversations: Dr. Yang, a UBC Civil Engineering professor; and Rhys Rustad-Elliott, a systems software engineer with a master's from VU Amsterdam in computer security and several years at Google and Elastic.
+Rhys Rustad-Elliott is a systems software engineer with industry experience at Google and Elastic. He talked about his work ethic and his curiosity — the wide range of computer science projects he's done and how he picks what to work on next.
 
-Both were informal but genuine. What I'd do differently: pre-arrange the expert outreach in the Plan of Action, with written questions before each conversation."
+What I'd do differently: pre-arrange these in the Plan of Action with a written question list before each conversation."
+
+**Cue:** [If asked about mentor meetings in Q&A: I had one early on. My mentor read me as someone who didn't need much help and said so, so I ran autonomously. What I'd change is pre-arranging the meetings with written questions to make them more structured.]
 
 ---
 

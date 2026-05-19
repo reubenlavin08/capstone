@@ -183,9 +183,9 @@ title: The realization
 </div>
 
 <!--
-Google's own description of the Pro Cert says the holder built a portfolio of 20+ artifacts. So Google itself was telling me the certificate isn't the proof. The artifacts are.
+Seven days of clicking through course modules taught me something, but it was passive. I was curious about the real thing. I wanted to be hands-on — to actually make something instead of watching videos about other people making things.
 
-The next two months were the artifacts.
+The next two months were that.
 
 [PAUSE 2s before advancing]
 -->
@@ -243,13 +243,13 @@ title: Sentinel — first AI integration
 <h2 class="text-3xl font-mono mb-10">Sentinel-AI-Occupancy-Monitor</h2>
 
 <div class="chip-row mb-12">
-  <span class="chip">YOLOv8-Pose</span>
-  <span class="chip">OpenVINO</span>
-  <span class="chip">Streamlit</span>
+  <span class="chip">person-detection AI</span>
+  <span class="chip">Intel accelerator</span>
+  <span class="chip">live dashboard</span>
 </div>
 
 <div class="text-xl max-w-2xl leading-relaxed">
-  IP-camera feed &rarr; real-time pose detection &rarr; live occupancy dashboard.
+  camera &rarr; AI that finds people &rarr; live dashboard of who's in the room.
 </div>
 
 ---
@@ -265,13 +265,13 @@ title: Sentinel gallery
 </div>
 
 <!--
-Sentinel-AI-Occupancy-Monitor was my first project where I actually shipped a working AI/software integration end-to-end.
+Sentinel was my first project that actually shipped a working AI integration end-to-end. Built during spring break in Mexico City.
 
-The pipeline: IP camera streams to a Python service, YOLOv8-Pose runs detection accelerated by Intel OpenVINO, and a Streamlit dashboard shows live occupancy.
+The setup: a camera feeds into a program that runs a person-detection AI, accelerated by an Intel chip, and a live dashboard shows who's in the room and where they are.
 
-That photo on the right is the actual model output — bounding box + pose keypoints on a person walking through frame.
+What you're seeing is the live output — boxes around people, dots tracing how they're standing.
 
-Sentinel is what told me I could actually do this. Bullseye, the helmet, all of it came after.
+Sentinel was the project that told me I could actually do this. Everything that came after — bullseye, the helmet — came from confidence Sentinel gave me.
 
 [PAUSE 2s]
 -->
@@ -309,7 +309,7 @@ On April 29 I shipped version one — salvage-radar — a Craigslist scraper for
 
 Three days later I'd hit the limits, so I rebuilt it as bullseye — added a local AI agent and comparison data.
 
-Two days after that I rebuilt again as bullseye-app — a polished Windows desktop app scoring Facebook Marketplace listings against eBay sold-comp data, AGPL-3, picked up three GitHub stars in the first week.
+Two days after that I rebuilt again as bullseye-app — a polished Windows desktop app that scores Facebook Marketplace listings against the actual selling prices of similar items on eBay. Open-source. Picked up three GitHub stars in the first week.
 
 [DEMO: open bullseye-app on the laptop, type a search like "drone", show it scoring listings against eBay sold-comps in real time (~1 min)]
 
@@ -381,17 +381,17 @@ title: Helmet
 <!--
 This is the project the capstone was nominally about — an assistive-vision helmet for blind users.
 
-The "why": a friend of mine built a haptic and ultrasonic cane for blind users. I helped him with the wiring. After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't — same problem, more spatial information.
+The "why": a friend of mine built a vibrating cane for blind users. I helped him wire it up. After watching him test it, I started thinking about what a helmet could pick up that a cane couldn't — same problem, but with more information about what's around you.
 
-[DEMO: bring out ESP32 + ToF sensor on breadboard, plug into laptop USB, run the Python visualizer. wave a hand in front of the sensor and show the live 64-zone depth grid updating (~1 min)]
+[DEMO: bring out the helmet sensor on a breadboard, plug into laptop. Wave a hand in front of it, show the live 3D depth map on the screen.]
 
-What works: the ESP32-S3 streams a 64-zone depth grid at 15 Hz over serial; the Python visualizer renders animated time-of-flight rays in real time.
+What works: a small chip in the helmet streams a depth map of the area around it about fifteen times a second to a laptop, and the laptop draws what the sensor is seeing in 3D, live.
 
-What's stuck: the IMU was internally shorted from the factory (returned), so pose fusion isn't running yet, and I haven't tuned the ToF settings to get clean output.
+What's stuck: the motion sensor was broken from the factory. I returned it. So the part that tells the helmet which way you're facing isn't running yet.
 
 You can debug your code for hours and the answer is still that the chip is broken.
 
-Hardware quality is a variable you can't fix with skill.
+Lesson: hardware quality is a variable you can't fix with skill.
 
 [PAUSE 2s]
 -->
@@ -435,15 +435,13 @@ title: Shorthand
 </div>
 
 <!--
-shorthand is the project I struggled with most.
+This is the project I struggled with most.
 
-The idea is a shorthand input system — type a two-letter code, an LLM expands it into a full prompt. I built a terminal hook with beam search and LLM reranking. I got it working.
+The idea: type a two-letter code, an AI expands it into a full prompt for you. I built the version that runs inside a terminal program. I got it working — including the logic that picks the best expansion to suggest.
 
-And then I realized most of the optimization I'd just done was polish on the wrong layer. The terminal hook is a tiny piece of the eventual system. The real value lives at system-wide integration — where the shorthand works in any text field, not just the terminal.
+Then I realized I'd been polishing the wrong piece. The terminal version is one tiny corner of the eventual product. The real value is the version where the shorthand works in any text field, anywhere on your computer — not just the terminal. And once I move to that version, the polish work I just did is gone.
 
-All my beam-search and reranking work was going to be obsolete the moment I moved to that layer.
-
-Choose your abstraction layer before you optimize it. Otherwise you're polishing something you're about to replace.
+Lesson: figure out where the real value lives before you start polishing.
 
 [PAUSE 2s]
 -->
@@ -468,8 +466,8 @@ title: cc-discord-remote
 
 <div class="chip-row mb-10">
   <span class="chip">Discord bot</span>
-  <span class="chip">Win32 ctypes</span>
-  <span class="chip">terminal piping</span>
+  <span class="chip">Windows automation</span>
+  <span class="chip">2-day build</span>
 </div>
 
 <div class="text-xl max-w-md leading-relaxed">
@@ -485,11 +483,13 @@ title: cc-discord-remote
 </div>
 
 <!--
-Two weekends ago I realized I couldn't use the official /remote-control feature because my iPhone Claude account is different from the laptop one — Terry's signup. So I built my own.
+Two weekends ago I realized I couldn't use the official remote-control feature for my AI assistant because my phone account and my laptop account are different.
 
-cc-discord-remote is a Discord bot that pipes commands into Claude Code running in the terminal on my laptop via Win32 ctypes. I can send a Discord message from anywhere and it runs in Claude Code on the laptop, then the response comes back to me in Discord.
+So I built my own. cc-discord-remote is a Discord bot. I send a message from anywhere; it types the message into the AI on my laptop; the response comes back to me in Discord.
 
-It means I can keep work moving when I'm not physically at the laptop. Built in 2 days.
+It means I can keep work moving when I'm not physically at the laptop. Built in two days.
+
+Lesson: when the tool you need doesn't fit your setup, build the bridge yourself.
 -->
 
 ---
@@ -595,19 +595,13 @@ title: Network
 </div>
 
 <!--
-This is the part of the rubric where I have to be honest about where I fell short and where I made do. The capstone guideline is three mentor meetings and two expert consultations.
+Two informal conversations with practicing experts.
 
-I had one mentor meeting, in the first window. My mentor's read of me was that I was smart and didn't need their help, and they said as much. So I ran autonomously — which is what the rest of this deck shows.
+The first was with Dr. Yang, a Professor of Civil Engineering at UBC. He looked at my projects and talked about how they connected to his lab's work — automation in construction, building affordability, and using drones with stereo vision and computer vision to autonomously inspect the safety of buildings and bridges. That's the kind of real-world handle on this work I couldn't have gotten from coursework.
 
-On the expert side, I didn't pre-arrange formal consultations. What I did have were two unstructured conversations with practicing experts.
+The second was with Rhys Rustad-Elliott, a systems software engineer with industry experience at Google and Elastic. He talked about his work ethic and his curiosity — the wide range of computer science projects he's done and how he picks what to work on next.
 
-The first was with Dr. Yang, a Professor of Civil Engineering at UBC — we talked about civil engineering and automation, and my projects came up.
-
-The second was with Rhys Rustad-Elliott, a systems software engineer with a master's cum laude from VU Amsterdam in computer security, an undergrad with distinction from Toronto, and several years of industry experience at Google and Elastic working on low-level Linux systems and runtime security — we talked about his education path, his career trajectory, and how he approaches projects.
-
-Both were informal but both were genuine learning moments. In school, I also worked with Mr. Barnum on chemistry and Dr. Holowka on 3D modeling and spindle work.
-
-What I'd do differently: pre-arrange the expert outreach in the Plan of Action, with a written question list before each conversation.
+What I'd do differently: pre-arrange these in the Plan of Action with a written question list before each conversation.
 -->
 
 ---

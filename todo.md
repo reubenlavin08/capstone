@@ -167,6 +167,15 @@ R35. ✅ **VL53CX GIF resized** on helmet text slide (width: 100%; max-height: 5
 R36. ⚠️ **Update prompts.md + delivery.md + speaker-notes.md** with all script fixes. In progress this turn.
 R37. ✅ **Rule reaffirmed**: every request → todo.md FIRST.
 
+## Batch 5 (2026-05-18 user feedback after first pass)
+
+R38. ✅ **Theory moment rewritten** in Reuben's voice — about curiosity + wanting to be hands-on, not Google's "artifacts" frame.
+R39. ✅ **Rubric framing answer**: more about what was LEARNED. Confirmed in response to user. Every project slide now ends on a lesson; EQ-answer slide is the meta-reflection.
+R40. ✅ **Jargon stripped**: Sentinel chips + script, Helmet chips + script, Shorthand script, cc-discord-remote chips + script, Bullseye script. AGPL → "open-source"; YOLOv8-Pose → "person-detection AI"; OpenVINO → "Intel accelerator"; Streamlit → "live dashboard"; ESP32-S3 → "small chip"; ToF/depth grid → "depth map"; IMU → "motion sensor"; Win32 ctypes → "Windows automation"; beam search + LLM rerank → "the logic that picks the best expansion".
+R41. ✅ **Mentor mention dropped** from Network slide spoken script. Cue added for Q&A fallback.
+R42. ✅ **Dr. Yang content rewritten**: civil engineering, automation in construction, building affordability, autonomous structural safety inspection with drones + stereo vision + computer vision.
+R43. ✅ **Rhys content rewritten**: work ethic + curiosity, range of CS projects, how he picks what's next. Credentials dropped.
+
 ## Batch 3 (2026-05-19 ~04:30)
 
 R19. ❌ **Front page broken** — title now at bottom of slide (not centered). PCB traces visible but title positioning is off. Need to fix cover layout properly.
