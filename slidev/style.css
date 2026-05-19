@@ -250,7 +250,8 @@
   overflow: hidden;
   border-radius: 2px;
 }
-.gallery .cell img {
+.gallery .cell img,
+.gallery .cell video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -316,6 +317,7 @@
   background: #0a0a0a;
 }
 .gallery.mosaic-6 .cell img,
+.gallery.mosaic-6 .cell video,
 .gallery.mosaic-4 .cell img {
   object-fit: contain;
   object-position: center;

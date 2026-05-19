@@ -156,6 +156,17 @@ R16. ❌ Add to .next cascade (smallest text, append at bottom): "openclaw red-t
 R17. ❌ Two VL53CX software GIFs added to Drive — embed on helmet text or helmet gallery slide
 R18. ✅ Add cc-discord-remote project slide — "control Claude Code from anywhere, anytime" (built May 15-16)
 
+## Batch 4 (2026-05-19 ~04:45)
+
+R30. ⚠️ **Past slide / report cards** — rewriting script to be direct about what each quote means in plain language so user can deliver from the cue.
+R31. ⚠️ **Kill "exercise in closing that gap" filler** — and any similar filler/throwaway lines. In progress this turn.
+R32. ⚠️ **prompts.md bullets — replace abstract milestones with concrete examples**. e.g., "01 knowledge baseline = Google AI Pro Cert, 02 pivot = Sentinel first AI integration, 03 integration = Bullseye lineage, 04 synthesis = lidar helmet." In progress this turn.
+R33. ✅ **Slide order is correct**: Past → EQ+POA → Phase 1 (Cert) → Theory → Hardware → Sentinel → Bullseye → Helmet → Shorthand → cc-discord-remote → Web design. Script docs (prompts/delivery) were out of sync — fixing this turn.
+R34. ⚠️ **Final gallery slide (outtakes)** — building using pointcloud-basic.gif, claude-monitor-live.mp4, touch-grass-screen.gif, gallery/03+04 unused stills.
+R35. ✅ **VL53CX GIF resized** on helmet text slide (width: 100%; max-height: 540px).
+R36. ⚠️ **Update prompts.md + delivery.md + speaker-notes.md** with all script fixes. In progress this turn.
+R37. ✅ **Rule reaffirmed**: every request → todo.md FIRST.
+
 ## Batch 3 (2026-05-19 ~04:30)
 
 R19. ❌ **Front page broken** — title now at bottom of slide (not centered). PCB traces visible but title positioning is off. Need to fix cover layout properly.

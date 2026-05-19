@@ -68,17 +68,17 @@ title: The Past
 </div>
 
 <!--
-I'll start with where I came from. In Grade 8, my report card said I needed to develop strategies for persevering through setbacks — basically, I gave up too easily.
+These are four real lines from my report cards across high school.
 
-By Grade 10, I was at least self-aware enough to write that I needed to find strategies to focus and manage stress.
+Grade 8: "needs strategies to persevere" — I'd quit when things got hard.
 
-By Grade 12 Physics, my teacher described what she called a "mature ownership" of learning — I'd figured out how to actually push through.
+Grade 10: "needs strategies to focus and manage stress" — I'd put work off and panic at the end.
 
-That arc — from giving up easily to taking ownership — is what made it possible for me to attempt the kind of self-directed project this capstone asked for.
+Grade 12 Physics: "mature ownership of learning" — by then I was running my own projects and meeting my own deadlines.
 
-The gap I still have, named explicitly in my AP Calc feedback, is explanatory clarity. I can do the math; I struggle to communicate the why. This presentation is partly an exercise in closing that gap.
+AP Calc, this year: "needs explanatory clarity" — I can do the math, but I struggle to communicate the why. That's the gap I'm working on right now — including up here.
 
-[Mention bass + Volador if photos are visible — improvising under pressure as a personal theme]
+That arc is what made a self-directed capstone possible at all.
 -->
 
 ---
@@ -116,13 +116,15 @@ title: Essential question + plan
 </div>
 
 <!--
-Here's the question I started with: how do I transition from a consumer of AI to a developer through self-directed study?
+The question I started with: how do I transition from a consumer of AI to a developer through self-directed study?
 
-And the plan I wrote in March: four milestones — Knowledge Baseline, Technical Pivot, Integration, Final Synthesis.
+The plan I wrote in March, four milestones:
+01 knowledge baseline — Google AI Pro Cert
+02 pivot — Sentinel, first end-to-end AI integration
+03 integration — bullseye lineage
+04 synthesis — lidar helmet
 
-The plan was real. What I'm going to show you next is what actually happened against it, and where I deviated.
-
-Spoiler: the deviation is where the learning is.
+What I'm going to show you is what actually happened against that plan. The deviation is where the learning is.
 -->
 
 ---
@@ -181,13 +183,11 @@ title: The realization
 </div>
 
 <!--
-After seven days of sitting at a desk clicking through course modules, I'd reached the limits of what passive study could teach me.
+Google's own description of the Pro Cert says the holder built a portfolio of 20+ artifacts. So Google itself was telling me the certificate isn't the proof. The artifacts are.
 
-Google's own description of the Pro Cert — the thing I'd just earned — says it certifies that the holder has built a portfolio of 20+ artifacts and vibe-coded a custom AI solution. So Google itself was telling me: the certificate isn't the proof; the artifacts are.
+The next two months were the artifacts.
 
-Around that same time I kept seeing engineering builds on YouTube — sensor projects, AI-augmented tools, weird hardware — and at some point I started wanting to make those things rather than watch them. The next two months were that.
-
-Theory only gets you so far. The rest is hands-on.
+[PAUSE 2s before advancing]
 -->
 
 ---
@@ -373,7 +373,7 @@ title: Helmet
 </div>
 
 <div class="flex items-center justify-center">
-  <img src="/helmet/pointcloud-v6.gif" alt="live VL53L8CX point cloud" style="max-height: 380px; max-width: 100%; object-fit: contain;" />
+  <img src="/helmet/pointcloud-v6.gif" alt="live VL53L8CX point cloud" style="width: 100%; max-height: 540px; object-fit: contain;" />
 </div>
 
 </div>
@@ -685,6 +685,47 @@ The original EQ wasn't wrong. It was just premature — I needed three months of
 The questions keep coming.
 
 [PAUSE 4s — hold the silence. This is your last real line. Then advance.]
+-->
+
+---
+layout: default
+class: text-left
+title: Outtakes
+---
+
+<div class="tag mb-8">.outtakes</div>
+
+<div class="gallery mosaic-6 max-w-6xl">
+  <div class="cell">
+    <video src="/videos/claude-monitor-live.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="cell">
+    <img src="/helmet/pointcloud-basic.gif" alt="early point cloud" />
+  </div>
+  <div class="cell">
+    <img src="/videos/touch-grass-screen.gif" alt="touch-grass nudge" />
+  </div>
+  <div class="cell">
+    <img src="/gallery/04.png" alt="claude-monitor dashboard" />
+  </div>
+  <div class="cell">
+    <img src="/gallery/03.jpg" alt="bench scene" />
+  </div>
+  <div class="cell">
+    <img src="/gallery/04.jpg" alt="bench scene" />
+  </div>
+</div>
+
+<!--
+Outtakes. Stuff that didn't make a slide of its own:
+
+- claude-monitor running live on the Pi-screen dashboard
+- the original ToF point cloud — what the helmet visualization looked like before I rewrote it
+- the touch-grass nudge — claude-monitor will yell at me if I cross a usage budget
+- the dashboard view of claude-monitor scraping CLI usage
+- background images from the project window
+
+[Linger ~10 seconds, then advance to thank you.]
 -->
 
 ---
