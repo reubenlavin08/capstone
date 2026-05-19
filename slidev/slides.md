@@ -425,16 +425,16 @@ Choose your abstraction layer before you optimize it. Otherwise you're polishing
 
 ---
 layout: default
-class: text-left
+class: text-center
 title: Web design (and this deck)
 ---
 
-<div class="tag mb-4">.phase_2</div>
-<div class="muted text-sm tracking-wide mb-16">meta-loop · the course teaches me how to design itself</div>
+<div class="flex justify-center mb-4"><div class="tag">.phase_2</div></div>
+<div class="muted text-sm tracking-wide mb-12">meta-loop · the course teaches me how to design itself</div>
 
-<h2 class="text-3xl font-mono mb-12">claude-web-design-guide</h2>
+<h2 class="text-3xl font-mono mb-10">Designing with Claude Code</h2>
 
-<div class="text-2xl flex items-center gap-6 mb-10">
+<div class="text-2xl flex items-center justify-center gap-6 mb-10">
   <span>write the course</span>
   <span class="dim">→</span>
   <span>take it</span>
@@ -442,18 +442,21 @@ title: Web design (and this deck)
   <span>iterate</span>
 </div>
 
-<div class="flex items-center gap-3 mb-10">
+<div class="flex items-center justify-center gap-3 mb-10">
   <span class="chip dim">v1</span>
   <span class="chip dim">v2</span>
   <span class="chip">v3 live</span>
-  <span class="muted text-sm ml-2 font-mono">/v1 /v2 archived in place — readers watch it develop</span>
 </div>
 
-<div class="muted text-base">
+<div class="muted text-sm mb-10 max-w-xl mx-auto leading-relaxed">
+  9 steps: content → references → type → colour → layout → density → motion → "do not do" → final audit
+</div>
+
+<div class="muted text-base mb-10">
   this slideshow is the test.
 </div>
 
-<div class="dim text-sm mt-10 font-mono">
+<div class="dim text-sm font-mono">
   reubenlavin08.github.io/claude-web-design-guide
 </div>
 
