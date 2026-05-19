@@ -6,7 +6,7 @@ info: |
   Capstone · WPGA Class of 2026 · May 19, 2026
 colorSchema: dark
 mdc: true
-transition: fade-out
+transition: slide-left
 class: text-center
 layout: cover
 ---
