@@ -12,6 +12,7 @@
   color: #ffffff !important;
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-weight: 400;
+  padding-bottom: 3.5rem !important;
 }
 
 .slidev-layout h1,
@@ -396,15 +397,16 @@
 .gallery.mosaic-3-side > :nth-child(2) { grid-area: b; }
 .gallery.mosaic-3-side > :nth-child(3) { grid-area: c; }
 
-/* QUAD — 2x2 equal cells. For 4 items at identical size. */
+/* QUAD — 2x2 equal cells. For 4 items at identical size.
+   Explicit row heights so two rows fit inside the slide. */
 .gallery.quad {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 200px 200px;
   gap: 10px;
   width: 100%;
 }
-.gallery.quad .cell { aspect-ratio: 16/9; background: #0a0a0a; }
+.gallery.quad .cell { aspect-ratio: auto; background: #0a0a0a; }
 
 /* PAIR — two equal cells side by side. For "same size" requirements. */
 .gallery.pair {
