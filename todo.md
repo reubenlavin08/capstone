@@ -184,7 +184,8 @@ R46. ✅ **Hardware gallery rewired**: cell 3 now plane-test.mp4 (airplane fligh
 
 ## Batch 7 (2026-05-18)
 
-R47. ✅ **Merged speaker-notes.md + prompts.md into one file** — prompts.md is canonical, deleted speaker-notes.md. Per-slide bullet format: each bullet is a direct line to say. Dropped verbose "Script" prose paragraphs. delivery.md kept as mirror.
+R47. ✅ **Merged speaker-notes.md + prompts.md into one file** — prompts.md is canonical, deleted speaker-notes.md. Per-slide bullet format: each bullet is a direct line to say. Dropped verbose "Script" prose paragraphs.
+R48. ✅ **Deleted delivery.md** — was an identical mirror of prompts.md. Single canonical script file now.
 
 ## Batch 3 (2026-05-19 ~04:30)
 
